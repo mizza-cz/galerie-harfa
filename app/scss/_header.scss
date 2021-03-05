@@ -236,7 +236,18 @@
     line-height: 42px;
   }
 }
+
 @media (max-width: 1200px) {
+  .navbar .navbar__menu {
+    margin-top: 70px;
+  }
+  .navbar .navbar__col {
+    display: flex;
+    width: 450px;
+  }
+  .navbar__col::before {
+    width: 550px;
+  }
   .navbar {
     right: 20px;
   }
@@ -258,5 +269,27 @@
   }
   .header.sticky .navbar__btn {
     top: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar__col::before {
+    width: 700px;
+  }
+  .navbar .navbar__col {
+    position: fixed;
+    width: 100%;
+  }
+  .navbar .menu__link {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .navbar__col .menu,
+  .navbar__col .navbar__menu {
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar .navbar__menu {
+    margin-top: 63px;
   }
 }
