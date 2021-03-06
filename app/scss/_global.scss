@@ -55,6 +55,7 @@ body {
 }
 .main {
   margin-top: 120px;
+  position: relative;
 }
 .container {
   padding: 0 15px;
@@ -69,72 +70,83 @@ body {
   max-width: 1108px;
 }
 /////// sell ---------------------------------
-// .sell--big {
-//   width: 200px;
-//   height: 200px;
-//   left: 60px;
-//   top: 60px;
-// }
-// .sell {
-//   position: absolute;
-//   background-color: #fff;
-//   border-radius: 50%;
-//   display: flex;
-//   //   justify-content: center;
-//   align-items: center;
-//   transform: rotate(-15deg);
-//   font-weight: 800;
-//   text-transform: uppercase;
-//   flex-wrap: wrap;
-//   color: $pink;
-//   &__descr {
-//     font-size: 23.5px;
-//     line-height: 26px;
-//   }
-//   &__number {
-//     font-size: 107.5px;
-//     padding-top: 20px;
-//     padding-left: 20px;
-//     span {
-//       font-size: 25.2px;
-//     }
-//   }
-// }
-// .bg--pink {
-//   background-color: $pink;
-//   @include border-left;
-// }
-// .bg--orange {
-//   background-color: $orange;
-// }
-// .bg--green {
-//   background-color: $green;
-// }
-// .bg--ocean {
-//   background-color: $ocean;
-// }
-// .bg--yellow {
-//   background-color: $yellow;
-//   @include border-right;
-// }
-// .decoration {
-//   width: 100%;
-//   height: 10px;
-//   display: flex;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   .bg--pink {
-//     border-bottom-left-radius: 0;
-//   }
-//   .bg--yellow {
-//     border-bottom-right-radius: 0;
-//   }
-//   span {
-//     height: 100%;
-//     width: 100%;
-//   }
-// }
+.sell--big {
+  width: 200px;
+  height: 200px;
+  left: 60px;
+  top: 60px;
+}
+.sell {
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-15deg);
+  font-weight: 800;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  color: $pink;
+  &__descr {
+    font-size: 23.5px;
+    line-height: 26px;
+  }
+  &__number {
+    font-size: 107.5px;
+    span {
+      font-size: 25.2px;
+    }
+  }
+}
+.bg--pink {
+  background-color: $pink;
+  @include border-left;
+}
+.bg--orange {
+  background-color: $orange;
+}
+.bg--green {
+  background-color: $green;
+}
+.bg--ocean {
+  background-color: $ocean;
+}
+.bg--yellow {
+  background-color: $yellow;
+  @include border-right;
+}
+.decoration {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .bg--pink {
+    border-bottom-left-radius: 0;
+  }
+  .bg--yellow {
+    border-bottom-right-radius: 0;
+  }
+  span {
+    height: 100%;
+    width: 100%;
+  }
+}
+.decoration.decoration--bottom {
+  bottom: 0;
+  top: auto;
+  .bg--pink {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+  }
+  .bg--yellow {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
 // .text {
 //   font-size: 24px;
 //   line-height: 34px;
