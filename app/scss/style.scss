@@ -11,7 +11,6 @@
   margin-bottom: 20px;
   width: 100%;
   position: relative;
-  height: 560px;
   img {
     width: 100%;
     height: 100%;
@@ -43,7 +42,7 @@
 // top section end ---------------------------------------------------
 //shop-detail section
 .shop-detail {
-  padding-top: 88px;
+  margin-top: 170px;
 }
 .shop-detail__title {
   display: flex;
@@ -58,7 +57,7 @@
   }
 }
 .shop-detail__item + .shop-detail__item {
-  margin-left: 10px;
+  margin-left: 6px;
 }
 .shop-detail__item {
   font-size: 15px;
@@ -69,7 +68,7 @@
   background-color: $pink;
   border-radius: 15px;
   position: relative;
-  padding-left: 40px;
+  padding: 5px 9px 6px 31px;
   display: inline-block;
   &::before {
     content: '';
@@ -77,7 +76,8 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    left: 0;
+    left: 9px;
+    top: 9px;
     background-color: #fff;
   }
 }
@@ -85,14 +85,111 @@
   margin-bottom: 130px;
 }
 
+.shop-detail__box {
+  .more {
+    display: none;
+  }
+}
+
+// infromation
+.information {
+  margin-bottom: 120px;
+  &__inner {
+    position: relative;
+    margin-top: 105px;
+    padding: 90px 80px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 200;
+    margin-bottom: 70px;
+  }
+  &__list,
+  &__list a {
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: 300;
+  }
+  &__list span {
+    font-size: 46px;
+    font-weight: 700;
+    display: block;
+  }
+}
+.information__form {
+  height: 60px;
+  width: 443px;
+  display: flex;
+  margin-left: 5px;
+  button {
+    background-color: $pink;
+    color: #fff;
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 26px;
+  }
+  input {
+    background-color: #eeeeee;
+    border: none;
+    width: 380px;
+    outline: none;
+    padding: 0 15px;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
+.information__placing {
+  .information__title {
+    margin-bottom: 48px;
+  }
+}
+.information__placing-floor {
+  font-weight: 300;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+.information__placing-map {
+  max-width: 414px;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+.sup-footer.information {
+  margin-bottom: 60px;
+  .information__item.information__mail {
+    .information__list {
+      margin-bottom: 40px;
+    }
+  }
+  .information__inner {
+    margin-top: 80px;
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-bottom: 135px;
+  }
+}
+.information__item.information__mail {
+  width: 454px;
+}
+.information__item--contact {
+  margin-left: 115px;
+}
 /// gallery ---------------------------
 .gallery {
+  margin-bottom: 80px;
   .title {
     margin-bottom: 30px;
     display: none;
-  }
-  .container {
-    padding: 0;
   }
 }
 .gallery__inner {
@@ -168,65 +265,204 @@
 }
 /// gallery ----------------------------
 
-// infromation
-.information {
-  &__inner {
-    position: relative;
-    margin-top: 200px;
-    padding: 100px 20px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__title {
-    font-size: 50px;
-    line-height: 30px;
-    font-weight: 200;
-    margin-bottom: 65px;
-  }
-  &__list,
-  &__list a {
-    font-size: 26px;
-    line-height: 50px;
-    font-weight: 300;
-  }
-  &__list span {
-    font-size: 46px;
-    font-weight: 700;
-    display: block;
+// shops start ----------------------------
+.shops {
+  margin-bottom: 60px;
+  .container {
+    padding: 0;
   }
 }
-.information__form {
-  height: 60px;
-  width: 420px;
-  display: flex;
-  button {
-    background-color: $pink;
-    color: #fff;
-    display: inline-block;
-    width: 60px;
-    height: 100%;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size: 26px;
+.shops__title {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  span {
+    font-weight: 200;
   }
-  input {
-    background-color: #eeeeee;
-    border: none;
-    width: 360px;
-    outline: none;
-    padding: 0 15px;
+}
+.shops__inner {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.shops__row {
+  max-width: 25%;
+  width: 100%;
+  padding: 0 16px;
+}
+.shops__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    &::before {
+      right: -64px;
+    }
+  }
+  &::before {
+    content: '';
     height: 100%;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
+    width: 500px;
+    position: absolute;
+    background: linear-gradient(45deg, rgb(218, 55, 71) 0%, rgb(255, 102, 51) 100%);
+    top: 0;
+
+    right: -113%;
+    z-index: 3;
+    opacity: 0.9;
+    transform: skew(-10deg, 0);
+    transition: all 2s;
+  }
+
+  a.sell-shops {
+    transition: all 0.5s;
+    &::before {
+      content: '\ea3b';
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+      right: 0;
+      font-family: 'icomoon';
+      text-align: center;
+      font-size: 0;
+      transform: rotate(45deg);
+    }
   }
 }
 
-//footer
-.footer__inner {
+.shops__content {
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  bottom: 39px;
+  left: 40px;
+  z-index: 999;
+}
+.shops__content-title {
+  margin-bottom: -12px;
+  font-size: 30px;
+}
+.shops__content-descr {
+  padding-bottom: 25px;
+  font-size: 0;
+  font-weight: 400;
+  transition: all 0.5s;
+}
+.shops__categories-list + .shops__categories-list {
+  margin-left: 5px;
+}
+.shops__categories {
   display: flex;
-  justify-content: space-between;
+  &-list {
+    background-color: #da3747;
+    border-radius: 11px;
+    padding: 5px 13px 4px 9px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+.shops__btn {
+  position: absolute;
+  bottom: 17px;
+  right: 21px;
+  z-index: 999;
+  span {
+    transition: all 0.5;
+    display: none;
+  }
+  .btn-arrow {
+    transform: rotate(45deg);
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    transition: all 0.5s;
+  }
+}
+// shops active
+.shops__item.active {
+  .sell.sell-shops {
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:hover {
+    &::before {
+      right: 26px;
+    }
+  }
+  .shops__content-descr {
+    font-size: 16px;
+    transition: all 0.5s;
+    padding-top: 25px;
+  }
+  .shops__btn {
+    right: 18px;
+    bottom: 15px;
+    span {
+      display: block;
+    }
+    .btn-arrow {
+      font-size: 0;
+    }
+  }
+}
+// shops end ------------------------------
+
+//footer
+
+.footer__col {
+  margin-right: 212px;
+}
+.footer__inner {
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
   position: relative;
+  padding: 93px 0 40px 80px;
+}
+.footer__title {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 56px;
+}
+.footer__list {
+  margin-bottom: 30px;
+}
+.footer__link,
+.footer__list {
+  font-weight: 300;
+  font-size: 26px;
+}
+.footer__link {
+  padding-left: 40px;
+  position: relative;
+
+  font-size: 26px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(135deg, #1d3354 0%, #da3747 100%);
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+  }
+}
+.footer__copy {
+  margin: 100px 40px 0 auto;
+  font-size: 20px;
+  font-weight: 700;
 }
 @import 'media';
