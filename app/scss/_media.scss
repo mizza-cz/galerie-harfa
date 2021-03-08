@@ -578,6 +578,22 @@
   }
 }
 
+@media (max-width: 400px) {
+  .shops__categories-list {
+    margin-bottom: 5px;
+  }
+  .shops__categories-list + .shops__categories-list {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+  .shops__categories {
+    width: 130px;
+    flex-wrap: wrap;
+  }
+  .shops__content {
+    left: 20px;
+  }
+}
 @media (max-width: 380px) {
   .information__title {
     font-size: 38px;
