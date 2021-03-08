@@ -15,22 +15,24 @@ btnMore.addEventListener('click', () => {
   shopDetailBox.classList.toggle('vision');
 });
 
-
-
 // const btnShop = document.querySelector('.shops__btn');
 // const shopItem = document.querySelector('.shops__item');
 // btnShop.addEventListener('click', () => {
 //   shopItem.classList.toggle('active');
 // });
 
-$('.shops__btn').on('click', function () {
-  $(this).closest('shops__item').removeClass('active');
+// $('.shops__btn').on('click', function () {
+//   $(this).closest('shops__item').removeClass('active');
+//   $(this).parent().addClass('active');
+
+//   return false;
+// });
+$('.best__btn').on('click', function () {
+  $(this).closest('best__item-content').removeClass('active');
   $(this).parent().addClass('active');
 
   return false;
 });
-
-
 jQuery(document).ready(function ($) {
   $('.gallery__inner').magnificPopup({
     delegate: 'a',

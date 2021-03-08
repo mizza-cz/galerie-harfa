@@ -71,6 +71,18 @@ body {
   max-width: 1108px;
 }
 /////// sell ---------------------------------
+.sell--mini.sell {
+  width: 80px;
+  height: 80px;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #404040;
+  span {
+    font-size: 24px;
+  }
+}
 .sell--big.sell {
   width: 200px;
   height: 200px;
