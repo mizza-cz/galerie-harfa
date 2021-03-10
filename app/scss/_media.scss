@@ -574,6 +574,9 @@
   .main-page.services-page .top {
     padding-top: 20px;
     margin-bottom: 30px;
+    .decoration {
+      display: flex;
+    }
     .decoration .bg--pink {
       border-bottom-left-radius: 10px;
     }
