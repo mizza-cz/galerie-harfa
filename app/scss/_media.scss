@@ -10,6 +10,19 @@
   }
 }
 @media (max-width: 1800px) {
+  .main-page.services-page .services__inner {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'services--1 services--2 services--3'
+      'services--5 services--5 services--3'
+      'services--4 services--6 services--7'
+      'services--8 services--9 services--10';
+    .services--11,
+    .services--12,
+    .services--13 {
+      display: none;
+    }
+  }
   .main-page .events__item {
     margin: 0 20px;
   }
@@ -157,6 +170,19 @@
   }
 }
 @media (max-width: 1340px) {
+  .main-page.services-page .services__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'services--1 services--3'
+      'services--2 services--3'
+      'services--4 services--5'
+      'services--8 services--7';
+    grid-gap: 20px;
+    .services--9,
+    .services--10 {
+      display: none;
+    }
+  }
   .main-page .news .shops__inner {
     .shops__row {
       margin-bottom: 20px;
@@ -381,6 +407,22 @@
   }
 }
 @media (max-width: 880px) {
+  .main-page.services-page .services__inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'services--1'
+      'services--2'
+      'services--5'
+      'services--3'
+      'services--3';
+    .services--5 {
+      display: block;
+    }
+    .services--8,
+    .services--7 {
+      display: none;
+    }
+  }
   .main-page .services__inner {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -529,6 +571,26 @@
   }
 }
 @media (max-width: 660px) {
+  .main-page.services-page .top {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    .decoration .bg--pink {
+      border-bottom-left-radius: 10px;
+    }
+    .decoration .bg--yellow {
+      border-bottom-right-radius: 10px;
+    }
+  }
+  .services-page__title {
+    padding-top: 42px;
+    font-size: 50px;
+  }
+  .main-page.services-page .services__inner {
+    .services--1,
+    .services--2 {
+      display: block;
+    }
+  }
   .main-page .events {
     margin-bottom: 50px;
   }
