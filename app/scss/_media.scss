@@ -97,6 +97,16 @@
   }
 }
 @media (max-width: 1440px) {
+  .main-page.best-deal .best__row {
+    background-size: cover;
+  }
+  .main-page.best-deal .best__items {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      'best--6 best--8 best--8'
+      'best--5 best--5 best--4';
+  }
   .main-page .events__item {
     margin-bottom: 40px;
     max-width: 460px;
@@ -322,6 +332,12 @@
 }
 
 @media (max-width: 1040px) {
+  .main-page.best-deal .best__items {
+    .best--6,
+    .best--4 {
+      display: block;
+    }
+  }
   .main-page .events__img {
     min-height: 400px;
   }
@@ -380,6 +396,12 @@
 }
 
 @media (max-width: 900px) {
+  .main-page.best-deal .best__items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'best--6 best--5'
+      'best--4 best--8';
+  }
   .checkbox__inner {
     justify-content: start;
   }
@@ -571,6 +593,54 @@
   }
 }
 @media (max-width: 660px) {
+  .main-page.best-deal .best-deal__subtitle {
+    margin-bottom: 16px;
+  }
+  .main-page.best-deal .best__items {
+    margin-bottom: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      'best--6'
+      'best--5'
+      'best--4'
+      'best--8';
+  }
+  .main-page.best-deal {
+    margin-top: 79px;
+    .best-deal__inner {
+      margin-top: 60px;
+    }
+    .top__inner {
+      padding-top: 45px;
+    }
+    .best-deal__list {
+      margin-bottom: 30px;
+    }
+    .best-deal__list li {
+      font-size: 26px;
+      line-height: 36px;
+      padding: 0 17px;
+      span {
+        font-weight: 800;
+      }
+    }
+    .best-deal__title {
+      font-size: 50px;
+      padding: 0 15px;
+      line-height: 51px;
+      margin-bottom: 31px;
+      span {
+        font-weight: 800;
+        display: block;
+      }
+    }
+    .top {
+      .decoration {
+        display: flex;
+      }
+    }
+  }
   .main-page.services-page .top {
     padding-top: 20px;
     margin-bottom: 30px;
@@ -1012,6 +1082,9 @@
   }
 }
 @media (max-width: 400px) {
+  .main-page.best-deal .best-deal__list li {
+    padding: 0 5px;
+  }
   .main-page .services__inner .services__item-btn {
     max-width: 280px;
   }
