@@ -357,6 +357,17 @@ body {
     background-color: $ocean;
   }
 }
+.btn--blue.btn {
+  &:hover .btn-call {
+    color: $blue;
+  }
+  &::after {
+    border: 2px solid $blue;
+  }
+  &::before {
+    background-color: $blue;
+  }
+}
 .btn {
   padding: 21px 76px 10px;
   margin-left: 20px;

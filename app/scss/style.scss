@@ -6,6 +6,9 @@
 // // top section start -------------------------------------------
 .top.top-main {
   margin-bottom: 110px;
+  .btn {
+    display: none;
+  }
 }
 .top-main__content {
   position: absolute;
@@ -689,6 +692,11 @@
 
   .kids {
     margin-bottom: 114px;
+    .shops__item.actives {
+      .shops__categories-list {
+        border: 2px solid #fff;
+      }
+    }
     .shops__item::before {
       background: #fd6a36;
     }
@@ -710,7 +718,7 @@
     .btn-link {
       padding-top: 32px;
       font-size: 22px;
-      background-image: linear-gradient(-45deg, rgb(247, 169, 64) 0%, rgb(98, 183, 112) 100%);
+      background-image: linear-gradient(-45deg, rgb(247, 169, 64) 82%, rgb(98, 183, 112) 100%);
       span {
         font-size: 30px;
         line-height: 28px;
@@ -865,13 +873,184 @@
       }
     }
   }
+  // events start ------------------
+  .events {
+    margin-top: 110px;
+    margin-bottom: 105px;
+    .title {
+      margin-bottom: 44px;
+    }
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 95px;
+    }
+    &__item {
+      position: relative;
+      max-width: 420px;
+      width: 100%;
+      padding-top: 40px;
+      padding-bottom: 157px;
+    }
+    &__img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 7px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      min-height: 224px;
+      width: 100%;
+      display: block;
+    }
+    &__day {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      text-decoration: line-through;
+    }
+    &__info {
+      position: absolute;
+      bottom: 0;
+    }
+    &__info-title {
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 30px;
+      max-width: 275px;
+    }
+    &__categories {
+      display: flex;
+    }
+    &__categorie {
+      padding: 5px 10px 3px 9px;
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-radius: 11px;
+      background: linear-gradient(-45deg, #ed683b 100%, #f7a940 100%);
+    }
+    .events__categorie + .events__categorie {
+      margin-left: 4px;
+    }
+    .btn-link {
+      padding-top: 32px;
+      font-size: 22px;
+      background-image: linear-gradient(-45deg, rgb(247, 169, 64) 82%, rgb(98, 183, 112) 100%);
+      span {
+        font-size: 26px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  /// events end ---------------------
+  /// news start ----------------------
+  .news {
+    margin-bottom: 90px;
+    .btn-link {
+      background-color: $ocean;
+      font-size: 20px;
+      line-height: 20px;
+      line-height: 1.2;
+      padding-top: 41px;
+      span {
+        font-size: 32px;
+        line-height: 20px;
+        font-weight: 700;
+      }
+    }
+    .shops__title {
+      margin-bottom: 41px;
+    }
+    .shops__item.actives::before {
+      right: -37px;
+      width: 120%;
+    }
+    .shops__inner {
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 40px;
+      margin-bottom: 62px;
+      grid-template-areas: 'news--1 news--1 news--2 news--3';
+    }
+    .shops__row {
+      max-width: 100%;
+      width: 100%;
+      padding: 0;
+    }
+    .shops__categories-list {
+      background: rgb(21, 122, 110);
+    }
+    .shops__item::before {
+      background: linear-gradient(-45deg, rgb(21, 122, 110) 0%, rgb(29, 51, 84) 100%);
+    }
+  }
+
+  .news--1 {
+    grid-area: news--1;
+    .shops__categories-list {
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+    .shops__content-descr {
+      max-width: 427px;
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: 400;
+      padding-bottom: 18px;
+    }
+    .shops__content {
+      transition: all 1s;
+      opacity: 0;
+    }
+    .shops__item::before {
+      right: -54%;
+    }
+    .shops__item.actives {
+      &::before {
+        right: -70px;
+        width: 120%;
+      }
+      .shops__content {
+        opacity: 1;
+      }
+    }
+  }
+  .news--2 {
+    grid-area: news--2;
+  }
+  .news--3 {
+    grid-area: news--3;
+  }
+  // mews end ---------------------------
   /// services start --------------------
+  .services {
+    margin-bottom: 108px;
+    .btn-link {
+      font-size: 20px;
+      line-height: 20px;
+      background: linear-gradient(165deg, #2a96d4 0, #62b770 10%);
+      span {
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 700;
+      }
+    }
+  }
   .services__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
     grid-template-areas:
       'services--1 services--2 services--3 services--4'
       'services--5 services--5 services--3 services--6';
@@ -893,7 +1072,6 @@
     }
   }
   .services__item {
-    height: 100%;
     padding: 0 40px;
     &-btn {
       position: absolute;
@@ -1018,6 +1196,12 @@
     line-height: 30px;
     border: 2px solid #fff;
     border-radius: 5px;
+    transition: all 0.4s;
+    &:hover {
+      border: 2px solid $orange;
+      color: $orange;
+      transform: scale(1.06);
+    }
   }
   .services__menu-link + .services__menu-link {
     margin-top: 20px;
@@ -1032,6 +1216,9 @@
 }
 .main-page .deal {
   margin-bottom: 100px;
+  .best__item-content::after {
+    background: #1d3354;
+  }
   .btn-link {
     background: linear-gradient(145deg, #d83450 89%, #ed683b 100%);
   }
@@ -1085,6 +1272,7 @@
   background-position: center;
   height: 100%;
   display: block;
+  border-radius: 5px;
 }
 .best__item-content {
   width: 100%;

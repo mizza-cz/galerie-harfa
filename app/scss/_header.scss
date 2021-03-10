@@ -145,6 +145,9 @@
   }
 }
 .header.sticky {
+  .navbar__btn {
+    right: 20px;
+  }
   .header__inner {
     height: 60px;
   }
@@ -173,6 +176,12 @@
 }
 
 @media (max-width: 1860px) {
+  .navbar.change {
+    .navbar__col .menu,
+    .navbar__col .navbar__menu {
+      right: 40px;
+    }
+  }
   .header.sticky .navbar.change .burger-close {
     right: 20px;
   }
@@ -181,7 +190,7 @@
   }
   .navbar__col .menu,
   .navbar__col .navbar__menu {
-    right: 40px;
+    right: 0px;
   }
   .header__logo {
     padding-left: 20px;
@@ -277,6 +286,10 @@
   }
 }
 @media (max-width: 600px) {
+  .navbar.change .navbar__col .menu,
+  .navbar.change .navbar__col .navbar__menu {
+    right: 0;
+  }
   .navbar__col::before {
     display: none;
   }
