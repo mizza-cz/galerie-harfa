@@ -1719,10 +1719,6 @@
     width: 100%;
     margin-bottom: 30px;
     height: 215px;
-    img {
-    }
-  }
-  .group__categories {
   }
   .group__item {
     margin-bottom: 30px;
@@ -1736,6 +1732,17 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+  }
+}
+//shops
+.shops-page.group {
+  .checkbox__inner {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: -40px;
+    .checkbox__box {
+      margin-left: 40px;
     }
   }
 }
