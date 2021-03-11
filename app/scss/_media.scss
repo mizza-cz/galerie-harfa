@@ -92,6 +92,19 @@
   }
 }
 @media (max-width: 1600px) {
+  .group__num {
+    font-size: 70px;
+    top: 65px;
+    left: 0;
+  }
+  .group__col-title {
+    font-size: 170px;
+    line-height: 170px;
+    padding-left: 40px;
+  }
+  .group__items .group__item {
+    flex: 100%;
+  }
   .main-page .news .shops__item.actives::before {
     width: 137%;
   }
@@ -230,6 +243,16 @@
 }
 
 @media (max-width: 1280px) {
+  .group__num {
+    top: 45px;
+    font-size: 55px;
+  }
+  .group__col-title {
+    font-size: 120px;
+    line-height: 120px;
+    padding-left: 30px;
+  }
+
   .main-page .campaigns__inner {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -332,6 +355,18 @@
 }
 
 @media (max-width: 1040px) {
+  .group__col {
+    flex: 0 50%;
+  }
+  .group__wrapper:nth-last-of-type(2) .group__col:last-child {
+    display: none;
+  }
+  .group__wrapper:last-child {
+    display: none;
+  }
+  .group__checkbox {
+    flex-wrap: wrap;
+  }
   .main-page.best-deal .best__items {
     .best--6,
     .best--4 {
@@ -396,6 +431,11 @@
 }
 
 @media (max-width: 900px) {
+  .group {
+    .checkbox__box + .checkbox__box {
+      margin-left: 10px;
+    }
+  }
   .main-page.best-deal .best__items {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -593,6 +633,66 @@
   }
 }
 @media (max-width: 660px) {
+  .group__inner {
+    margin-bottom: 20px;
+  }
+  .group__wrapper:nth-last-of-type(2) .group__col:nth-of-type(2) {
+    display: none;
+  }
+  .group__col {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+  .group__wrapper {
+    flex-wrap: wrap;
+  }
+  .group__top {
+    padding: 0;
+    max-width: 100%;
+  }
+  // .group__wrapper .group__col:nth-of-type(3) {
+  //   .group__col-title {
+  //     display: none;
+  //   }
+  // }
+  .group-page.main-page .top.top-main {
+    margin-bottom: 45px;
+  }
+  .group__title {
+    margin-bottom: 53px;
+    font-size: 50px;
+    line-height: 30px;
+    span {
+      display: block;
+    }
+  }
+  .group-page.main-page .group {
+    .shops__title {
+      padding-left: 0;
+      margin-bottom: 18px;
+      span {
+        display: block;
+      }
+    }
+  }
+  .group {
+    .shops__row {
+      padding: 0;
+    }
+    .checkbox__box + .checkbox__box {
+      margin-left: 0;
+    }
+    .checkbox__inner {
+      flex-direction: column;
+      margin-bottom: 36px;
+    }
+    .text {
+      font-size: 24px;
+    }
+    .group__row {
+      display: none;
+    }
+  }
   .main-page.best-deal .best-deal__subtitle {
     margin-bottom: 16px;
   }
