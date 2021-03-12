@@ -2010,4 +2010,49 @@
     line-height: 66px;
   }
 }
+
+// career-detail
+.main.career-detail {
+  .text {
+    text-align: center;
+    margin-bottom: 100px;
+    padding-left: 0;
+  }
+  .title {
+    font-weight: 300;
+    margin: 0 auto;
+    line-height: 66px;
+  }
+  .career-detail__box {
+    position: absolute;
+    transform: translateY(50%);
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .career-detail__title {
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  .career-detail__categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    li + li {
+      margin-left: 10px;
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 22px;
+      background-color: #fff;
+      border-radius: 11px;
+      padding: 5px 13px 4px 13px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
 @import 'media';

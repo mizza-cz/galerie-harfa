@@ -246,7 +246,8 @@
 }
 
 @media (max-width: 1280px) {
-  .main.services-detail {
+  .main.services-detail,
+  .main.career-detail {
     .top__box-item {
       width: 100%;
     }
@@ -354,6 +355,9 @@
   }
 }
 @media (max-width: 1100px) {
+  .main.career-detail .career-detail__title {
+    font-size: 60px;
+  }
   .terasy-page.main-page {
     .top-main__content::before {
       width: 167px;
@@ -483,7 +487,8 @@
 }
 
 @media (max-width: 900px) {
-  .main.services-detail .top__box {
+  .main.services-detail .top__box,
+  .main.career-detail .top__box {
     width: 930px;
   }
   .terasy__bottom-inner .shops__row {
@@ -723,6 +728,22 @@
   }
 }
 @media (max-width: 660px) {
+  .main.career-detail {
+    .text {
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 70px;
+    }
+    .title {
+      font-size: 45px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  }
+  .main.career-detail .career-detail__title {
+    font-size: 50px;
+    padding: 0 10px;
+  }
   .main.services-detail .services__item-btn {
     .btn {
       padding: 21px 50px 10px;
