@@ -711,6 +711,21 @@
     </footer>
 
     <script>
+      var video = document.querySelector('.video');
+      var btnVideo = document.getElementById('play');
+      var topInner = document.querySelector('.top__inner');
+      function togglePlayPause() {
+        if (video.paused) {
+          btnVideo.className = 'pause';
+          video.play();
+        } else {
+          btnVideo.className = 'play';
+          video.pause();
+        }
+      }
+      btnVideo.onclick = function () {
+        togglePlayPause();
+      };
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
           center: { lat: 50.10438700624494, lng: 14.491399543012731 },

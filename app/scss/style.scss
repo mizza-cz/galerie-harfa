@@ -320,6 +320,9 @@
 // shops start ----------------------------
 .shops {
   margin-bottom: 60px;
+  .group__form {
+    padding: 0 15px;
+  }
   .container {
     padding: 0;
   }
@@ -423,6 +426,7 @@
   }
 }
 .shops__btn {
+  cursor: pointer;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -469,7 +473,16 @@
   }
 }
 // shops end ------------------------------
-
+.group-page.main-page {
+  .checkbox__inner {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: -40px;
+    .checkbox__box {
+      margin-left: 40px;
+    }
+  }
+}
 //footer
 
 .footer__col {
@@ -575,6 +588,7 @@
 }
 .checkbox__inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 82px;
 }
@@ -1995,13 +2009,16 @@
   }
 }
 /// servies-detail
-.main.services-detail {
-  .information__menu {
-    margin-bottom: 50px;
-  }
+.main.services-detail,
+.main.career-detail {
   .services__item-btn {
     margin-left: -15px;
   }
+  .information__menu {
+    margin-bottom: 50px;
+  }
+}
+.main.services-detail {
   .title {
     text-align: center;
     font-weight: 300;

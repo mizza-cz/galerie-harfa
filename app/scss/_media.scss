@@ -301,7 +301,6 @@
     }
   }
   .checkbox__inner {
-    flex-wrap: wrap;
     padding: 0 20px;
   }
   .best__items {
@@ -518,6 +517,14 @@
       display: none;
     }
   }
+  .checkbox__inner {
+    margin-left: -20px;
+    padding: 0;
+    .checkbox__box {
+      margin-left: 20px;
+      padding: 0 20px;
+    }
+  }
   .shops-page.group .checkbox__inner {
     margin-left: -20px;
     padding: 0;
@@ -528,7 +535,7 @@
   }
   .group {
     .checkbox__box + .checkbox__box {
-      margin-left: 10px;
+      margin-left: 0px;
     }
   }
   .main-page.best-deal .best__items {
@@ -543,9 +550,7 @@
   .checkbox__box {
     padding: 0 20px;
   }
-  .checkbox__box + .checkbox__box {
-    margin-left: 0;
-  }
+
   .best__top {
     max-width: 100%;
   }
@@ -728,15 +733,26 @@
   }
 }
 @media (max-width: 660px) {
+  .group .checkbox__inner {
+    padding: 0;
+  }
+  .shops {
+    .checkbox__inner {
+      padding: 0;
+    }
+    .group__form {
+      padding: 0 5px;
+    }
+  }
   .main.career-detail {
     .text {
       font-size: 24px;
       line-height: 32px;
-      margin-bottom: 70px;
+      margin-bottom: 30px;
     }
     .title {
       font-size: 45px;
-      margin-bottom: 25px;
+      margin-bottom: 0px;
       text-align: center;
     }
   }
@@ -837,6 +853,18 @@
         display: block;
       }
     }
+  }
+  .group-page.main-page .checkbox__inner {
+    margin-left: 0;
+  }
+  .group-page.main-page .checkbox__inner .checkbox__box {
+    margin-left: 0;
+  }
+  .checkbox__inner .checkbox__box {
+    margin-left: 0;
+  }
+  .checkbox__box + .checkbox__box {
+    margin-left: 0;
   }
   .group {
     .shops__row {
