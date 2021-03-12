@@ -22,6 +22,26 @@ jQuery(document).ready(function ($) {
     },
   });
 });
+var video = document.querySelector('.video');
+var btnVideo = document.getElementById('play');
+var topInner = document.querySelector('.top__inner');
+function togglePlayPause() {
+  if (video.paused) {
+    btnVideo.className = 'pause';
+    video.play();
+  } else {
+    btnVideo.className = 'play';
+    video.pause();
+  }
+}
+btnVideo.onclick = function () {
+  togglePlayPause();
+};
+$('.btn__video').on('click', function () {
+  $(this).closest('top__inner').removeClass('top-play');
+  $(this).parent().addClass('top-play');
+});
+
 window.addEventListener('scroll', function () {
   var header = document.querySelector('.header');
   header.classList.toggle('sticky', window.scrollY > 0);

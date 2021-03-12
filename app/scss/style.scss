@@ -1746,4 +1746,252 @@
     }
   }
 }
+
+/// terasy page
+.terasy__title {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.terasy__subtitle {
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  margin-left: 15px;
+  span {
+    font-weight: 800;
+    position: relative;
+    padding-left: 45px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      left: 5px;
+      top: 19px;
+      border-radius: 50%;
+    }
+  }
+}
+.main.terasy-page {
+  margin-top: 96px;
+}
+.terasy-page {
+  .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .top__img {
+    width: 100%;
+    height: 100%;
+  }
+  .shops__item {
+    border: 2px solid transparent;
+  }
+  .shops__item.actives {
+    .shops__categories-list {
+      border: 2px solid #fff;
+    }
+  }
+  .shops__categories-list {
+    padding: 5px 13px 4px 19px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      background-color: #fff;
+      width: 8px;
+      height: 8px;
+      left: 6px;
+      top: 7px;
+    }
+  }
+  .food,
+  .terasy__inner,
+  .terasy__bottom {
+    margin-bottom: 78px;
+  }
+  .top.top-main {
+    margin-bottom: 60px;
+    .sell {
+      width: 140px;
+      height: 140px;
+      right: 40px;
+      left: auto;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      span {
+        font-size: 20px;
+      }
+      &--1 {
+        top: 65px;
+        word-break: break-word;
+        text-align: center;
+        padding: 0 15px;
+      }
+      &--2 {
+        top: 230px;
+      }
+    }
+  }
+  .text {
+    max-width: 915px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 95px;
+  }
+  .terasy__bottom .terasy__subtitle {
+    span:before {
+      background-color: $green;
+    }
+  }
+  .gallery .terasy__subtitle {
+    span:before {
+      background-color: $ocean;
+    }
+  }
+  .food .terasy__subtitle {
+    span:before {
+      background-color: #d83550;
+    }
+  }
+  .c-video {
+    height: 100%;
+    position: relative;
+    &.top-play {
+      .sell,
+      .top-main__content {
+        opacity: 0;
+      }
+    }
+  }
+  .btn__video {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    top: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 30;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+
+  .top-main__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 1.1px;
+  }
+  .top-main__content {
+    padding-left: 82px;
+    transform: translateY(2%);
+    top: 44%;
+  }
+  .top-main__content::before {
+    background-image: url('../images/decorate/terasy.png');
+    width: 167px;
+    height: 83px;
+    left: 111px;
+    top: -95px;
+  }
+  .decoration {
+    display: none;
+  }
+}
+.terasy__inner {
+  .terasy__subtitle {
+    span:before {
+      background-color: $orange;
+    }
+  }
+  .shops__categories-list {
+    margin-bottom: 5px;
+  }
+  .shops__categories {
+    flex-wrap: wrap;
+  }
+  .shops__item,
+  .shops__item-bg {
+    min-height: 580px;
+  }
+  .shops__item.actives::before {
+    right: 26px;
+  }
+  .shops__item::before {
+    width: 130%;
+    right: -127%;
+    background: #fd6a36;
+  }
+  .shops__categories-list {
+    background-color: $orange;
+  }
+  .shops__content-title {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    span {
+      font-weight: 300;
+    }
+  }
+  .shops__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    grid-template-areas:
+      'terasy--1 terasy--1 terasy--2'
+      'terasy--3 terasy--4 terasy--4'
+      'terasy--5 terasy--5 terasy--6';
+  }
+
+  .shops__row {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+.terasy--1 {
+  grid-area: terasy--1;
+}
+.terasy--2 {
+  grid-area: terasy--2;
+}
+.terasy--3 {
+  grid-area: terasy--3;
+}
+.terasy--4 {
+  grid-area: terasy--4;
+}
+.terasy--5 {
+  grid-area: terasy--5;
+}
+.terasy--6 {
+  grid-area: terasy--6;
+}
+.terasy__bottom-inner {
+  display: flex;
+  .shops__item::before {
+    display: none;
+  }
+  .shops__item,
+  .shops__item-bg {
+    min-height: 580px;
+  }
+  .shops__categories-list {
+    background-color: $green;
+  }
+  .shops__row {
+    flex: 0 0 33.333%;
+    max-width: 100%;
+  }
+}
 @import 'media';
