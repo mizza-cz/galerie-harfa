@@ -21,6 +21,11 @@ jQuery(document).ready(function ($) {
       enabled: true,
     },
   });
+  const btnMore = document.querySelector('.more');
+  const shopDetailBox = document.querySelector('.shop-detail__box');
+  btnMore.addEventListener('click', () => {
+    shopDetailBox.classList.toggle('vision');
+  });
 });
 var video = document.querySelector('.video');
 var btnVideo = document.getElementById('play');
@@ -51,12 +56,6 @@ const menuIcon = document.querySelector('.navbar__btn');
 const navbar = document.querySelector('.navbar');
 menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
-});
-
-const btnMore = document.querySelector('.more');
-const shopDetailBox = document.querySelector('.shop-detail__box');
-btnMore.addEventListener('click', () => {
-  shopDetailBox.classList.toggle('vision');
 });
 
 $('.shops__btn').on('click', function () {

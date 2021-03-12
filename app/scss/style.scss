@@ -1994,4 +1994,20 @@
     max-width: 100%;
   }
 }
+/// servies-detail
+.main.services-detail {
+  .information__menu {
+    margin-bottom: 50px;
+  }
+  .services__item-btn {
+    margin-left: -15px;
+  }
+  .title {
+    text-align: center;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 66px;
+  }
+}
 @import 'media';

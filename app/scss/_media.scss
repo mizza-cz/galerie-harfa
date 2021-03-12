@@ -246,6 +246,14 @@
 }
 
 @media (max-width: 1280px) {
+  .main.services-detail {
+    .top__box-item {
+      width: 100%;
+    }
+    .top__box {
+      width: 100%;
+    }
+  }
   .terasy__bottom-inner {
     flex-wrap: wrap;
     .shops__row {
@@ -475,6 +483,9 @@
 }
 
 @media (max-width: 900px) {
+  .main.services-detail .top__box {
+    width: 930px;
+  }
   .terasy__bottom-inner .shops__row {
     flex: 100%;
     padding: 0;
@@ -712,6 +723,18 @@
   }
 }
 @media (max-width: 660px) {
+  .main.services-detail .services__item-btn {
+    .btn {
+      padding: 21px 50px 10px;
+    }
+    .btn-call {
+      font-size: 24px;
+    }
+  }
+  .main.services-detail .title {
+    font-size: 36px;
+    line-height: 42px;
+  }
   .terasy__inner .shops__item,
   .terasy__inner .shops__item-bg {
     height: 370px;
