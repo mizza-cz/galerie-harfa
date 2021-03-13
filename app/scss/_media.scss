@@ -92,6 +92,9 @@
   }
 }
 @media (max-width: 1600px) {
+  .career__vacancy {
+    max-width: 250px;
+  }
   .terasy__bottom-inner .shops__row {
     padding: 0 10px;
   }
@@ -354,6 +357,9 @@
   }
 }
 @media (max-width: 1100px) {
+  .career__wrapper {
+    flex: 0 50%;
+  }
   .main.career-detail .career-detail__title {
     font-size: 60px;
   }
@@ -676,6 +682,9 @@
   }
 }
 @media (max-width: 780px) {
+  .career__wrapper {
+    flex: 100%;
+  }
   .main-page .deal {
     .best__row {
       background-size: cover;
@@ -733,6 +742,10 @@
   }
 }
 @media (max-width: 660px) {
+  .career__title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
   .group .checkbox__inner {
     padding: 0;
   }
@@ -1373,6 +1386,12 @@
   }
 }
 @media (max-width: 400px) {
+  .career__wrapper {
+    padding: 0;
+  }
+  .career__inner .shops__categories-list {
+    margin-right: 5px;
+  }
   .terasy__subtitle span {
     font-size: 24px;
   }
