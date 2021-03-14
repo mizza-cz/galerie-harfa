@@ -61,6 +61,13 @@
   }
 }
 @media (max-width: 1700px) {
+  .parking__map {
+    top: 0;
+
+    img {
+      object-fit: cover;
+    }
+  }
   .main-page .news--1 {
     .shops__item::before {
       right: -105%;
@@ -205,6 +212,15 @@
   }
 }
 @media (max-width: 1340px) {
+  .parking-page .maps {
+    margin-top: -150px;
+  }
+  .parking__categories {
+    flex-wrap: wrap;
+  }
+  .parking__categorie {
+    margin-bottom: 40px;
+  }
   .parking__price {
     flex-wrap: wrap;
     justify-content: center;
@@ -476,6 +492,9 @@
 }
 
 @media (max-width: 1040px) {
+  .parking-page .maps {
+    margin-top: 0;
+  }
   .group__col {
     flex: 0 50%;
   }
@@ -552,6 +571,10 @@
 }
 
 @media (max-width: 900px) {
+  .parking__categorie {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
   .main.services-detail .top__box,
   .main.career-detail .top__box {
     width: 930px;
@@ -742,6 +765,12 @@
   }
 }
 @media (max-width: 780px) {
+  .map-1 {
+    display: none;
+  }
+  .map-2 {
+    display: block;
+  }
   .career__wrapper {
     flex: 100%;
   }
@@ -802,8 +831,57 @@
   }
 }
 @media (max-width: 660px) {
+  .parking-page .maps {
+    margin-top: -90px;
+  }
+  .parking__map {
+    top: -50px;
+  }
+  .parking__bottom .parking__price-descr {
+    margin-bottom: 110px;
+  }
+  .parking-page.main-page .parking__bottom .title {
+    font-size: 60px;
+    margin-top: 20px;
+    line-height: 53px;
+    margin-bottom: 14px;
+  }
   .parking__inner .parking__text {
-    margin-bottom: 57px;
+    margin-bottom: 20px;
+  }
+  .parking__list-img {
+    height: 70px;
+    width: 95px;
+    margin-bottom: 0;
+  }
+  .parking__list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .parking__categories {
+    margin-left: -10px;
+    margin-top: 20px;
+    margin-bottom: 39px;
+  }
+  .parking__list {
+    font-size: 30px;
+  }
+  .parking__list-bonus {
+    font-size: 60px;
+    span {
+      font-size: 30px;
+    }
+  }
+  .parking__categorie {
+    height: 190px;
+    max-width: 190px;
+    width: 100%;
+    margin-left: 10px;
+    padding: 35px 10px 39px 10px;
+  }
+  .parking__list-bottom {
+    display: none;
   }
   .parking__form {
     margin-bottom: 46px;
@@ -863,6 +941,7 @@
     .title {
       font-size: 50px;
       margin-bottom: 51px;
+      line-height: 1;
     }
   }
 
@@ -1458,6 +1537,13 @@
   }
 }
 @media (max-width: 480px) {
+  .date-box {
+    width: 100%;
+  }
+  .parking__inner label {
+    width: 100% !important;
+    padding: 0 15px;
+  }
   .information {
     .container {
       padding: 0;
@@ -1527,6 +1613,19 @@
   }
 }
 @media (max-width: 400px) {
+  .parking__form {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+  .date-box {
+    width: 50px;
+  }
+  .parking__inner label {
+    width: 200px !important;
+
+    margin: 0 0 10px 0;
+  }
+
   .career__wrapper {
     padding: 0;
   }
