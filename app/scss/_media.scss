@@ -123,6 +123,9 @@
   }
 }
 @media (max-width: 1440px) {
+  .landing__content {
+    top: 150px;
+  }
   .event-detail__inner {
     flex-wrap: wrap;
     .shops__row {
@@ -422,6 +425,14 @@
   }
 }
 @media (max-width: 1100px) {
+  .landing__content {
+    top: 65px;
+    padding: 0 15px;
+  }
+  .landing__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
   .event-detail__inner .shops__row {
     max-width: 600px;
     margin-left: auto;
@@ -670,6 +681,11 @@
   }
 }
 @media (max-width: 880px) {
+  .landing__text {
+    span {
+      display: none;
+    }
+  }
   .main-page.services-page .services__inner {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -777,6 +793,9 @@
   }
 }
 @media (max-width: 780px) {
+  .landing__inner {
+    padding-top: 200px;
+  }
   .map-1 {
     display: none;
   }
@@ -1461,6 +1480,9 @@
   .sell--big {
     display: none;
   }
+  .landing__inner {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -1641,6 +1663,14 @@
   }
 }
 @media (max-width: 400px) {
+  .landing__text {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .landing__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
   .parking__form {
     flex-wrap: wrap;
     justify-content: end;
