@@ -2389,4 +2389,37 @@
 .map-2 {
   display: none;
 }
+.top.event-detail {
+  .best-deal__img {
+    margin-bottom: 40px;
+  }
+  .best-deal__subtitle {
+    text-align: left;
+  }
+  .best-deal__title {
+    span {
+      display: block;
+    }
+  }
+}
+.event-detail__inner {
+  display: flex;
+  margin-bottom: 100px;
+  .shops__categories-list {
+    background-color: $orange;
+  }
+  .shops__item {
+    min-height: 320px;
+    &::before {
+      display: none;
+    }
+  }
+  .shops__item-bg {
+    min-height: 320px;
+  }
+  .shops__row {
+    max-width: 100%;
+    flex: 0 0 33.333%;
+  }
+}
 @import 'media';
