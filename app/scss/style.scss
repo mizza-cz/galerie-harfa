@@ -152,7 +152,7 @@
     position: relative;
     margin-top: 105px;
     padding: 90px 80px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -497,7 +497,7 @@
 .footer__inner {
   flex-wrap: wrap;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
   display: flex;
   position: relative;
   padding: 93px 0 40px 80px;
@@ -591,6 +591,10 @@
   border: none;
   background-color: transparent;
   width: 100%;
+  &:focus::placeholder {
+    color: transparent;
+  }
+
   &.best__input--mob {
     display: none;
   }
@@ -1225,7 +1229,7 @@
 }
 
 .best__item {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 .best__btn {
   cursor: pointer;
@@ -1254,6 +1258,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 328px;
   height: 100%;
   display: block;
   border-radius: 5px;
