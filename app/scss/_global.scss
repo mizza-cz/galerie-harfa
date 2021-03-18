@@ -246,7 +246,11 @@ body {
   display: flex;
   justify-content: center;
 }
+.social__box {
+  display: flex;
+}
 .social__link {
+  margin-left: 40px;
   font-size: 36px;
   color: #575656;
   border-radius: 50%;
@@ -264,12 +268,10 @@ body {
     transform: scale(1.2);
   }
 }
-.social__list + .social__list {
-  margin-left: 40px;
-}
 
 .icon-youtube-play.social__link {
   border: 3px solid rgb(218, 55, 71);
+  margin-left: 0;
   &:hover {
     color: red;
   }

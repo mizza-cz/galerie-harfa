@@ -150,11 +150,14 @@
     right: 20px;
   }
   .header__inner {
-    height: 60px;
+    height: 70px;
   }
   .header__logo {
     left: 0;
     top: 10px;
+    img {
+      height: 55px;
+    }
   }
   .navbar.change .burger-close {
     right: -25px;
