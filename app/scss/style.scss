@@ -189,6 +189,10 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     font-size: 26px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: #ec673b;
+    }
   }
   input {
     background-color: #eeeeee;
@@ -517,6 +521,9 @@
   position: relative;
 
   font-size: 26px;
+  &:hover {
+    text-decoration: underline;
+  }
   &::before {
     content: '';
     position: absolute;
