@@ -1090,7 +1090,7 @@
     background-position: center;
     position: relative;
     border-radius: 7px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 
     .btn {
       padding: 21px 88px 10px;
@@ -1446,6 +1446,7 @@
 
 // services-page
 .services-page__title {
+  margin-top: 150px;
   font-weight: 400;
   font-size: 60px;
   text-align: center;
@@ -1462,10 +1463,10 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
+  margin-bottom: 190px;
 }
 .main-page.services-page {
   .top {
-    padding-top: 150px;
     margin-bottom: 190px;
     .decoration {
       display: none;
@@ -1862,7 +1863,7 @@
         top: 65px;
         word-break: break-word;
         text-align: center;
-        padding: 0 15px;
+        padding: 0 17px;
       }
       &--2 {
         top: 230px;

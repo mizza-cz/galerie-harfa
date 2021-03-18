@@ -1219,8 +1219,6 @@
     }
   }
   .main-page.services-page .top {
-    padding-top: 20px;
-    margin-bottom: 30px;
     .decoration {
       display: flex;
     }
@@ -1232,8 +1230,14 @@
     }
   }
   .services-page__title {
-    padding-top: 42px;
     font-size: 50px;
+    margin-top: 0;
+  }
+  .main-page.services-page .top {
+    margin-bottom: 45px;
+  }
+  .services-page__text {
+    margin-bottom: 80px;
   }
   .main-page.services-page .services__inner {
     .services--1,
