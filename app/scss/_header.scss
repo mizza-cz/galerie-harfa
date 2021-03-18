@@ -254,9 +254,12 @@
     margin-top: 70px;
   }
   .navbar .navbar__col {
-    display: flex;
-    width: 450px;
-    background-color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    // display: flex;
+    // width: 450px;
+    // background-color: #fff;
     transition: all 1s;
   }
   .navbar__col::before {
@@ -264,7 +267,7 @@
     width: 0;
   }
   .navbar.change .navbar__col::before {
-    width: 550px;
+    width: 520px;
   }
   .navbar {
     right: 0px;
@@ -273,11 +276,14 @@
     top: 0;
   }
   .header__inner {
-    height: 60px;
+    height: 70px;
   }
   .header__logo {
     top: 10px;
     z-index: 22;
+    img {
+      height: 55px;
+    }
   }
   .nav__menu {
     display: none;
