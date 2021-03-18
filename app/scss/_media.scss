@@ -651,12 +651,12 @@
       margin-left: 0px;
     }
   }
-  .main-page.best-deal .best__items {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'best--6 best--5'
-      'best--4 best--8';
-  }
+  // .main-page.best-deal .best__items {
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-template-areas:
+  //     'best--6 best--5'
+  //     'best--4 best--8';
+  // }
   .checkbox__inner {
     justify-content: center;
   }
@@ -813,6 +813,11 @@
   .career__wrapper {
     flex: 100%;
   }
+  .best__items {
+    .best__row {
+      background-size: cover;
+    }
+  }
   .main-page .deal {
     .best__row {
       background-size: cover;
@@ -858,6 +863,15 @@
     img {
       width: 100%;
     }
+  }
+}
+@media (max-width: 768px) {
+  .main-page.best-deal .best__items {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'best--8 best--8'
+      'best--4 best--6'
+      'best--5 best--5';
   }
 }
 
@@ -1161,13 +1175,13 @@
   }
   .main-page.best-deal .best__items {
     margin-bottom: 20px;
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
     grid-gap: 10px;
-    grid-template-areas:
-      'best--6'
-      'best--5'
-      'best--4'
-      'best--8';
+    // grid-template-areas:
+    //   'best--6'
+    //   'best--5'
+    //   'best--4'
+    //   'best--8';
   }
   .main-page.best-deal {
     margin-top: 79px;
