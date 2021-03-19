@@ -333,6 +333,9 @@ body {
   }
 }
 .btn--orange.btn {
+  &:hover::before {
+    border: 2px solid $orange;
+  }
   &:hover .btn-call {
     color: $orange;
   }
@@ -344,6 +347,9 @@ body {
   }
 }
 .btn--pink.btn {
+  &:hover::before {
+    border: 2px solid $pink;
+  }
   &:hover .btn-call {
     color: $pink;
   }
@@ -355,6 +361,9 @@ body {
   }
 }
 .btn--ocean.btn {
+  &:hover::before {
+    border: 2px solid $ocean;
+  }
   &:hover .btn-call {
     color: $ocean;
   }
@@ -366,6 +375,9 @@ body {
   }
 }
 .btn--blue.btn {
+  &:hover::before {
+    border: 2px solid $blue;
+  }
   &:hover .btn-call {
     color: $blue;
   }
@@ -396,7 +408,7 @@ body {
 
     transition: transform 0.2s ease-in-out;
     transform: skew(-10deg, 0);
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
   &::before {
     content: '';
@@ -409,7 +421,6 @@ body {
     transition: transform 0.2s ease-in-out;
     transform: skew(-10deg, 0);
     border-radius: 5px;
-    transition: all 0.5s;
   }
 
   &:hover::before {
@@ -418,6 +429,7 @@ body {
 
   &:hover::after {
     opacity: 0;
+    transition: all 0.4s;
   }
 }
 
@@ -430,6 +442,9 @@ body {
   color: #ffffff;
   z-index: 999;
   transition: all 0.4s;
+  &:hover {
+    transition: all 0.4s;
+  }
 
   span {
     font-weight: 900;
