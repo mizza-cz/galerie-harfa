@@ -312,6 +312,11 @@
 }
 
 @media (max-width: 1280px) {
+  .main.services-detail {
+    .decoration {
+      display: none;
+    }
+  }
   .parking-page .top__box-item.bg--pink {
     border-top-left-radius: 10px;
   }
@@ -1046,7 +1051,8 @@
     font-size: 50px;
     padding: 0 10px;
   }
-  .main.services-detail .services__item-btn {
+  .main.services-detail .services__item-btn,
+  .main.career-detail .services__item-btn {
     .btn {
       padding: 21px 50px 10px;
     }
