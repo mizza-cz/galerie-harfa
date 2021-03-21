@@ -1591,6 +1591,9 @@
   .landing__inner {
     margin-bottom: 40px;
   }
+  .checkbox__inner {
+    flex-direction: column;
+  }
 }
 @media (max-width: 600px) {
   .main-page.best-deal .best__items {
@@ -1783,6 +1786,14 @@
   }
 }
 @media (max-width: 400px) {
+  .career__inner {
+    .shops__categories {
+      width: 100%;
+    }
+  }
+  .career__title {
+    margin-left: 0;
+  }
   .icon-googleplay.social__link::after {
     height: 80px;
     width: 80px;
