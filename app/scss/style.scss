@@ -1664,7 +1664,7 @@
 }
 .group__num {
   position: absolute;
-  left: -5px;
+  left: 10px;
   top: 60px;
   font-size: 100px;
   font-weight: 200;
@@ -1756,16 +1756,16 @@
   }
   .group__item-img {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 215px;
   }
   .group__item {
     margin-bottom: 30px;
     flex: 0 50%;
     width: 100%;
-    min-height: 433px;
+    min-height: 415px;
     &-link {
-      padding: 23px 10px 30px 10px;
+      padding: 23px 10px 20px 10px;
       position: relative;
       height: 100%;
       display: flex;
