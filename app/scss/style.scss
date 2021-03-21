@@ -379,6 +379,22 @@
   border-radius: 7px;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s;
+  &:hover {
+    .shops__categories-list a {
+      border: 2px solid $pink;
+      background-color: #fff;
+      color: $pink;
+    }
+    &::before {
+      right: 26px;
+    }
+    .shops__content-descr {
+      font-size: 16px;
+      padding-top: 25px;
+      transition: all 0.5s;
+    }
+  }
   &-bg {
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,12 +440,13 @@
   font-weight: 700;
   position: absolute;
   bottom: 39px;
-  left: 40px;
+  left: 35px;
   z-index: 999;
 }
 .shops__content-title {
   margin-bottom: -12px;
   font-size: 30px;
+  margin-left: 5px;
 }
 .shops__content-descr {
   padding-bottom: 25px;
@@ -437,11 +454,13 @@
   font-weight: 400;
   transition: all 0.5s;
 }
-.shops__categories-list + .shops__categories-list {
-  margin-left: 5px;
+.shops__categories-list {
+  margin: 0 5px 5px 5px;
 }
 .shops__categories {
   display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
   &-list a {
     color: #fff;
     display: block;
@@ -752,16 +771,20 @@
 
   .kids {
     margin-bottom: 114px;
+    .shops__item:hover,
     .shops__item.actives {
-      .shops__categories-list {
-        border: 2px solid #fff;
+      .shops__categories-list a {
+        border: 2px solid $orange;
+        color: $orange;
+        background-color: #fff;
       }
     }
+
     .shops__item::before {
       background: #fd6a36;
     }
-    .shops__categories-list {
-      background: linear-gradient(-45deg, rgb(237, 104, 59) 100%, rgb(247, 169, 64) 100%);
+    .shops__categories-list a {
+      background: $orange;
     }
     .sell {
       font-size: 26px;
@@ -985,15 +1008,22 @@
     &__categories {
       display: flex;
     }
-    &__categorie {
-      padding: 5px 10px 3px 9px;
+    &__categorie a {
+      padding: 4px 11px 3px 8px;
       font-size: 12px;
       line-height: 1.2;
       font-weight: 700;
+      border: 2px solid transparent;
       text-transform: uppercase;
       color: #ffffff;
       border-radius: 11px;
-      background: linear-gradient(-45deg, #ed683b 100%, #f7a940 100%);
+      transition: all 0.4s;
+      background: $orange;
+      &:hover {
+        background: #fff;
+        color: $orange;
+        border: 2px solid $orange;
+      }
     }
     .events__categorie + .events__categorie {
       margin-left: 4px;
@@ -1028,6 +1058,14 @@
     .shops__title {
       margin-bottom: 41px;
     }
+    .shops__item:hover,
+    .shops__item.active {
+      .shops__categories-list a {
+        border: 2px solid rgb(21, 122, 110);
+        color: rgb(21, 122, 110);
+        background-color: #fff;
+      }
+    }
     .shops__item.actives::before {
       right: -37px;
       width: 120%;
@@ -1046,7 +1084,7 @@
       width: 100%;
       padding: 0;
     }
-    .shops__categories-list {
+    .shops__categories-list a {
       background: rgb(21, 122, 110);
     }
     .shops__item::before {
@@ -1056,7 +1094,7 @@
 
   .news--1 {
     grid-area: news--1;
-    .shops__categories-list {
+    .shops__categories-list a {
       background-color: transparent;
       border: 2px solid #fff;
     }
@@ -1074,7 +1112,8 @@
     .shops__item::before {
       right: -54%;
     }
-    .shops__item.actives {
+    .shops__item.actives,
+    .shops__item:hover {
       &::before {
         right: -70px;
         width: 120%;
@@ -1311,6 +1350,11 @@
   display: block;
   z-index: 10;
   &:hover {
+    .best__hover {
+      left: 30px;
+      opacity: 1;
+      transition: all 2s;
+    }
     &::before {
       right: -60px;
       z-index: 4;

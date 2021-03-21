@@ -1847,15 +1847,9 @@
   .main-page .services__inner .services__item-btn {
     max-width: 280px;
   }
-  .shops__categories-list {
-    margin-bottom: 5px;
-  }
-  .shops__categories-list + .shops__categories-list {
-    margin-left: 0;
-    margin-right: 5px;
-  }
+
   .shops__categories {
-    width: 130px;
+    width: 100%;
     flex-wrap: wrap;
   }
   .shops__content {
