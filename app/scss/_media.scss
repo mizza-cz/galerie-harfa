@@ -308,7 +308,7 @@
   }
   .information__inner {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .information__item {
     margin-bottom: 60px;
@@ -321,8 +321,10 @@
 
 @media (max-width: 1280px) {
   .main.services-detail {
-    .decoration {
-      display: none;
+    .top {
+      .decoration {
+        display: none;
+      }
     }
   }
   .parking-page .top__box-item.bg--pink {
@@ -894,6 +896,18 @@
   }
 }
 @media (max-width: 768px) {
+  .main-page.best-deal .best__item-content::after {
+    right: -73px;
+  }
+  .main-page.best-deal {
+    .best--8,
+    .best--5 {
+      .best__item-content,
+      .best__row {
+        min-height: 260px;
+      }
+    }
+  }
   .group__wrapper:last-child {
     display: none;
   }
@@ -1114,7 +1128,7 @@
   .main.services-detail .services__item-btn,
   .main.career-detail .services__item-btn {
     .btn {
-      padding: 21px 50px 10px;
+      padding: 21px 35px 10px;
     }
     .btn-call {
       font-size: 24px;
@@ -1566,7 +1580,7 @@
     margin-bottom: 44px;
   }
   .shop-detail {
-    margin-top: 42px;
+    margin-top: 80px;
   }
   .shop-detail__logo {
     display: none;
@@ -1578,7 +1592,16 @@
     margin-bottom: 40px;
   }
 }
-
+@media (max-width: 600px) {
+  .main-page.best-deal .best__items {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'best--8'
+      'best--4'
+      'best--5'
+      'best--6';
+  }
+}
 @media (max-width: 580px) {
   .main-page .shops__title span {
     display: inline-block;
