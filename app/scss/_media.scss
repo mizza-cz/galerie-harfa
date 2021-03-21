@@ -243,30 +243,7 @@
   .parking__price-item {
     margin-bottom: 30px;
   }
-  .parking-page {
-    .top__box-item {
-      width: 33.333%;
-    }
-    .top__box-item.bg--yellow,
-    .top__box-item.bg--ocean {
-      width: 50%;
-    }
-    .top__box {
-      flex-wrap: wrap;
-    }
-    .top__box-item.bg--yellow {
-      border-top-right-radius: 0;
-    }
-    .top__box-item.bg--green {
-      border-top-right-radius: 10px;
-    }
-    .top__box-item.bg--ocean {
-      border-bottom-left-radius: 10px;
-    }
-    .top__box-item.bg--pink {
-      border-bottom-left-radius: 0;
-    }
-  }
+
   .main-page.services-page .services__inner {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -317,19 +294,16 @@
 }
 
 @media (max-width: 1280px) {
-  .main.services-detail {
+  .main.services-detail,
+  .main.career-detail,
+  .parking-page {
     .top {
       .decoration {
         display: none;
       }
     }
   }
-  .parking-page .top__box-item.bg--pink {
-    border-top-left-radius: 10px;
-  }
-  .parking-page .top__box {
-    width: 100%;
-  }
+
   .main.services-detail,
   .main.career-detail {
     .top__box-item {
@@ -452,23 +426,7 @@
     margin-right: auto;
     flex: none;
   }
-  .parking-page .top__box-item.bg--yellow {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    flex: 100%;
-  }
-  .parking-page .top__box-item.bg--green {
-    border-top-right-radius: 0;
-  }
-  .parking-page .top__box-item.bg--ocean {
-    border-bottom-left-radius: 0;
-  }
-  .parking-page .top__box-item.bg--orange {
-    border-top-right-radius: 10px;
-  }
-  .parking-page .top__box-item {
-    flex: 0 50%;
-  }
+
   .career__wrapper {
     flex: 0 50%;
   }
@@ -828,6 +786,25 @@
   }
 }
 @media (max-width: 780px) {
+  .terasy__inner .shops__inner .shops__item.actives:hover::before {
+    right: 26px;
+  }
+
+  .terasy__inner .shops__inner .shops__item:hover .shops__categories-list a {
+    background-color: $orange;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  .terasy__inner .shops__inner .shops__item.actives {
+    .shops__categories-list a {
+      background-color: #fff;
+      color: $orange;
+      border: 2px solid $orange;
+    }
+  }
+  .terasy__inner .shops__inner .shops__item:hover::before {
+    right: -127%;
+  }
   .main-page .news--1 .shops__item:hover::before {
     right: -105%;
     width: 110%;
@@ -867,7 +844,11 @@
     color: rgb(21, 122, 110);
     background-color: #fff;
   }
-
+  .shops__item:hover .shops__categories-list a {
+    color: #fff;
+    background-color: $pink;
+    border: 2px solid transparent;
+  }
   .shops__item.actives {
     .shops__categories-list a {
       border: 2px solid $pink;
@@ -1171,23 +1152,6 @@
     }
   }
 
-  .parking-page .decoration {
-    bottom: -10px;
-  }
-  .parking-page .top__box-item.bg--yellow {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .parking-page .top__box-item.bg--orange {
-    border-top-right-radius: 0;
-  }
-  .parking-page .top__box-item.bg--pink {
-    border-top-right-radius: 10px;
-  }
-  .parking-page .top__box-item {
-    flex: 100%;
-    height: 142px;
-  }
   .career__title {
     font-size: 50px;
     margin-bottom: 20px;
@@ -1207,7 +1171,7 @@
     .text {
       font-size: 24px;
       line-height: 32px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
     }
     .title {
       font-size: 45px;
@@ -1238,7 +1202,7 @@
   }
   .terasy__subtitle {
     font-size: 30px;
-    margin-left: 0;
+    margin-left: 10px;
     line-height: 37px;
     margin-bottom: 10px;
     span {
@@ -1784,6 +1748,15 @@
 }
 
 @media (max-width: 480px) {
+  .main.events-page {
+    .shops__title {
+      line-height: 56px;
+    }
+    .text {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
   .group__num {
     font-size: 46px;
     top: 23px;

@@ -1913,6 +1913,8 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 95px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .terasy__bottom .terasy__subtitle {
     span:before {
@@ -1975,6 +1977,18 @@
     display: none;
   }
 }
+.terasy__inner .shops__inner {
+  .shops__item:hover {
+    &::before {
+      right: 2%;
+    }
+    .shops__categories-list a {
+      background-color: #fff;
+      color: $orange;
+      border: 2px solid $orange;
+    }
+  }
+}
 .terasy__inner {
   .terasy__subtitle {
     span:before {
@@ -1999,11 +2013,6 @@
   }
   .shops__categories-list a {
     background-color: $orange;
-    &:hover {
-      background-color: #fff;
-      color: $orange;
-      border: 2px solid $orange;
-    }
   }
   .shops__content-title {
     font-size: 40px;
@@ -2049,6 +2058,14 @@
 }
 .terasy__bottom-inner {
   display: flex;
+  .shops__item:hover {
+    .shops__categories-list a {
+      color: $green;
+      border: 2px solid $green;
+      background: #fff;
+    }
+  }
+
   .shops__item::before {
     display: none;
   }
@@ -2058,11 +2075,6 @@
   }
   .shops__categories-list a {
     background-color: $green;
-    &:hover {
-      color: $green;
-      border: 2px solid $green;
-      background: #fff;
-    }
   }
   .shops__row {
     flex: 0 0 33.333%;
@@ -2120,18 +2132,41 @@
     li + li {
       margin-left: 10px;
     }
-    li {
+    a {
       margin-bottom: 10px;
-      font-size: 22px;
-      background-color: #fff;
+      background-color: $ocean;
       border-radius: 11px;
-      padding: 5px 13px 4px 13px;
+      padding: 4px 11px 3px 8px;
+      font-size: 22px;
       text-transform: uppercase;
       font-weight: 700;
+      color: #fff;
+      border: 2px solid transparent;
+      transition: all 0.4s;
+      &:hover {
+        background-color: #fff;
+        color: $ocean;
+        border: 2px solid $ocean;
+      }
     }
   }
 }
 /// career-page
+.career__list-title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.career__list {
+  margin-bottom: 100px;
+  margin-left: 30px;
+  li {
+    list-style: initial;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 .career__title {
   font-size: 60px;
   font-weight: 800;
@@ -2469,11 +2504,18 @@
 .event-detail__inner {
   display: flex;
   margin-bottom: 100px;
-  .shops__categories-list {
+  .shops__categories-list a {
     background-color: $orange;
   }
   .shops__item {
     min-height: 320px;
+    &:hover {
+      .shops__categories-list a {
+        border: 2px solid $orange;
+        color: $orange;
+        background-color: #fff;
+      }
+    }
     &::before {
       display: none;
     }
