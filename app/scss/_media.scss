@@ -889,6 +889,9 @@
   }
 }
 @media (max-width: 768px) {
+  .group__wrapper:last-child {
+    display: none;
+  }
   .group__wrapper--top .group__col {
     flex: 100%;
     margin-bottom: 40px;
