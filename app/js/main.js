@@ -1,4 +1,8 @@
 jQuery(document).ready(function ($) {
+  $('.group__form-filter').on('click', function () {
+    $(this).toggleClass('group__form-filter--closed');
+    $(this).next().slideToggle();
+  });
   $('.shops__item  .btn-arrow').click(function () {
     $(this).parents('.shops__item').addClass('actives'); //добавляем класс текущей (нажатой)
   });
@@ -56,4 +60,3 @@ const shopDetailBox = document.querySelector('.shop-detail__box');
 btnMore.addEventListener('click', () => {
   shopDetailBox.classList.toggle('vision');
 });
-

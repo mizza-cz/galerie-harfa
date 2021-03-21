@@ -911,6 +911,22 @@
   }
 }
 @media (max-width: 660px) {
+  .group__form-filter {
+    display: block;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .group__form {
+    .group__row {
+      padding-left: 20px;
+    }
+    .group__checkbox {
+      flex-direction: column;
+    }
+  }
+
   .event-detail__inner .shops__row {
     padding: 0;
   }
