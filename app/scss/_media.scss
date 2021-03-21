@@ -917,6 +917,20 @@
     line-height: 46px;
     font-weight: 700;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    &.group__form-filter--closed {
+      span {
+        transform: rotate(135deg);
+      }
+    }
+    span {
+      transition: all 0.4s;
+      font-size: 20px;
+      transform: rotate(45deg);
+      margin-left: 20px;
+    }
   }
   .group__form {
     .group__row {
