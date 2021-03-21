@@ -705,6 +705,11 @@
   }
 }
 @media (max-width: 880px) {
+  .information__item {
+    .social__box {
+      justify-content: start;
+    }
+  }
   .social__link {
     margin-left: 30px;
   }
