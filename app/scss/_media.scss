@@ -119,9 +119,6 @@
   .group__items .group__item {
     flex: 100%;
   }
-  .main-page .news .shops__item.actives::before {
-    width: 137%;
-  }
 }
 @media (max-width: 1440px) {
   .group__num {
@@ -831,6 +828,103 @@
   }
 }
 @media (max-width: 780px) {
+  .main-page .news--1 .shops__item:hover::before {
+    right: -105%;
+    width: 110%;
+  }
+  .main-page .news--1 .shops__item.actives::before {
+    right: 26px;
+    width: 120%;
+  }
+
+  .shops__item:hover .shops__content-descr {
+    font-size: 0;
+    padding-top: 0;
+  }
+  .shops__item:hover::before {
+    right: -105%;
+  }
+  .shops__item.actives::before {
+    right: 26px;
+  }
+  .main-page .kids .shops__item:hover .shops__categories-list a {
+    background: #fd6a36;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  .main-page .kids .shops__item.actives .shops__categories-list a {
+    border: 2px solid $orange;
+    color: $orange;
+    background-color: #fff;
+  }
+  .main-page .news .shops__item:hover .shops__categories-list a {
+    border: 2px solid transparent;
+    background: #157a6e;
+    color: #fff;
+  }
+  .main-page .news .shops__item.actives .shops__categories-list a {
+    border: 2px solid rgb(21, 122, 110);
+    color: rgb(21, 122, 110);
+    background-color: #fff;
+  }
+
+  .shops__item.actives {
+    .shops__categories-list a {
+      border: 2px solid $pink;
+      background-color: #fff;
+      color: $pink;
+    }
+    .sell.sell-shops {
+      opacity: 0;
+      transition: all 0.5s;
+    }
+
+    &::before {
+      right: 26px;
+    }
+    .shops__content-descr {
+      font-size: 16px;
+      transition: all 0.5s;
+      padding-top: 25px;
+    }
+    .shops__btn {
+      span {
+        display: block;
+      }
+      .btn-arrow {
+        font-size: 0;
+      }
+    }
+  }
+
+  .best__item-content.active {
+    .best__hover {
+      left: 30px;
+      opacity: 1 !important;
+      transition: all 2s;
+    }
+    .best__btn {
+      right: 0;
+      bottom: 0;
+      span {
+        display: block;
+      }
+      .btn-arrow {
+        font-size: 0;
+      }
+    }
+    &:before {
+      right: -60px !important;
+      z-index: 4;
+    }
+  }
+  .best__item-content:hover .best__hover {
+    opacity: 0;
+  }
+  .best__item-content:hover::before {
+    right: -210%;
+  }
+
   .landing__inner {
     padding-top: 200px;
   }

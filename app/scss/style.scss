@@ -502,34 +502,7 @@
   }
 }
 // shops active
-.shops__item.actives {
-  .shops__categories-list a {
-    border: 2px solid $pink;
-    background-color: #fff;
-    color: $pink;
-  }
-  .sell.sell-shops {
-    opacity: 0;
-    transition: all 0.5s;
-  }
 
-  &::before {
-    right: 26px;
-  }
-  .shops__content-descr {
-    font-size: 16px;
-    transition: all 0.5s;
-    padding-top: 25px;
-  }
-  .shops__btn {
-    span {
-      display: block;
-    }
-    .btn-arrow {
-      font-size: 0;
-    }
-  }
-}
 // shops end ------------------------------
 .group-page.main-page {
   .checkbox__inner {
@@ -771,8 +744,7 @@
 
   .kids {
     margin-bottom: 114px;
-    .shops__item:hover,
-    .shops__item.actives {
+    .shops__item:hover {
       .shops__categories-list a {
         border: 2px solid $orange;
         color: $orange;
@@ -1058,18 +1030,14 @@
     .shops__title {
       margin-bottom: 41px;
     }
-    .shops__item:hover,
-    .shops__item.active {
+    .shops__item:hover {
       .shops__categories-list a {
         border: 2px solid rgb(21, 122, 110);
         color: rgb(21, 122, 110);
         background-color: #fff;
       }
     }
-    .shops__item.actives::before {
-      right: -37px;
-      width: 120%;
-    }
+
     .shops__inner {
       padding: 0;
       display: grid;
@@ -1112,7 +1080,6 @@
     .shops__item::before {
       right: -54%;
     }
-    .shops__item.actives,
     .shops__item:hover {
       &::before {
         right: -70px;
@@ -1398,27 +1365,7 @@
   max-width: 200px;
   width: 100%;
 }
-.best__item-content.active {
-  .best__hover {
-    left: 30px;
-    opacity: 1;
-    transition: all 2s;
-  }
-  .best__btn {
-    right: 0;
-    bottom: 0;
-    span {
-      display: block;
-    }
-    .btn-arrow {
-      font-size: 0;
-    }
-  }
-  &:before {
-    right: -60px;
-    z-index: 4;
-  }
-}
+
 .best__hover {
   transition: all 2s;
   color: #fff;
@@ -1729,6 +1676,10 @@
   max-width: 952px;
   margin: 0 auto;
   padding: 0 10px;
+  .text {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .group__title {
   font-size: 60px;
@@ -1802,8 +1753,8 @@
   flex-wrap: wrap;
 }
 .group__categorie {
-  margin: 0 3px 5px 3px;
   &-link {
+    margin: 0 5px 5px 5px;
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -2040,9 +1991,7 @@
   .shops__item-bg {
     min-height: 580px;
   }
-  .shops__item.actives::before {
-    right: 26px;
-  }
+
   .shops__item::before {
     width: 130%;
     right: -127%;
