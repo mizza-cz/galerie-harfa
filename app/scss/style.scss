@@ -2148,9 +2148,15 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  .shops__categories-list {
+  .shops__categories-list a {
     font-weight: 700;
     color: #fff;
+    background-color: $ocean;
+    &:hover {
+      border: 2px solid $ocean;
+      background-color: #fff;
+      color: $ocean;
+    }
   }
 }
 .career__wrapper {
