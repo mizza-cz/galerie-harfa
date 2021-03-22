@@ -189,6 +189,20 @@
                 <span class="bg--yellow"></span>
               </div>
             </div>
+            <div class="arrowBounce">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10">
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="white" fill-rule="nonzero">
+                    <g>
+                      <path
+                        d="M8.115 8.013l1.939-1.616c.071-.06.092-.15.053-.227-.038-.078-.13-.128-.23-.128H2C1.31 6.042.75 5.575.75 5S1.31 3.958 2 3.958h7.879c.101 0 .193-.05.231-.128.04-.078.018-.168-.054-.228L8.117 1.986c-.488-.407-.488-1.066 0-1.473.488-.406 1.28-.406 1.767 0l4.5 3.75c.234.196.366.46.366.737 0 .276-.132.54-.366.736l-4.5 3.75c-.488.406-1.28.406-1.767 0-.488-.407-.488-1.066 0-1.473h-.002z"
+                        transform="translate(-298 -2781) translate(298 2781)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
             <div class="top__box--scroll">
               <div class="top__box">
                 <div class="top__box-item bg--pink">Parking Hilight</div>
@@ -352,31 +366,24 @@
       <div id="map"></div>
 
       <script type="text/javascript">
-
-      
         var map;
 
-      
         function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 50.10384273543545, lng: 14.49106584865871 },
 
-            map = new google.maps.Map(document.getElementById('map'), {
-              
-                center: {lat: 50.10384273543545,  lng: 14.49106584865871},
-                
-                zoom: 16
-            });
-            var marker = new google.maps.Marker({
-
-              position: {lat: 50.10384273543545,  lng: 14.49106584865871},
-
-              map: map,
-
-              title: 'Galerie Harfa',
-              icon: 'images/decorate/marker.png'
+            zoom: 16,
           });
-   
+          var marker = new google.maps.Marker({
+            position: { lat: 50.10384273543545, lng: 14.49106584865871 },
+
+            map: map,
+
+            title: 'Galerie Harfa',
+            icon: 'images/decorate/marker.png',
+          });
         }
-    </script>
+      </script>
 
       <div class="social">
         <div class="container">
@@ -532,8 +539,8 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>

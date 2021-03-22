@@ -295,6 +295,10 @@
 }
 
 @media (max-width: 1280px) {
+  .parking-page .arrowBounce,
+  .shop-det .arrowBounce {
+    display: block;
+  }
   .main.services-detail,
   .main.career-detail,
   .parking-page {
@@ -555,6 +559,12 @@
 }
 
 @media (max-width: 900px) {
+  .career-detail,
+  .services-detail {
+    .arrowBounce {
+      display: block;
+    }
+  }
   .parking__categorie {
     margin-left: 20px;
     margin-bottom: 20px;
