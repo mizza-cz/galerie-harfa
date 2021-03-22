@@ -123,9 +123,9 @@
 @media (max-width: 1440px) {
   .gallery__inner {
     grid-template-columns: auto auto auto auto;
-    .img:last-child {
-      grid-column-start: span 2;
-    }
+    // .img:last-child {
+    //   grid-column-start: span 2;
+    // }
   }
   .group__num {
     top: 50px;
@@ -407,9 +407,9 @@
 @media (max-width: 1100px) {
   .gallery__inner {
     grid-template-columns: auto auto auto;
-    .img:last-child {
-      grid-column-start: span 1;
-    }
+    // .img:last-child {
+    //   grid-column-start: span 1;
+    // }
   }
   .landing__title {
     font-size: 50px;
@@ -720,9 +720,9 @@
 @media (max-width: 820px) {
   .gallery__inner {
     grid-template-columns: auto auto;
-    .img:last-child {
-      grid-column-start: span 2;
-    }
+    // .img:last-child {
+    //   grid-column-start: span 2;
+    // }
   }
   .main-page .news--1 .shops__item::before {
     right: -105%;
@@ -982,16 +982,16 @@
   }
 }
 @media (max-width: 660px) {
-  .gallery__inner {
-    .img:nth-child(7),
-    .img:nth-child(8),
-    .img:nth-child(9) {
-      display: none;
-    }
-  }
+  // .gallery__inner {
+  //   .img:nth-child(7),
+  //   .img:nth-child(8),
+  //   .img:nth-child(9) {
+  //     display: none;
+  //   }
+  // }
   .gallery__inner .img:first-child,
   .gallery__inner .img:nth-child(6) {
-    height: 600px;
+    height: 352px;
   }
   .group__form-filter {
     display: block;

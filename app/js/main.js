@@ -1,9 +1,5 @@
 jQuery(document).ready(function ($) {
-  // $('.grid').masonry({
-  //   // options...
-  //   itemSelector: '.grid-item',
-
-  // });
+ 
   $('.group__form-filter').on('click', function () {
     $(this).toggleClass('group__form-filter--closed');
     $(this).next().slideToggle();
