@@ -939,6 +939,12 @@
   }
 }
 @media (max-width: 768px) {
+  .career .career__item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   .main-page.best-deal .best__item-content::after {
     right: -73px;
   }
@@ -1822,6 +1828,7 @@
   .career__inner {
     .shops__categories {
       width: 100%;
+      justify-content: center;
     }
   }
   .career__title {
