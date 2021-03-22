@@ -482,25 +482,16 @@
   .group__col-title {
     padding-left: 90px;
     text-align: left;
+    font-size: 95px;
+    line-height: 95px;
   }
   .parking-page .maps {
     margin-top: 0;
   }
-  .group__wrapper--top {
-    .group__col {
-      flex: 0 50%;
-    }
+  .group__num {
+    top: 26px;
   }
 
-  .group__col {
-    flex: 100%;
-  }
-  .group__wrapper {
-    flex-wrap: wrap;
-  }
-  .group__items .group__item {
-    flex: 0 50%;
-  }
   .group__checkbox {
     flex-wrap: wrap;
   }
@@ -558,6 +549,30 @@
   }
 }
 
+@media (max-width: 980px) {
+  .group__col-title {
+    display: none;
+  }
+  .group__wrapper--top {
+    .group__col {
+      flex: 0 50%;
+    }
+  }
+
+  .group__col {
+    flex: 100%;
+  }
+  .group__wrapper {
+    flex-wrap: wrap;
+    padding-top: 75px;
+  }
+  .group__num {
+    top: 0;
+  }
+  .group__items .group__item {
+    flex: 0 50%;
+  }
+}
 @media (max-width: 900px) {
   .career-detail,
   .services-detail {
