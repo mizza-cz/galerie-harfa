@@ -2405,6 +2405,13 @@
   display: flex;
   justify-content: center;
   margin: 50px 0 100px -40px;
+  &-inner {
+    display: flex;
+  }
+  a:hover {
+    color: #fff;
+    background-color: $green;
+  }
 }
 .parking__categorie {
   position: relative;
@@ -2414,8 +2421,9 @@
   padding: 35px 45px 60px 45px;
   width: 300px;
   height: 300px;
+  transition: all 0.4s;
 
-  &.bg--green {
+  &.active {
     color: #fff;
     background-color: $green;
   }

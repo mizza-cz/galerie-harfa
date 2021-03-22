@@ -1067,9 +1067,14 @@
     object-fit: contain;
   }
   .parking__categories {
-    margin-left: -10px;
+    margin-left: 0;
     margin-top: 20px;
     margin-bottom: 39px;
+    &-inner {
+      flex-wrap: wrap;
+      max-width: 210px;
+      justify-content: center;
+    }
   }
   .parking__list {
     font-size: 30px;
@@ -1084,7 +1089,7 @@
     height: 190px;
     max-width: 190px;
     width: 100%;
-    margin-left: 10px;
+    margin-left: 0;
     padding: 35px 10px 39px 10px;
   }
   .parking__list-bottom {
@@ -1831,7 +1836,18 @@
     width: 100%;
   }
 }
+@media (max-width: 440px) {
+  .parking__categories {
+    justify-content: space-around;
+  }
+  .parking__categories-inner {
+    max-width: 190px;
+  }
+}
 @media (max-width: 410px) {
+  .parking__categories-inner {
+    max-width: 200px;
+  }
   .main.main-page {
     .top-main__content {
       padding-left: 150px;
