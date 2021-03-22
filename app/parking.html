@@ -280,12 +280,14 @@
               Kdy nás navštívíte
             </div>
             <form class="parking__form">
-              <input type="checkbox" checked id="today" />
+              <input name="parking__name" checked type="radio" id="today" />
               <label for="today" style="width: 152px">today</label>
 
+              <input name="parking__name" type="radio" id="tommorow" />
+              <label for="tommorow" style="width: 227px">tommorow</label>
+
               <div class="date-box">
-                <label for="tommorow" style="width: 227px">tommorow</label>
-                <input type="date" id="tommorow" />
+                <input type="date" id="calend" />
               </div>
             </form>
             <div class="parking__text">Prodlužte si parkování zdarma</div>
