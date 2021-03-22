@@ -1718,6 +1718,7 @@
 @media (max-width: 480px) {
   .gallery__inner {
     grid-template-columns: 1fr;
+    grid-gap: 10px 0;
     .img {
       height: 352px;
     }
