@@ -1793,6 +1793,10 @@
   }
 }
 @media (max-width: 440px) {
+  .information__item--open .information__list span {
+    font-size: 26px;
+    padding-right: 10px;
+  }
   .parking__categories {
     justify-content: space-around;
   }

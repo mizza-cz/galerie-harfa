@@ -2638,4 +2638,15 @@
     }
   }
 }
+.information__item--open {
+  max-width: 400px;
+  width: 100%;
+  .information__list {
+    display: flex;
+    justify-content: space-between;
+    span {
+      font-size: 32px;
+    }
+  }
+}
 @import 'media';
