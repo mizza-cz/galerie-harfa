@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Galerie Harfa</title>
+
     <link rel="stylesheet" href="https://use.typekit.net/cis2uei.css" />
     <link rel="stylesheet" href="css/libs.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
+
   </head>
 
   <body>
@@ -914,8 +916,8 @@
       <section class="gallery">
         <div class="container">
           <h2 class="title">Instagram</h2>
-          <div class="gallery__inner">
-            <a class="img" href="images/shop/shop-1.jpg">
+          <div class="gallery__inner grid">
+            <a class="img sizes2" href="images/shop/shop-1.jpg">
               <img src="images/shop/shop-1.jpg" alt="" />
             </a>
             <a class="img" href="images/shop/shop-2.jpg">
@@ -1019,11 +1021,40 @@
         </div>
       </section>
 
-      <div class="maps">
+      <!-- <div class="maps">
         <div class="container">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2559.065390974512!2d14.490617!3d50.103783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb9c69e4fa7e3a7eb!2sGalerie%20Harfa!5e0!3m2!1scs!2scz!4v1615881283011!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-      </div>
+      </div> -->
+
+      <script type="text/javascript">
+
+      
+        var map;
+
+      
+        function initMap() {
+
+            map = new google.maps.Map(document.getElementById('map'), {
+              
+                center: {lat: 50.10384273543545,  lng: 14.49106584865871},
+                
+                zoom: 16
+            });
+            var marker = new google.maps.Marker({
+
+              position: {lat: 50.10384273543545,  lng: 14.49106584865871},
+
+              map: map,
+
+              title: 'Galerie Harfa',
+              icon: 'images/decorate/marker.png'
+          });
+   
+        }
+    </script>
+
+      <div id="map"></div>
 
       <div class="social">
         <div class="container">
@@ -1176,6 +1207,11 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
   </body>
 </html>
