@@ -1428,10 +1428,12 @@
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
-    color: #fff;
+
     padding-top: 23px;
     span {
-      background-color: rgb(21, 122, 110);
+      color: $pink;
+      background-color: #fff;
+      border: 2px solid $pink;
       padding: 3px 9px 2px 9px;
       border-radius: 11px;
     }
