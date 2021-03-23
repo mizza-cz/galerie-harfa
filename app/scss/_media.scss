@@ -794,6 +794,15 @@
   }
 }
 @media (max-width: 780px) {
+  .career__vacancy {
+    max-width: 262px;
+  }
+  .career .career__item {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   .terasy__inner .shops__inner .shops__item.actives:hover::before {
     right: 26px;
   }
@@ -964,12 +973,6 @@
   }
 }
 @media (max-width: 768px) {
-  .career .career__item {
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
   .main-page.best-deal .best__item-content::after {
     right: -73px;
   }
