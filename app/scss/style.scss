@@ -418,11 +418,6 @@
   overflow: hidden;
   transition: all 0.5s;
   &:hover {
-    .shops__categories-list a {
-      border: 2px solid $pink;
-      background-color: #fff;
-      color: $pink;
-    }
     &::before {
       right: 26px;
     }
@@ -782,11 +777,6 @@
   .kids {
     margin-bottom: 114px;
     .shops__item:hover {
-      .shops__categories-list a {
-        border: 2px solid $orange;
-        color: $orange;
-        background-color: #fff;
-      }
     }
 
     .shops__item::before {
@@ -794,6 +784,11 @@
     }
     .shops__categories-list a {
       background: $orange;
+      &:hover {
+        border: 2px solid $orange;
+        color: $orange;
+        background-color: #fff;
+      }
     }
     .sell {
       font-size: 26px;
@@ -984,13 +979,6 @@
       padding-top: 40px;
       padding-bottom: 157px;
       transition: all 0.4s;
-      &:hover {
-        .events__categorie a {
-          background: #fff;
-          color: $orange;
-          border: 2px solid $orange;
-        }
-      }
     }
     &__img {
       background-size: cover;
@@ -1036,11 +1024,11 @@
       border-radius: 11px;
       transition: all 0.4s;
       background: $orange;
-      // &:hover {
-      //   background: #fff;
-      //   color: $orange;
-      //   border: 2px solid $orange;
-      // }
+      &:hover {
+        background: #fff;
+        color: $orange;
+        border: 2px solid $orange;
+      }
     }
     .events__categorie + .events__categorie {
       margin-left: 4px;
@@ -1075,13 +1063,6 @@
     .shops__title {
       margin-bottom: 41px;
     }
-    .shops__item:hover {
-      .shops__categories-list a {
-        border: 2px solid rgb(21, 122, 110);
-        color: rgb(21, 122, 110);
-        background-color: #fff;
-      }
-    }
 
     .shops__inner {
       padding: 0;
@@ -1099,6 +1080,11 @@
     }
     .shops__categories-list a {
       background: rgb(21, 122, 110);
+      &:hover {
+        border: 2px solid rgb(21, 122, 110);
+        color: rgb(21, 122, 110);
+        background-color: #fff;
+      }
     }
     .shops__item::before {
       background: linear-gradient(-45deg, rgb(21, 122, 110) 0%, rgb(29, 51, 84) 100%);
@@ -1107,10 +1093,7 @@
 
   .news--1 {
     grid-area: news--1;
-    .shops__categories-list a {
-      background-color: transparent;
-      border: 2px solid #fff;
-    }
+
     .shops__content-descr {
       max-width: 427px;
       font-size: 16px;
@@ -1431,11 +1414,18 @@
 
     padding-top: 23px;
     span {
-      color: $pink;
-      background-color: #fff;
-      border: 2px solid $pink;
+      cursor: pointer;
+      background: $pink;
+      color: #fff;
+      border: 2px solid transparent;
       padding: 3px 9px 2px 9px;
       border-radius: 11px;
+      transition: all 0.4s;
+      &:hover {
+        color: $pink;
+        background-color: #fff;
+        border: 2px solid $pink;
+      }
     }
     span + span {
       margin-left: 3px;
@@ -1808,11 +1798,11 @@
     border-radius: 15px;
     padding: 4px 11px 3px 8px;
     transition: all 0.4s;
-    // &:hover {
-    //   border: 2px solid #d83550;
-    //   color: #d83550;
-    //   background-color: #fff;
-    // }
+    &:hover {
+      border: 2px solid #d83550;
+      color: #d83550;
+      background-color: #fff;
+    }
   }
 }
 .group__form-filter {
@@ -1853,9 +1843,6 @@
 }
 .group__wrapper .group__item-link:hover {
   .group__categorie-link {
-    border: 2px solid #d83550;
-    color: #d83550;
-    background-color: #fff;
   }
 }
 //shops
@@ -2033,11 +2020,6 @@
     &::before {
       right: 2%;
     }
-    .shops__categories-list a {
-      background-color: #fff;
-      color: $orange;
-      border: 2px solid $orange;
-    }
   }
 }
 .terasy__inner {
@@ -2064,6 +2046,11 @@
   }
   .shops__categories-list a {
     background-color: $orange;
+    &:hover {
+      background-color: #fff;
+      color: $orange;
+      border: 2px solid $orange;
+    }
   }
   .shops__content-title {
     font-size: 40px;
@@ -2109,13 +2096,6 @@
 }
 .terasy__bottom-inner {
   display: flex;
-  .shops__item:hover {
-    .shops__categories-list a {
-      color: $green;
-      border: 2px solid $green;
-      background: #fff;
-    }
-  }
 
   .shops__item::before {
     display: none;
@@ -2126,6 +2106,11 @@
   }
   .shops__categories-list a {
     background-color: $green;
+    &:hover {
+      color: $green;
+      border: 2px solid $green;
+      background: #fff;
+    }
   }
   .shops__row {
     flex: 0 0 33.333%;
@@ -2232,6 +2217,11 @@
     font-weight: 700;
     color: #fff;
     background-color: $ocean;
+    &:hover {
+      border: 2px solid $ocean;
+      background-color: #fff;
+      color: $ocean;
+    }
   }
 }
 .career__wrapper {
@@ -2245,13 +2235,6 @@
   border-radius: 5px;
   padding: 20px;
   transition: all 0.4s;
-  &:hover {
-    .shops__categories-list a {
-      border: 2px solid $ocean;
-      background-color: #fff;
-      color: $ocean;
-    }
-  }
 }
 .career__link {
   max-width: 200px;
@@ -2568,16 +2551,15 @@
   margin-bottom: 100px;
   .shops__categories-list a {
     background-color: $orange;
+    &:hover {
+      border: 2px solid $orange;
+      color: $orange;
+      background-color: #fff;
+    }
   }
   .shops__item {
     min-height: 320px;
-    &:hover {
-      .shops__categories-list a {
-        border: 2px solid $orange;
-        color: $orange;
-        background-color: #fff;
-      }
-    }
+
     &::before {
       display: none;
     }
