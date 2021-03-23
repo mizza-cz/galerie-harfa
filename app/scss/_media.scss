@@ -986,8 +986,11 @@
     display: none;
   }
   .group__wrapper--top .group__col {
-    flex: 100%;
+    // flex: 100%;
     margin-bottom: 40px;
+    .group__item-link {
+      min-height: 370px;
+    }
   }
   .main-page.best-deal .best__items {
     grid-template-columns: 1fr 1fr;
@@ -1004,6 +1007,9 @@
   }
 }
 @media (max-width: 660px) {
+  .group__wrapper--top .group__col {
+    flex: 100%;
+  }
   .group__form-filter {
     display: block;
     font-size: 40px;
