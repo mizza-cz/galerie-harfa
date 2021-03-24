@@ -491,6 +491,12 @@
 }
 
 @media (max-width: 1040px) {
+  .food__link {
+    max-width: 320px;
+  }
+  .food__inner {
+    width: 1700px;
+  }
   .group__col-title {
     padding-left: 90px;
     text-align: left;
