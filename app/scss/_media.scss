@@ -69,7 +69,7 @@
     }
   }
   .main-page .news--1 {
-    .shops__item::before {
+    .shops__item-bg::before {
       right: -105%;
     }
   }
@@ -93,7 +93,7 @@
     width: 100%;
     margin-bottom: 30px;
   }
-  .shops__item::before {
+  .shops__item-bg::before {
     right: -105%;
     width: 110%;
   }
@@ -840,6 +840,63 @@
   }
 }
 @media (max-width: 780px) {
+  .event-detail__inner .shops__item-bg::after,
+  .terasy__bottom .shops__item .shops__item-bg::after,
+  .terasy__inner .shops__inner .shops__item-bg::before {
+    display: none;
+  }
+  .terasy__inner {
+    .shops__item .shops__item-bg::after {
+      background: $orange;
+    }
+  }
+  .news {
+    .shops__item .shops__item-bg::after {
+      background: linear-gradient(-45deg, #157a6e 0%, #1d3354 100%);
+    }
+  }
+  .kids {
+    .shops__item .shops__item-bg::after {
+      background: #fd6a36;
+    }
+  }
+  .shops__item-bg::before,
+  .main-page .news--1 .shops__item-bg:hover::before {
+    width: 0;
+  }
+
+  .shops__item.actives .shops__item-bg::after {
+    right: 26px;
+  }
+  .shops__item {
+    .shops__item-bg {
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        right: -105%;
+        width: 110%;
+        z-index: 3;
+        opacity: 0.9;
+        background: linear-gradient(45deg, #da3747 0%, #f63 100%);
+        top: 0;
+        transform: skew(-10deg, 0);
+        transition: all 2s;
+      }
+    }
+  }
+  .main-page .kids .shops__item:hover .shops__categories-list a {
+    background: #fd6a36;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  .main-page .kids .shops__item.actives .shops__categories-list a {
+    border: 2px solid $orange;
+    color: $orange;
+    background-color: #fff;
+  }
+
+  // ------------------
   .career__vacancy {
     max-width: 262px;
   }
@@ -848,9 +905,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-  }
-  .terasy__inner .shops__inner .shops__item.actives:hover::before {
-    right: 26px;
   }
 
   .terasy__inner .shops__inner .shops__item:hover .shops__categories-list a {
@@ -865,38 +919,12 @@
       border: 2px solid $orange;
     }
   }
-  .terasy__inner .shops__inner .shops__item:hover::before {
-    right: -127%;
-  }
-  .main-page .news--1 .shops__item:hover::before {
-    right: -105%;
-    width: 110%;
-  }
-  .main-page .news--1 .shops__item.actives::before {
-    right: 26px;
-    width: 120%;
-  }
 
   .shops__item:hover .shops__content-descr {
     font-size: 0;
     padding-top: 0;
   }
-  .shops__item:hover::before {
-    right: -105%;
-  }
-  .shops__item.actives::before {
-    right: 26px;
-  }
-  .main-page .kids .shops__item:hover .shops__categories-list a {
-    background: #fd6a36;
-    color: #fff;
-    border: 2px solid transparent;
-  }
-  .main-page .kids .shops__item.actives .shops__categories-list a {
-    border: 2px solid $orange;
-    color: $orange;
-    background-color: #fff;
-  }
+
   .main-page .news .shops__item:hover .shops__categories-list a {
     border: 2px solid transparent;
     background: #157a6e;
@@ -907,7 +935,7 @@
     color: rgb(21, 122, 110);
     background-color: #fff;
   }
-  .shops__item:hover .shops__categories-list a {
+  .shops__item-bg:hover .shops__categories-list a {
     color: #fff;
     background-color: $pink;
     border: 2px solid transparent;
@@ -923,9 +951,6 @@
       transition: all 0.5s;
     }
 
-    &::before {
-      right: 26px;
-    }
     .shops__content-descr {
       font-size: 16px;
       transition: all 0.5s;
@@ -940,7 +965,9 @@
       }
     }
   }
-
+  .main-page .deal .best__item-content:hover .best__row::before {
+    right: -210%;
+  }
   .best__item-content.active {
     .best__hover {
       left: 30px;
@@ -957,15 +984,21 @@
         font-size: 0;
       }
     }
-    &:before {
+    .best__row:before {
       right: -60px !important;
       z-index: 4;
     }
   }
+  .best__item-content:hover .best__row::before {
+    right: -210%;
+  }
+  .best__row:hover .best__hover {
+    opacity: 0;
+  }
   .best__item-content:hover .best__hover {
     opacity: 0;
   }
-  .best__item-content:hover::before {
+  .best__row:hover::before {
     right: -210%;
   }
 
@@ -1073,7 +1106,6 @@
     display: none;
   }
   .group__wrapper--top .group__col {
-    // flex: 100%;
     margin-bottom: 40px;
     .group__item-link {
       min-height: 370px;

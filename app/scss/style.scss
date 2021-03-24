@@ -323,60 +323,7 @@
   background: #000;
   opacity: 0.9;
 }
-// .gallery__inner {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-//   grid-template-rows: auto;
 
-//   grid-template-areas:
-//     'img-1 img-1 img-2 img-3 img-4'
-//     'img-1 img-1 img-5 img-6 img-6'
-//     'img-7 img-8 img-9 img-6 img-6';
-//   a {
-//     width: 100%;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 352px;
-
-//
-//     overflow: hidden;
-//     display: block;
-
-//   }
-
-//   .img-1 {
-//     grid-area: img-1;
-//   }
-//   .img-2 {
-//     grid-area: img-2;
-//   }
-//   .img-3 {
-//     grid-area: img-3;
-//   }
-//   .img-4 {
-//     grid-area: img-4;
-//   }
-//   .img-5 {
-//     grid-area: img-5;
-//   }
-//   .img-6 {
-//     grid-area: img-6;
-//   }
-//   .img-7 {
-//     grid-area: img-7;
-//   }
-//   .img-8 {
-//     grid-area: img-8;
-//   }
-//   .img-9 {
-//     grid-area: img-9;
-//   }
-// }
 /// gallery ----------------------------
 
 // shops start ----------------------------
@@ -418,7 +365,7 @@
   overflow: hidden;
   transition: all 0.5s;
   &:hover {
-    &::before {
+    .shops__item-bg::before {
       right: 26px;
     }
     .shops__content-descr {
@@ -435,20 +382,20 @@
     height: 100%;
     display: block;
     min-height: 420px;
-  }
-  &::before {
-    content: '';
-    height: 100%;
-    width: 500px;
-    position: absolute;
-    background: linear-gradient(45deg, rgb(218, 55, 71) 0%, rgb(255, 102, 51) 100%);
-    top: 0;
+    &::before {
+      content: '';
+      height: 100%;
+      width: 500px;
+      position: absolute;
+      background: linear-gradient(45deg, rgb(218, 55, 71) 0%, rgb(255, 102, 51) 100%);
+      top: 0;
 
-    right: -113%;
-    z-index: 3;
-    opacity: 0.9;
-    transform: skew(-10deg, 0);
-    transition: all 2s;
+      right: -113%;
+      z-index: 3;
+      opacity: 0.9;
+      transform: skew(-10deg, 0);
+      transition: all 2s;
+    }
   }
 
   a.sell-shops {
@@ -776,10 +723,7 @@
 
   .kids {
     margin-bottom: 114px;
-    .shops__item:hover {
-    }
-
-    .shops__item::before {
+    .shops__item-bg:before {
       background: #fd6a36;
     }
     .shops__categories-list a {
@@ -1086,7 +1030,7 @@
         background-color: #fff;
       }
     }
-    .shops__item::before {
+    .shops__item-bg::before {
       background: linear-gradient(-45deg, rgb(21, 122, 110) 0%, rgb(29, 51, 84) 100%);
     }
   }
@@ -1105,10 +1049,10 @@
       transition: all 1s;
       opacity: 0;
     }
-    .shops__item::before {
+    .shops__item-bg::before {
       right: -54%;
     }
-    .shops__item:hover {
+    .shops__item-bg:hover {
       &::before {
         right: -70px;
         width: 120%;
@@ -1238,6 +1182,7 @@
     font-size: 26px;
     line-height: 30px;
     margin-bottom: 25px;
+    color: #fff;
   }
   .services__menu-link {
     align-items: center;
@@ -1271,21 +1216,7 @@
 }
 .main-page .deal {
   margin-bottom: 100px;
-  .best__item-content::after {
-    background: $ocean;
-  }
-  .best__item-content {
-    &:hover {
-      .best__hover {
-        left: 30px;
-        opacity: 1;
-        transition: all 2s;
-      }
-      &::before {
-        right: -60px;
-        z-index: 4;
-      }
-    }
+  .best__row {
     &::before {
       content: '';
       height: 100%;
@@ -1298,6 +1229,22 @@
       opacity: 0.9;
       transform: skew(-10deg, 0);
       transition: all 2s;
+    }
+  }
+  .best__item-content::after {
+    background: $ocean;
+  }
+  .best__item-content {
+    &:hover {
+      .best__hover {
+        left: 30px;
+        opacity: 1;
+        transition: all 2s;
+      }
+      .best__row::before {
+        right: -60px;
+        z-index: 4;
+      }
     }
   }
   .btn-link {
@@ -1355,6 +1302,19 @@
   height: 100%;
   display: block;
   border-radius: 5px;
+  &::before {
+    content: '';
+    height: 100%;
+    width: 162%;
+    position: absolute;
+    background: $ocean;
+    top: 0;
+    right: -210%;
+    z-index: 20;
+    opacity: 0.9;
+    transform: skew(-10deg, 0);
+    transition: all 2s;
+  }
 }
 .best__item-content {
   width: 100%;
@@ -1369,31 +1329,19 @@
   transition: all 0.7s;
   overflow: hidden;
   display: block;
-  z-index: 10;
+  z-index: 22;
   &:hover {
     .best__hover {
       left: 30px;
       opacity: 1;
       transition: all 2s;
     }
-    &::before {
+    .best__row::before {
       right: -60px;
       z-index: 4;
     }
   }
-  &::before {
-    content: '';
-    height: 100%;
-    width: 162%;
-    position: absolute;
-    background: $ocean;
-    top: 0;
-    right: -210%;
-    z-index: 20;
-    opacity: 0.9;
-    transform: skew(-10deg, 0);
-    transition: all 2s;
-  }
+
   &::after {
     content: '';
     height: 100%;
@@ -1401,7 +1349,6 @@
     position: absolute;
     background: rgb(43, 150, 212);
     top: 0;
-
     right: -81px;
     z-index: 3;
     opacity: 0.9;
@@ -1931,16 +1878,6 @@
 
   .shops__categories-list {
     position: relative;
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   border-radius: 50%;
-    //   background-color: #fff;
-    //   width: 8px;
-    //   height: 8px;
-    //   left: 6px;
-    //   top: 7px;
-    // }
   }
   .food,
   .terasy__inner,
@@ -2065,7 +2002,7 @@
     min-height: 580px;
   }
 
-  .shops__item::before {
+  .shops__item-bg::before {
     width: 130%;
     right: -127%;
     background: #fd6a36;
@@ -2123,7 +2060,7 @@
 .terasy__bottom-inner {
   display: flex;
 
-  .shops__item::before {
+  .shops__item-bg::before {
     display: none;
   }
   .shops__item,
