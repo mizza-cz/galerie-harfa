@@ -529,7 +529,13 @@
     margin-right: 10px;
   }
   .main-page .events__img {
-    min-height: 400px;
+    min-height: 240px;
+  }
+  .main-page .events__item {
+    padding-bottom: 145px;
+  }
+  .main-page .events__info-title {
+    margin-bottom: 20px;
   }
 
   .main-page .shops__title {
@@ -762,6 +768,11 @@
   }
 }
 @media (max-width: 820px) {
+  .main-page .events__img {
+    min-height: 420px;
+    background-size: contain;
+    box-shadow: none;
+  }
   .event-detail__inner .shops__item-bg {
     min-height: 360px;
   }
@@ -1035,6 +1046,10 @@
   }
 }
 @media (max-width: 768px) {
+  .main-page .events__item {
+    padding-bottom: 125px;
+    padding-top: 20px;
+  }
   .shops__item.actives {
     .shops__categories-list a {
       color: $pink;
@@ -1491,7 +1506,7 @@
     }
   }
   .main-page .events__img {
-    min-height: 204px;
+    min-height: 360px;
   }
   .main-page .events .title {
     margin-bottom: 18px;
@@ -1738,6 +1753,12 @@
   }
 }
 @media (max-width: 600px) {
+  .main-page .events__item {
+    padding-bottom: 120px;
+  }
+  .main-page .events__img {
+    min-height: 330px;
+  }
   .main-page.best-deal .best__items {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -1809,6 +1830,9 @@
 }
 
 @media (max-width: 480px) {
+  .main-page .events__img {
+    min-height: 260px;
+  }
   .gallery__inner {
     grid-template-columns: 1fr;
     grid-gap: 10px 0;
@@ -1936,6 +1960,9 @@
   }
 }
 @media (max-width: 400px) {
+  .main-page .events__img {
+    min-height: 220px;
+  }
   .career__inner {
     .shops__categories {
       width: 100%;
