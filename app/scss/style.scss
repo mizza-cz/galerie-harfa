@@ -1708,6 +1708,7 @@
   display: flex;
   position: relative;
   margin-top: 20px;
+  padding-top: 180px;
 }
 .group__num {
   position: absolute;
@@ -1718,20 +1719,12 @@
   text-transform: uppercase;
 }
 .group__col {
-  flex: 0 0 33%;
-  &-title {
-    padding-left: 25px;
-    text-align: center;
-    font-weight: 700;
-    color: #eee;
-    font-size: 200px;
-    text-transform: uppercase;
-    line-height: 200px;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  width: 100%;
 }
 .group__item {
   padding: 0 10px;
+  flex: 0 0 33.333%;
 
   &-img {
     height: 142px;
@@ -1791,7 +1784,8 @@
 .group__items {
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+
+  width: 100%;
 
   .group__categories {
     margin-left: 0;
@@ -1806,7 +1800,8 @@
   }
   .group__item {
     margin-bottom: 30px;
-    flex: 0 50%;
+
+    flex: 0 0 16.666%;
     width: 100%;
     min-height: 415px;
     &-link {
