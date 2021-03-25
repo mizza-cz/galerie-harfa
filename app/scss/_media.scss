@@ -99,6 +99,12 @@
   }
 }
 @media (max-width: 1600px) {
+  .best__item--hight {
+    height: 679px;
+  }
+  .best__items {
+    grid-gap: 20px;
+  }
   .career__vacancy {
     max-width: 250px;
   }
@@ -128,16 +134,6 @@
   .parking__payment-item {
     margin-bottom: 20px;
   }
-  .main-page.best-deal .best__row {
-    background-size: cover;
-  }
-  .main-page.best-deal .best__items {
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      'best--6 best--8 best--8'
-      'best--5 best--5 best--4';
-  }
 
   .main-page .events__item {
     margin-bottom: 40px;
@@ -151,29 +147,7 @@
     justify-content: start;
     margin-bottom: 62px;
   }
-  .main-page .deal {
-    .best__items {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-        'best--1 best--2 best--3 best--4'
-        'best--8 best--8 best--3 best--5';
-    }
-    .best--7 {
-      display: none;
-    }
-    .best--6 {
-      display: none;
-    }
-  }
-  .best__items {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      'best--1 best--2 best--3 best--4'
-      'best--5 best--6 best--3 best--7'
-      'best--8 best--8 best--9 best--10'
-      'best--11 best--12 best--13 best--14'
-      'best--16 best--16 best--13 best--15';
-  }
+
   .top-main__content {
     transform: translateY(-50%);
     padding-left: 290px;
@@ -217,6 +191,19 @@
   }
 }
 @media (max-width: 1340px) {
+  .best__inner {
+    .best__item:nth-child(15) {
+      display: none;
+    }
+  }
+  .deal {
+    .best__item:last-child {
+      display: none;
+    }
+  }
+  .best__items {
+    grid-template-columns: auto auto auto auto;
+  }
   .parking-page .maps {
     margin-top: -150px;
   }
@@ -356,9 +343,7 @@
   .checkbox__inner {
     padding: 0 20px;
   }
-  .best__items {
-    grid-gap: 10px;
-  }
+
   .footer__copy {
     margin-right: 0;
   }
@@ -483,6 +468,18 @@
 }
 
 @media (max-width: 1040px) {
+  .best__inner {
+    .best__item:nth-child(14) {
+      display: none;
+    }
+  }
+  .deal .best__item:nth-child(6),
+  .deal .best__item:nth-child(5) {
+    display: none;
+  }
+  .best__items {
+    grid-template-columns: auto auto auto;
+  }
   .food__link {
     max-width: 320px;
   }
@@ -497,12 +494,7 @@
   .group__checkbox {
     flex-wrap: wrap;
   }
-  .main-page.best-deal .best__items {
-    .best--6,
-    .best--4 {
-      display: block;
-    }
-  }
+
   .main-page .events__inner {
     justify-content: space-between;
   }
@@ -521,37 +513,6 @@
 
   .main-page .shops__title {
     margin-bottom: 50px;
-  }
-  .main-page .deal {
-    .best__items {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas:
-        'best--1 best--2 best--3'
-        'best--8 best--8 best--3';
-    }
-    .best--4,
-    .best--5 {
-      display: none;
-    }
-  }
-  .best__items {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      'best--1 best--2 best--3'
-      'best--13 best--5 best--3'
-      'best--13 best--8 best--8';
-  }
-  .best--4,
-  .best--6,
-  .best--7,
-  .best--9,
-  .best--10,
-  .best--11,
-  .best--12,
-  .best--14,
-  .best--15,
-  .best--16 {
-    display: none;
   }
   .shops__row {
     padding: 0 10px;
@@ -797,6 +758,12 @@
   }
 }
 @media (max-width: 780px) {
+  .best__inner {
+    .best__item:nth-child(13),
+    .best__item:nth-child(16) {
+      display: none;
+    }
+  }
   .event-detail__inner .shops__item-bg::after,
   .terasy__bottom .shops__item .shops__item-bg::after,
   .terasy__inner .shops__inner .shops__item-bg::before {
@@ -971,38 +938,9 @@
   .career__wrapper {
     flex: 100%;
   }
+
   .best__items {
-    .best__row {
-      background-size: cover;
-    }
-  }
-  .main-page .deal {
-    .best__row {
-      background-size: cover;
-    }
-    .best__items {
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-        'best--1 best--3'
-        'best--2 best--3';
-    }
-    .best--8 {
-      display: none;
-    }
-  }
-  .best__item-content {
-    background-size: cover;
-  }
-  .best--3 .best__item-content::after,
-  .best--13 .best__item-content::after {
-    right: -81px;
-  }
-  .best__items {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'best--1 best--2'
-      'best--3 best--5'
-      'best--13 best--8';
+    grid-template-columns: auto auto;
   }
   .gallery__inner a::before {
     width: 900px;
@@ -1049,23 +987,6 @@
   }
   .main-page.best-deal .best__item-content::after {
     right: -73px;
-  }
-  .main-page.best-deal {
-    .best--8,
-    .best--5 {
-      .best__item-content,
-      .best__row {
-        min-height: 260px;
-      }
-    }
-  }
-
-  .main-page.best-deal .best__items {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      'best--8 best--8'
-      'best--4 best--6'
-      'best--5 best--5';
   }
 }
 
@@ -1722,13 +1643,14 @@
   .main-page .events__img {
     min-height: 330px;
   }
-  .main-page.best-deal .best__items {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'best--8'
-      'best--4'
-      'best--5'
-      'best--6';
+  .best__items {
+    grid-template-columns: auto;
+  }
+  .best__inner {
+    .best__item--width {
+      grid-column-start: span 1;
+      grid-row-start: span;
+    }
   }
 }
 @media (max-width: 580px) {
@@ -1771,25 +1693,6 @@
   }
 }
 @media (max-width: 540px) {
-  .main-page .deal {
-    .best__items {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        'best--1'
-        'best--2'
-        'best--3';
-    }
-  }
-  .best__items {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'best--1'
-      'best--2'
-      'best--3'
-      'best--5'
-      'best--8'
-      'best--13';
-  }
 }
 
 @media (max-width: 480px) {
