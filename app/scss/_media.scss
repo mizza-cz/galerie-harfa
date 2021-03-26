@@ -1563,12 +1563,12 @@
     margin-top: 54px;
   }
   .shop-detail__box {
-    .text {
+    .typography {
       display: none;
     }
   }
   .shop-detail__box.vision {
-    .text {
+    .typography {
       display: block;
     }
   }
@@ -1579,14 +1579,13 @@
   .container {
     padding: 0 10px;
   }
-  .shop-detail__box {
-    .more {
-      cursor: pointer;
-      display: block;
-      margin-bottom: 25px;
-      padding-top: 19px;
-    }
+  .more {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 25px;
+    padding-top: 19px;
   }
+
   .text-b {
     font-size: 20px;
     line-height: 28px;
