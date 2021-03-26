@@ -210,7 +210,7 @@
           </div>
 
           <div class="best__inner">
-            <form class="best__form">
+            <form class="best__form filter__form">
               <div class="best__search">
                 <button class="best__form-btn" type="submit">
                   <img src="images/svg/best-search.svg" alt="" />
@@ -228,15 +228,15 @@
               </div>
               <div class="checkbox__inner">
                 <div class="checkbox__box">
-                  <input type="checkbox" checked id="fashion" />
+                  <input name="fashion" type="checkbox" checked id="fashion" />
                   <label for="fashion">fashion</label>
                 </div>
                 <div class="checkbox__box">
-                  <input type="checkbox" checked id="lingerie" />
+                  <input name="lingerie" type="checkbox" checked id="lingerie" />
                   <label for="lingerie">lingerie</label>
                 </div>
                 <div class="checkbox__box">
-                  <input type="checkbox" checked id="outdoor" />
+                  <input name="outdoor" type="checkbox" checked id="outdoor" />
                   <label for="outdoor">outdoor</label>
                 </div>
               </div>
@@ -497,13 +497,14 @@
 
             zoom: 16,
           });
+          var image = 'http://galerieharfa.sh12w3.esports.cz/images/decoratemarker.png';
           var marker = new google.maps.Marker({
             position: { lat: 50.10384273543545, lng: 14.49106584865871 },
 
             map: map,
 
             title: 'Galerie Harfa',
-            icon: 'images/decorate/marker.png',
+            icon: image,
           });
         }
       </script>

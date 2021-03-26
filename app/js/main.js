@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
- 
   $('.group__form-filter').on('click', function () {
     $(this).toggleClass('group__form-filter--closed');
     $(this).next().slideToggle();
@@ -55,6 +54,9 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
+document
+  .querySelectorAll('.filter__form input[type=checkbox]')
+  .forEach((input) => input.addEventListener('change', () => input.form.submit()));
 /// text more
 const btnMore = document.querySelector('.more');
 const shopDetailBox = document.querySelector('.shop-detail__box');
