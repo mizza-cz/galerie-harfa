@@ -48,10 +48,35 @@ p {
   padding: 0;
   margin: 0;
 }
+p {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
 
 body {
   color: #575656;
   font-family: 'Allotrope', sans-serif;
+}
+.best__top {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 155px;
+  p {
+    margin-bottom: 92px;
+  }
+  h1,
+  h2 {
+    font-size: 60px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    line-height: 60px;
+    span {
+      font-weight: 800;
+    }
+  }
 }
 .main {
   margin-top: 120px;
@@ -125,7 +150,7 @@ body {
 }
 
 .btn-link {
-  font-size: 42px;
+  font-size: 22px;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
@@ -140,15 +165,15 @@ body {
   text-align: center;
   display: block;
   margin: 0 auto;
-  padding-top: 24px;
+  padding-top: 27px;
   transition: all 0.3s;
   &:hover {
     transform: scale(1.1);
   }
   span {
     display: block;
-    font-size: 24px;
-    line-height: 12px;
+    font-size: 30px;
+    line-height: 28px;
   }
   &::before {
     content: '';
@@ -212,12 +237,7 @@ body {
 .shop-detail__mob-test {
   display: none;
 }
-.text {
-  font-size: 24px;
-  line-height: 34px;
-  font-weight: 400;
-  margin-bottom: 40px;
-}
+
 .text-b {
   font-size: 30px;
 }
@@ -445,6 +465,25 @@ body {
 
   span {
     font-weight: 900;
+  }
+}
+
+.typography {
+  ul,
+  ol {
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+  li,
+  a {
+    font-size: 24px;
+    line-height: 32px;
+    list-style: initial;
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 

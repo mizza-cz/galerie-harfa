@@ -235,10 +235,17 @@ class Calendar {
                         den++;
                     } else if (data[0]) {// zvyrazneni dne s akci, priprava obsahu do divu akce
                         calendar += `<div class="divTableCellCalendar event eventDayId` + data[1].toLocaleDateString("en-US").replace('/', '').replace('/', '') + `"><span>` + den + `</span>`;
-                        calendar += `<div class="eventContent"><p>` + data[3] + `</p>`;
+                        calendar += `<div class="eventContent"><p style="cursor: pointer;" onclick="window.location.href='` + data[4] + `'">` + data[3] + `</p>`;
                         DivEventContent = "";
-                        for (let index = 4; index < data.length; index++) {
-                            DivEventContent += `<p>` + data[index] + `</p>`;
+                        for (let index = 5; index < data.length; index += 2) {
+
+                            if (data[index + 1] === undefined) {
+                                DivEventContent += `<p>` + data[index] + `</p>`;
+                            } else {
+                                DivEventContent += `<p style="cursor: pointer;" onclick="window.location.href='` + data[index + 1] + `'">` + data[index] + `</p>`;
+                            }
+
+
 
                         }
                         eventIdDay.push(den);

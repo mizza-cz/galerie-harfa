@@ -179,16 +179,17 @@
       <section class="top">
         <div class="container">
           <div class="top__inner">
-            <h1 class="best-deal__title">
-              <span>REGATTA</span>
-              <span style="font-weight: 400">-</span>
-              dámská a pánská bunda Helfa
-            </h1>
-            <ul class="best-deal__list">
-              <li>Regatta Great Outdoors.</li>
-              <li>Dámská a pánská buda HELFA nyní za <span>749,- Kč.</span></li>
-              <li>Těšíme se na Vaší návštěvu.</li>
-            </ul>
+            <div class="best__top">
+              <h1>
+                <b>REGATTA</b>
+                <span>-</span>
+                dámská a pánská bunda Helfa
+              </h1>
+              <p>Regatta Great Outdoors.</p>
+              <p>Dámská a pánská buda HELFA nyní za <b>749,- Kč.</b></p>
+              <p>Těšíme se na Vaší návštěvu.</p>
+            </div>
+
             <div class="best-deal__img">
               <img src="images/best/item-1.jpg" alt="" />
             </div>
@@ -271,31 +272,24 @@
       <div id="map"></div>
 
       <script type="text/javascript">
-
-      
         var map;
 
-      
         function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 50.10384273543545, lng: 14.49106584865871 },
 
-            map = new google.maps.Map(document.getElementById('map'), {
-              
-                center: {lat: 50.10384273543545,  lng: 14.49106584865871},
-                
-                zoom: 16
-            });
-            var marker = new google.maps.Marker({
-
-              position: {lat: 50.10384273543545,  lng: 14.49106584865871},
-
-              map: map,
-
-              title: 'Galerie Harfa',
-              icon: 'images/decorate/marker.png'
+            zoom: 16,
           });
-   
+          var marker = new google.maps.Marker({
+            position: { lat: 50.10384273543545, lng: 14.49106584865871 },
+
+            map: map,
+
+            title: 'Galerie Harfa',
+            icon: 'images/decorate/marker.png',
+          });
         }
-    </script>
+      </script>
 
       <div class="social">
         <div class="container">
@@ -451,8 +445,8 @@
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 </html>

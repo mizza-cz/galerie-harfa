@@ -54,9 +54,13 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
+// filter checkboxes
 document
   .querySelectorAll('.filter__form input[type=checkbox]')
   .forEach((input) => input.addEventListener('change', () => input.form.submit()));
+
+
+  
 /// text more
 const btnMore = document.querySelector('.more');
 const shopDetailBox = document.querySelector('.shop-detail__box');

@@ -87,11 +87,6 @@
     padding-top: 5px;
   }
 }
-.title {
-  font-size: 60px;
-  line-height: 30px;
-  font-weight: 800;
-}
 
 // top section end ---------------------------------------------------
 //shop-detail section
@@ -164,7 +159,8 @@
   margin: 40px 0 130px -5px;
 }
 
-.typography {
+.typography,
+.shop-detail__box {
   h3 {
     font-size: 24px;
     line-height: 34px;
@@ -362,6 +358,9 @@
   font-weight: 800;
   margin-bottom: 40px;
   padding-left: 20px;
+  font-size: 60px;
+  line-height: 30px;
+  font-weight: 800;
   span {
     font-weight: 200;
   }
@@ -570,19 +569,8 @@
 .best {
   margin-bottom: 100px;
   margin-top: 160px;
-  .shops__title {
-    font-size: 60px;
-    margin-bottom: 56px;
-  }
-  .text {
-    margin-bottom: 92px;
-  }
 }
-.best__top {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
+
 .best__form {
   text-align: center;
 }
@@ -764,13 +752,7 @@
       margin-bottom: 50px;
     }
     .btn-link {
-      padding-top: 32px;
-      font-size: 22px;
       background-image: linear-gradient(-45deg, rgb(247, 169, 64) 82%, rgb(98, 183, 112) 100%);
-      span {
-        font-size: 30px;
-        line-height: 28px;
-      }
     }
   }
 
@@ -913,12 +895,6 @@
     margin-bottom: 115px;
     .btn-link {
       background: linear-gradient(-45deg, #ed683b 64%, #f7a940 100%);
-      font-size: 22px;
-      padding-top: 35px;
-      span {
-        font-size: 30px;
-        line-height: 28px;
-      }
     }
   }
   // events start ------------------
@@ -995,13 +971,7 @@
       margin-left: 4px;
     }
     .btn-link {
-      padding-top: 32px;
-      font-size: 22px;
       background-image: linear-gradient(-45deg, rgb(247, 169, 64) 82%, rgb(98, 183, 112) 100%);
-      span {
-        font-size: 26px;
-        line-height: 28px;
-      }
     }
   }
 
@@ -1011,15 +981,6 @@
     margin-bottom: 90px;
     .btn-link {
       background-color: $ocean;
-      font-size: 20px;
-      line-height: 20px;
-      line-height: 1.2;
-      padding-top: 41px;
-      span {
-        font-size: 32px;
-        line-height: 20px;
-        font-weight: 700;
-      }
     }
     .shops__title {
       margin-bottom: 41px;
@@ -1091,14 +1052,7 @@
   .services {
     margin-bottom: 108px;
     .btn-link {
-      font-size: 20px;
-      line-height: 20px;
       background: linear-gradient(165deg, #2a96d4 0, #62b770 10%);
-      span {
-        font-size: 32px;
-        line-height: 1.2;
-        font-weight: 700;
-      }
     }
   }
   .services__inner {
@@ -1238,6 +1192,7 @@
     margin-bottom: 65px;
   }
 }
+
 .main-page .deal {
   margin-bottom: 100px;
   .best__row {
@@ -1249,7 +1204,7 @@
       background: $ocean;
       top: 0;
       right: -210%;
-      z-index: 20;
+      z-index: 2;
       opacity: 0.9;
       transform: skew(-10deg, 0);
       transition: all 2s;
@@ -1322,6 +1277,7 @@
   height: 100%;
   display: block;
   border-radius: 5px;
+  
 
   img {
     object-position: center;
@@ -1356,6 +1312,7 @@
   overflow: hidden;
   display: block;
   z-index: 22;
+
   &:hover {
     .best__hover {
       left: 30px;
@@ -1452,16 +1409,7 @@
     font-weight: 800;
   }
 }
-.services-page__text {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 930px;
-  width: 100%;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
-  margin-bottom: 190px;
-}
+
 .main-page.services-page {
   .top {
     margin-bottom: 190px;
@@ -1551,6 +1499,26 @@
 
 ///best-deal page --------------------
 .main-page.best-deal {
+  .best__top p {
+    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 92px;
+    }
+  }
+}
+.main-page.best-deal {
+  .top {
+    padding-top: 20px;
+  }
+  .best__top {
+    h1,
+    h2 {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 66px;
+      margin-bottom: 40px;
+    }
+  }
   .best__item-content::after {
     background: #1d3354;
   }
@@ -1567,20 +1535,11 @@
       border-radius: 10px;
     }
   }
+
   .best-deal__list {
     margin-bottom: 120px;
   }
-  .best-deal__list li {
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 400;
-  }
-  .best-deal__title {
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 66px;
-    margin-bottom: 40px;
-  }
+
   .best-deal__subtitle {
     text-align: center;
     font-size: 40px;
@@ -1593,7 +1552,6 @@
   }
   .top {
     &__inner {
-      padding-top: 151px;
       text-align: center;
     }
     .decoration {
@@ -1641,14 +1599,7 @@
     margin-right: 20px;
   }
 }
-.group__title {
-  font-size: 60px;
-  font-weight: 800;
-  margin-bottom: 38px;
-  span {
-    font-weight: 200;
-  }
-}
+
 
 .group__wrapper {
   display: flex;
@@ -2049,15 +2000,20 @@
 
 // career-detail
 .main.career-detail {
-  .text {
-    text-align: center;
-    margin-bottom: 100px;
-    padding-left: 0;
-  }
-  .title {
-    font-weight: 300;
-    margin: 0 auto;
-    line-height: 66px;
+  .shop-detail {
+    p {
+      text-align: center;
+      margin-bottom: 100px;
+      padding-left: 0;
+    }
+    h2 {
+      font-size: 60px;
+      font-weight: 300;
+      margin: 0 auto;
+      line-height: 66px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
   }
   .career-detail__box {
     position: absolute;
@@ -2189,10 +2145,6 @@
 }
 .parking {
   text-align: center;
-  .text {
-    max-width: 930px;
-    margin: 0 auto 84px;
-  }
   .title {
     margin-bottom: 57px;
   }
@@ -2453,9 +2405,15 @@
     text-align: left;
     margin-left: 20px;
   }
-  .best-deal__title {
+  h1,
+  h2 {
+    font-size: 60px;
+
+    line-height: 66px;
+    margin-bottom: 40px;
     span {
       display: block;
+      font-weight: 400;
     }
   }
 }
@@ -2484,54 +2442,6 @@
     max-width: 100%;
     flex: 0 0 33.333%;
   }
-}
-
-/// landing
-// .landing__inner {
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   height: 100%;
-//   display: block;
-//   width: 100%;
-//   margin-bottom: 100px;
-//   // position: relative;
-//   background-color: #f5c6be;
-//   // background-color: rgb(250, 205, 199);
-//   border-radius: 10px;
-// }
-// .landing-bg {
-//   background-color: #f5c6be;
-// }
-
-// .landing-bg img {
-//   height: 100%;
-//   width: 100%;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   border-bottom-left-radius: 10px;
-//   border-bottom-right-radius: 10px;
-// }
-.landing__title {
-  font-size: 60px;
-  font-weight: 400;
-  margin-bottom: 55px;
-  span {
-    font-weight: 800;
-  }
-}
-// .landing__content {
-//   position: absolute;
-//   top: 200px;
-//   left: 0;
-//   right: 0;
-//   margin: 0 auto;
-//   text-align: center;
-// }
-.landing__text {
-  max-width: 942px;
-  font-size: 26px;
-  line-height: 34px;
-  margin: 0 auto 100px;
 }
 
 .information__item {

@@ -168,8 +168,8 @@
         <section class="best">
             <div class="container">
                 <div class="best__top">
-                    <h2 class="shops__title title"><span>Upcoming</span> Events</h2>
-                    <p class="text">
+                    <h2 class="shops__title"> <b>Upcoming</b> Events</h2>
+                    <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                         Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -226,7 +226,7 @@
             <div class="block">
                 <h5>today</h5>
                 <div class="items-container">
-                    <div class="item">
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/1.jpg" alt="Event">
                             <div class="button-div">
@@ -234,8 +234,8 @@
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/2.jpg" alt="Event">
                             <div class="button-div">
@@ -243,48 +243,48 @@
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="block">
                 <h5>listopad</h5>
                 <div class="items-container">
-                    <div class="item">
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/1.jpg" alt="Event">
                             <div class="button-div">
-                                <span>FROM 14:00</span><button>Přidat do kalendáře</button>
+                                <span>10/3/2020</span><button>Přidat do kalendáře</button>
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/3.jpg" alt="Event">
                             <div class="button-div">
-                                <span>FROM 14:00</span><button>Přidat do kalendáře</button>
+                                <span>21/11/2020</span><button>Přidat do kalendáře</button>
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/4.jpg" alt="Event">
                             <div class="button-div">
-                                <span>FROM 14:00</span><button>Přidat do kalendáře</button>
+                                <span>23/11/2020</span><button>Přidat do kalendáře</button>
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
-                    <div class="item">
+                    </a>
+                    <a href="event-detail.html" class="item">
                         <div class="item-content">
                             <img src="images/event/2.jpg" alt="Event">
                             <div class="button-div">
-                                <span>FROM 14:00</span><button>Přidat do kalendáře</button>
+                                <span>25/11/2020</span><button>Přidat do kalendáře</button>
                             </div>
                             <p>Pigy a Lily setkání na Harfě 2020</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -475,10 +475,22 @@
         // 2d pole s daty, ktere se maji ukazat v kalendari. 
         // Na prvnim indexu se zadava den, kde se ma akce v kalendari zobrazit ve formatu: "rok-mesic-den"
         // Na druhem indexu je zbarveni polozky v kalendar
-        // Pote je dalsi prvek pole vypsan jako jedna akce, znamena to ze muze byt x akci
+        // Pote je dalsi prvek pole vypsan jako jedna akce a prvek za ni je kam smeruje odkaz po kliknuti na akci v kalendari
+        // např. "Akce 1", "https://www.google.cz",
+        // Pokud bude jen nazev akce, ale bude chybet odkaz, potom když se klikne na akci v kalendari, tak se nic nestane
         var events = [
-            [new Date("2021-03-05"), "#f7a941", "Pigy a Lily setkání na Harfě 2020"],
-            [new Date("2021-03-18"), "#f7a941", "Pigy a Lily setkání na Harfě 2020", "Dětské taneční"]
+            [new Date("2021-03-05"), "#7d2929",
+                "Pigy a Lily setkání na Harfě 2020", "event-detail.html",
+                "Další akce", "event-detail.html",
+            ],
+
+            [new Date("2021-03-18"), "#f7a941",
+                "Pigy a Lily setkání na Harfě 2020", "event-detail.html"
+            ],
+
+            [new Date("2021-04-10"), "#378acc",
+                "Pigy a Lily setkání na Harfě 2020", "event-detail.html"
+            ],
         ];
 
         // Iniciace kalendare, nasledna metoda print() vypise kalendar do divu s id indentifikatorem "calendar-content"
