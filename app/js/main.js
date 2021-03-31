@@ -23,8 +23,8 @@ jQuery(document).ready(function ($) {
     $(this).parent().addClass('top-play');
   });
 
-  ////
-  $('.gallery__inner').magnificPopup({
+  //
+  $('.grid').magnificPopup({
     delegate: 'a',
     type: 'image',
     gallery: {
@@ -44,6 +44,7 @@ var msnry = new Masonry(elem, {
   itemSelector: '.grid-item',
   gutter: 15,
 });
+
 // video terasy page
 
 //// scroll
