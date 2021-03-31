@@ -385,10 +385,10 @@
     min-height: 415px;
     position: relative;
   }
-  .group__categories {
-    position: absolute;
-    bottom: 10px;
-  }
+  // .group__categories {
+  //   position: absolute;
+  //   bottom: 10px;
+  // }
   .group__items .group__item {
     flex: 0 0 33.333%;
   }
@@ -518,6 +518,7 @@
   }
   .shops__row {
     padding: 0 10px;
+    margin-bottom: 20px;
   }
   .shops__item {
     min-height: 394px;
@@ -1421,6 +1422,7 @@
   .main-page .events {
     .shops__title {
       font-size: 40px;
+      line-height: 40px;
     }
   }
   .main-page .kids {
@@ -1453,7 +1455,7 @@
   .main-page .shops__title {
     font-size: 36px;
     margin-bottom: 16px;
-    line-height: 36px;
+    line-height: 40px;
   }
   .top.top-main {
     .top__img {

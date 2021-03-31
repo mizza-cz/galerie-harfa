@@ -210,7 +210,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-              <img onerror='this.src="images/placeholder.png"' alt="">
+              <img onerror="this.src='images/placeholder/1.png'" src="">
               </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -237,7 +237,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-3.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-3.jpg" alt="">
                   </a>
                 <div class="sell sell--mini">už jen<span>8 dní</span></div>
                 <div class="best__btn">
@@ -251,7 +251,7 @@
             <div class="best__item best__item--hight">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-3.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-3.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -264,7 +264,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-5.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-5.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -277,7 +277,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-6.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-6.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -289,7 +289,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-7.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-7.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -301,7 +301,7 @@
             <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-1.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-1.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -314,7 +314,7 @@
             <div class="best__item best__item--width">
               <div class="best__item-content">
                 <a href="#" class="best__row">
-                  <img src="images/best/item-7.jpg" alt="">
+                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-7.jpg" alt="">
                   </a>
                 <div class="best__btn">
                   <span class="btn-arrow icon-arrow-up-right2"></span>
@@ -778,7 +778,28 @@
           <a class="btn-link" href="./services.html"><span>all</span> News</a>
         </div>
       </section>
-      <section class="gallery">
+
+      <div class="grid-gallery">
+        <div class="container">
+          <div class="grid">
+            <a class="grid-item" href="#"><img src="images/Новая папка/deichmann.jpeg" alt=""></a>
+            <a class="grid-item grid-item--width2" href="#"><img src="images/Новая папка/deichmann1.jpeg" alt=""></a>
+            <a class="grid-item" href="#"><img src="images/Новая папка/deichmann2.jpeg" alt=""></a>
+            <a class="grid-item" href="#"><img src="images/Новая папка/deichmann3.jpeg" alt=""></a>
+            <a  class="grid-item" href="#"><img src="images/shop/shop-1.jpg" alt="" /></a>
+            <a class="grid-item grid-item--width2" href="#"><img src="images/shop/shop-2.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-3.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-4.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-5.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-6.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-7.jpg" alt="" /></a>
+            <a class="grid-item" href="#"><img src="images/shop/shop-8.jpg" alt="" /></a>
+   
+          </div>
+        </div>
+      </div>
+    
+      <!-- <section class="gallery">
         <div class="container">
           <h2 class="title">Instagram</h2>
           <div class="gallery__inner grid">
@@ -827,7 +848,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section class="events">
         <div class="container">
@@ -1084,6 +1105,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script

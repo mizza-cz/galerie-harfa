@@ -38,7 +38,12 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
-
+var elem = document.querySelector('.grid');
+var msnry = new Masonry(elem, {
+  // options
+  itemSelector: '.grid-item',
+  gutter: 15,
+});
 // video terasy page
 
 //// scroll
@@ -59,8 +64,6 @@ document
   .querySelectorAll('.filter__form input[type=checkbox]')
   .forEach((input) => input.addEventListener('change', () => input.form.submit()));
 
-
-  
 /// text more
 const btnMore = document.querySelector('.more');
 const shopDetailBox = document.querySelector('.shop-detail__box');
