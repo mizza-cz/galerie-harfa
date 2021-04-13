@@ -260,6 +260,14 @@
     height: 100%;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    &::placeholder {
+      color: #575656;
+      font-family: 'Allotrope', sans-serif;
+      font-size: 1.2rem;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
   }
 }
 .information__placing {
