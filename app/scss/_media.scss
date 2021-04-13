@@ -20,6 +20,9 @@
   }
 }
 @media (max-width: 1800px) {
+  #player {
+    height: 900px;
+  }
   .main-page .services__row.services__row--big {
     height: 860px;
   }
@@ -89,6 +92,9 @@
 }
 
 @media (max-width: 1600px) {
+  #player {
+    height: 800px;
+  }
   .best__item--big {
     height: 676px;
   }
@@ -114,6 +120,9 @@
   }
 }
 @media (max-width: 1440px) {
+  #player {
+    height: 730px;
+  }
   .top__img img {
     min-height: 576px;
   }
@@ -205,6 +214,9 @@
   }
 }
 @media (max-width: 1340px) {
+  #player {
+    height: 680px;
+  }
   .parking-page .maps {
     margin-top: -150px;
   }
@@ -250,9 +262,10 @@
 }
 
 @media (max-width: 1280px) {
-  .decoration.decoration--bottom {
-    bottom: -10px;
+  #player {
+    height: 650px;
   }
+
   .top__img img {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -366,6 +379,9 @@
 }
 
 @media (max-width: 1100px) {
+  #player {
+    height: 560px;
+  }
   .group__item-link {
     min-height: 415px;
     position: relative;
@@ -511,6 +527,9 @@
 }
 
 @media (max-width: 940px) {
+  #player {
+    height: 480px;
+  }
   .grid-sizer,
   .grid-item {
     width: 23.5%;
@@ -610,6 +629,9 @@
   }
 }
 @media (max-width: 880px) {
+  #player {
+    height: 450px;
+  }
   .information__item {
     .social__box {
       justify-content: start;
@@ -643,6 +665,13 @@
 }
 
 @media (max-width: 820px) {
+  #player {
+    height: 420px;
+  }
+  .start-video {
+    width: 100px;
+    height: 100px;
+  }
   .shops__inner,
   .event-detail__inner {
     margin-left: 0;
@@ -726,6 +755,9 @@
   }
 }
 @media (max-width: 780px) {
+  #player {
+    height: 400px;
+  }
   .best__item--big {
     height: 560px;
   }
@@ -981,9 +1013,14 @@
   }
 }
 @media (max-width: 660px) {
-  .c-video {
-    height: 350px;
+  div.thumbnail_container {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
+  .start-video {
+    display: none;
+  }
+
   .btn-link {
     width: 120px;
     height: 120px;
