@@ -5,9 +5,7 @@
   top: 0;
   left: 0;
   z-index: 999;
-  .container {
-    padding: 0;
-  }
+
   &__inner {
     transition: all 0.6s;
     height: 120px;
@@ -25,7 +23,7 @@
 .menu__link {
   color: #404040;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 1.625rem;
   &:hover {
     text-decoration: underline;
   }
@@ -36,12 +34,12 @@
 .navbar {
   top: 20px;
   position: absolute;
-  right: 40px;
+  right: 20px;
   z-index: 9999;
   transition: all 0.2s;
 
   .navbar__link {
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 40px;
     font-weight: 200;
     color: #1d3354;
@@ -55,7 +53,7 @@
   }
   .menu__link {
     font-weight: 200;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 55px;
     color: #1d3354;
   }
@@ -118,7 +116,7 @@
     height: 100%;
     background-color: #fff;
     width: 305px;
-    right: 0;
+    right: -90px;
     top: 0;
   }
   &::before {
@@ -152,9 +150,6 @@
   }
 }
 .header.sticky {
-  .navbar__btn {
-    right: 20px;
-  }
   .header__inner {
     height: 70px;
   }
@@ -166,7 +161,7 @@
     }
   }
   .navbar.change .burger-close {
-    right: -25px;
+    right: 55px;
     top: 5px;
   }
   .navbar {
@@ -180,8 +175,8 @@
   top: 33px;
 }
 .navbar.change .burger-close {
-  right: 20px;
-  top: 0;
+  right: 50px;
+  top: 10px;
   position: relative;
 }
 
@@ -193,18 +188,14 @@
     }
   }
   .header.sticky .navbar.change .burger-close {
-    right: 20px;
+    right: 45px;
   }
-  .navbar__col::after {
-    right: -60px;
-  }
+
   .navbar__col .menu,
   .navbar__col .navbar__menu {
     right: 0px;
   }
-  .header__logo {
-    padding-left: 20px;
-  }
+
   .header.sticky {
     .header__logo {
       left: 0;
@@ -213,14 +204,11 @@
 }
 
 @media (max-width: 1680px) {
-  .navbar__btn {
-    right: 20px;
-  }
   .navbar__col::before {
     width: 450px;
   }
   .navbar .menu__link {
-    font-size: 34px;
+    font-size: 2.125rem;
     line-height: 48px;
   }
   .navbar .navbar__menu {
@@ -230,7 +218,7 @@
 
 @media (max-width: 1600px) {
   .navbar .menu__link {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .navbar .navbar__menu {
     margin-top: 30px;
@@ -241,14 +229,14 @@
 }
 @media (max-width: 1440px) {
   .navbar .navbar__link {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 36px;
   }
   .navbar__col .menu {
     margin-top: 60px;
   }
   .navbar .menu__link {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .navbar .menu__link {
     line-height: 42px;
@@ -256,6 +244,9 @@
 }
 
 @media (max-width: 1200px) {
+  .navbar.change .navbar__col {
+    right: -60px;
+  }
   .navbar .navbar__menu {
     margin-top: 70px;
   }
@@ -292,8 +283,12 @@
   .nav__menu {
     display: none;
   }
+  .header.sticky .navbar.change .burger-close {
+    right: -20px;
+  }
   .navbar.change .burger-close {
     top: 20px;
+    right: -20px;
   }
   .header.sticky .navbar__btn {
     top: 20px;
@@ -306,6 +301,18 @@
   }
 }
 
+@media (max-width: 900px) {
+  .navbar.change .burger-close {
+    right: -10px;
+  }
+  .navbar.change .navbar__col .menu,
+  .navbar.change .navbar__col .navbar__menu {
+    right: 50px;
+  }
+  .header.sticky .navbar.change .burger-close {
+    right: -15px;
+  }
+}
 @media (max-width: 845px) {
   .navbar__col::after,
   .navbar__col::before {
@@ -319,12 +326,18 @@
   }
 }
 @media (max-width: 600px) {
+  .header.sticky .navbar.change .burger-close {
+    top: 0px;
+    right: 0;
+  }
   .navbar__col::after,
   .navbar__col::before {
     height: 100vh;
   }
   .navbar.change .navbar__col .menu,
-  .navbar.change .navbar__col .navbar__menu {
+  .navbar.change .navbar__col .navbar__menu,
+  .navbar.change .navbar__col,
+  .navbar.change .burger-close {
     right: 0;
   }
   .navbar__col::before {
@@ -336,7 +349,7 @@
     background-color: #fff;
   }
   .navbar .menu__link {
-    font-size: 26px;
+    font-size: 1.625rem;
     line-height: 36px;
   }
   .navbar__col .menu,

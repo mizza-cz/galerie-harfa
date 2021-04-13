@@ -182,24 +182,32 @@
         <div class="container">
           <div class="top__inner">
             <div class="top__img">
-              <img src="images/main-photo.jpg" alt="" />
-              <a class="btn btn--blue" href="#">
-                <div class="btn-call">CALL TO <span>ACTION</span></div>
-              </a>
-              <div class="top-main__content">
-                <h1 class="top-main__title">RozdáVÁme DÁRKY ZA miliOn</h1>
-                <div class="top-main__subtitle">Nakupujte a vyhrávejte</div>
-                <div class="top-main__subtitle">#RadostNavíc</div>
+            
+              <div class="c-video">
+                <button
+                  type="submit"
+                  id="play"
+                  class="btn__video"
+                  style="background-image: url('images/decorate/play.png')"
+                 
+                ></button>
+                <video
+                  src="video/videoplayback.mp4"
+                  class="video"
+                  poster="images/main-photo.jpg"
+                ></video>
+               
               </div>
+              <div class="decoration decoration--bottom">
+                <span class="bg--pink"></span>
+                <span class="bg--orange"></span>
+                <span class="bg--green"></span>
+                <span class="bg--ocean"></span>
+                <span class="bg--yellow"></span>
+              </div>
+           
             </div>
 
-            <div class="decoration decoration--bottom">
-              <span class="bg--pink"></span>
-              <span class="bg--orange"></span>
-              <span class="bg--green"></span>
-              <span class="bg--ocean"></span>
-              <span class="bg--yellow"></span>
-            </div>
           </div>
         </div>
       </section>
@@ -207,7 +215,7 @@
         <div class="container">
           <h2 class="shops__title title">Deals <span>of the</span> Week</h2>
           <div class="best__items">
-            <div class="best__item">
+            <div class="best__item best__item--big">
               <div class="best__item-content">
                 <a href="#" class="best__row">
               <img onerror="this.src='images/placeholder/1.png'" src="">
@@ -248,7 +256,7 @@
               </div>
             </div>
 
-            <div class="best__item best__item--hight">
+            <div class="best__item">
               <div class="best__item-content">
                 <a href="#" class="best__row">
                   <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-3.jpg" alt="">
@@ -286,46 +294,10 @@
                 <div class="best__hover"></div>
               </div>
             </div>
-            <div class="best__item">
-              <div class="best__item-content">
-                <a href="#" class="best__row">
-                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-7.jpg" alt="">
-                  </a>
-                <div class="best__btn">
-                  <span class="btn-arrow icon-arrow-up-right2"></span>
-                  <span class="shop-close"><img src="images/svg/close.svg" alt="" /></span>
-                </div>
-                <div class="best__hover"></div>
-              </div>
-            </div>
-            <div class="best__item">
-              <div class="best__item-content">
-                <a href="#" class="best__row">
-                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-1.jpg" alt="">
-                  </a>
-                <div class="best__btn">
-                  <span class="btn-arrow icon-arrow-up-right2"></span>
-                  <span class="shop-close"><img src="images/svg/close.svg" alt="" /></span>
-                </div>
-                <div class="best__hover"></div>
-              </div>
-            </div>
-
-            <div class="best__item best__item--width">
-              <div class="best__item-content">
-                <a href="#" class="best__row">
-                  <img onerror="this.src='images/placeholder/1.png'" src="images/best/item-7.jpg" alt="">
-                  </a>
-                <div class="best__btn">
-                  <span class="btn-arrow icon-arrow-up-right2"></span>
-                  <span class="shop-close"><img src="images/svg/close.svg" alt="" /></span>
-                </div>
-                <div class="best__hover"></div>
-              </div>
-            </div>
+          
 
           </div>
-          <a class="btn-link" href="./best-deal.html">All<span>Deals</span></a>
+          <a class="btn-link" href="./best-deal.html">Více</a>
         </div>
       </section>
       <section class="food">
@@ -451,7 +423,7 @@
             </div>
           </div>
          
-          <a class="btn-link" href="./shop-detail.html">more<span>food</span></a>
+          <a class="btn-link" href="./shop-detail.html">Více</a>
         </div>
       </section>
       <section class="kids">
@@ -551,7 +523,7 @@
               </div>
             </div>
           </div>
-          <a class="btn-link" href="./events.html">more<span>fun</span></a>
+          <a class="btn-link" href="./events.html">Více</a>
         </div>
       </section>
       <section class="campaigns">
@@ -607,7 +579,7 @@
           <div class="services__inner">
 
             
-            <div class="services__row services--1">
+            <div class="services__row">
               <a class="services__link" href="#" style="background-image: url('images/services/1.jpg')">
                 <div class="services__item">
                   <h6 class="services__item-title">professional <span>make-up</span></h6>
@@ -622,7 +594,7 @@
             </div>
 
 
-            <div class="services__row services--2">
+            <div class="services__row">
               <a class="services__link" href="#" style="background-image: url('images/services/2.jpg')">
                 <div class="services__item">
                   <h6 class="services__item-title">Fashion <span>Stylist</span></h6>
@@ -637,7 +609,7 @@
             </div>
 
            
-            <div class="services__row services--3 services__row--option">
+            <div class="services__row services__row--big">
              
                 <div class="services__item">
                   <a href="#" class="services__item-title">Harfa <span>Parking</span></a>
@@ -664,7 +636,7 @@
 
 
             
-            <div class="services__row services--4">
+            <div class="services__row">
               <a class="services__link" href="#" style="background-image: url('images/services/3.jpg')">
                 <div class="services__item">
                   <h6 class="services__item-title">kid's <span>corner</span></h6>
@@ -674,7 +646,7 @@
           </div>
 
          
-            <div class="services__row services--5">
+            <div class="services__row services__row--big">
               <a class="services__link" href="#" style="background-image: url('images/services/4.jpg')">
                 <div class="services__item">
                   <h6 class="services__item-title">Charging
@@ -684,7 +656,7 @@
               </a>
           </div>
 
-        <div class="services__row services--6">
+        <div class="services__row">
           <a class="services__link" href="#" style="background-image: url('images/services/1.jpg')">
             <div class="services__item">
               <h6 class="services__item-title">professional <span>make-up</span></h6>
@@ -699,7 +671,7 @@
         </div>
 
         </div>
-        <a class="btn-link" href="./services.html"><span>all</span> services</a>
+        <a class="btn-link" href="./services.html">Více</a>
       </div>
     </section>
 
@@ -775,7 +747,7 @@
             </div>
            
           </div>
-          <a class="btn-link" href="./services.html"><span>all</span> News</a>
+          <a class="btn-link" href="./services.html">Více</a>
         </div>
       </section>
 
@@ -783,17 +755,18 @@
         <div class="container">
            <h2 class="title">Instagram</h2>
           <div class="grid">
-            <a class="grid-item" href="images/gal/deichmann.jpeg"><img src="images/gal/deichmann.jpeg" alt=""></a>
-            <a class="grid-item grid-item--width2" href="images/gal/deichmann1.jpeg"><img src="images/gal/deichmann1.jpeg" alt=""></a>
-            <a class="grid-item" href="images/gal/deichmann2.jpeg"><img src="images/gal/deichmann2.jpeg" alt=""></a>
-            <a class="grid-item" href="images/gal/deichmann3.jpeg"><img src="images/gal/deichmann3.jpeg" alt=""></a>
-            <a  class="grid-item" href="images/shop/shop-1.jpg"><img src="images/shop/shop-1.jpg" alt="" /></a>
-            <a class="grid-item grid-item--width2" href="images/shop/shop-2.jpg"><img src="images/shop/shop-2.jpg" alt="" /></a>
-            <a class="grid-item" href="images/shop/shop-3.jpg"><img src="images/shop/shop-3.jpg" alt="" /></a>
-            <a class="grid-item" href="images/shop/shop-4.jpg"><img src="images/shop/shop-4.jpg" alt="" /></a>
-            <a class="grid-item" href="images/shop/shop-5.jpg"><img src="images/shop/shop-5.jpg" alt="" /></a>
-            <a class="grid-item" href="images/shop/shop-6.jpg"><img src="images/shop/shop-6.jpg" alt="" /></a>
-            <a class="grid-item" href="images/shop/shop-7.jpg"><img src="images/shop/shop-7.jpg" alt="" /></a>
+            <div class="grid-sizer"></div>
+            <a class="grid-item" href="images/test/bata.jpeg"><img src="images/test/bata.jpeg" alt=""></a>
+            <a class="grid-item grid-item--width2" href="images/test/bata1.jpeg"><img src="images/test/bata1.jpeg" alt=""></a>
+            <a class="grid-item" href="images/test/bata2.jpeg"><img src="images/test/bata2.jpeg" alt=""></a>
+            <a class="grid-item" href="images/test/ccc.jpeg"><img src="images/test/ccc.jpeg" alt=""></a>
+            <a  class="grid-item" href="images/test/ccc1.jpeg"><img src="images/test/ccc1.jpeg" alt="" /></a>
+            <a class="grid-item grid-item--width2" href="images/test/ccc2.jpeg"><img src="images/test/ccc2.jpeg" alt="" /></a>
+            <a class="grid-item" href="images/test/ccc3.jpeg"><img src="images/test/ccc3.jpeg" alt="" /></a>
+            <a class="grid-item" href="images/test/ecco1.jpeg"><img src="images/test/ecco1.jpeg" alt="" /></a>
+            <a class="grid-item" href="images/test/ecco2.png""><img src="images/test/ecco2.png" alt="" /></a>
+            <a class="grid-item" href="images/test/freddy1.jpeg"><img src="images/test/freddy1.jpeg" alt="" /></a>
+            <a class="grid-item" href="images/test/freddy2.jpeg"><img src="images/test/freddy2.jpeg" alt="" /></a>
             <a class="grid-item" href="images/shop/shop-8.jpg"><img src="images/shop/shop-8.jpg" alt="" /></a>
             <a class="grid-item" href="images/shop/shop-3.jpg"><img src="images/shop/shop-3.jpg" alt="" /></a>
             <a class="grid-item" href="images/shop/shop-4.jpg"><img src="images/shop/shop-4.jpg" alt="" /></a>
@@ -803,57 +776,7 @@
           </div>
         </div>
       </div>
-    
-      <!-- <section class="gallery">
-        <div class="container">
-         
-          <div class="gallery__inner grid">
-            <a class="img img2" href="images/shop/shop-1.jpg">
-              <img src="images/shop/shop-1.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-2.jpg">
-              <img src="images/shop/shop-2.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-3.jpg">
-              <img src="images/shop/shop-3.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-4.jpg">
-              <img src="images/shop/shop-4.jpg" alt="" />
-            </a>
-            <a class="img img2" href="images/shop/shop-5.jpg">
-              <img src="images/shop/shop-5.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-6.jpg">
-              <img src="images/shop/shop-6.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-7.jpg">
-              <img src="images/shop/shop-7.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-8.jpg">
-              <img src="images/shop/shop-8.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-5.jpg">
-              <img src="images/shop/shop-5.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-6.jpg">
-              <img src="images/shop/shop-6.jpg" alt="" />
-            </a>
 
-            <a class="img" href="images/shop/shop-8.jpg">
-              <img src="images/shop/shop-8.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-9.jpg">
-              <img src="images/shop/shop-9.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-8.jpg">
-              <img src="images/shop/shop-8.jpg" alt="" />
-            </a>
-            <a class="img" href="images/shop/shop-9.jpg">
-              <img src="images/shop/shop-9.jpg" alt="" />
-            </a>
-          </div>
-        </div>
-      </section> -->
 
       <section class="events">
         <div class="container">
@@ -924,7 +847,7 @@
           </div>
 
 
-          <a class="btn-link" href="./events.html">more<span>events</span></a>
+          <a class="btn-link" href="./events.html">Více</a>
         </div>
       </section>
 
@@ -1034,83 +957,105 @@
             <span class="bg--ocean"></span>
             <span class="bg--yellow"></span>
           </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Harfa for You</h3>
-            <ul class="footer__menu">
-              <li class="footer__list">
-                <a class="footer__link" href="#">Shopping</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Foodcourt</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Beauty</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Relax</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Kids</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Parking</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">O2</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Pages</h3>
-            <ul class="footer__menu">
-              <li class="footer__list">
-                <a class="footer__link" href="#">Shops</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Best Deals</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Services</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">News</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Events</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Harfa Gallery</h3>
-            <ul class="footer__menu">
-              <li class="footer__list">
-                <a class="footer__link" href="#">About Us</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Career</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Cowork / Lease</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__col">
-            <h3 class="footer__title">Navigation</h3>
-            <ul class="footer__menu">
-              <li class="footer__list">
-                <a class="footer__link" href="#">Directions</a>
-              </li>
-              <li class="footer__list">
-                <a class="footer__link" href="#">Map</a>
-              </li>
-            </ul>
+          <div class="footer__row">
+            <div class="footer__col">
+              <h3 class="footer__title">Harfa for You</h3>
+              <ul class="footer__menu">
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Shopping</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Foodcourt</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Beauty</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Relax</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Kids</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Parking</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">O2</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h3 class="footer__title">Pages</h3>
+              <ul class="footer__menu">
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Shops</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Best Deals</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Services</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">News</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Events</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h3 class="footer__title">Harfa Gallery</h3>
+              <ul class="footer__menu">
+                <li class="footer__list">
+                  <a class="footer__link" href="#">About Us</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Career</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Cowork / Lease</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h3 class="footer__title">Navigation</h3>
+              <ul class="footer__menu">
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Directions</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Map</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="footer__copy">© 2020 Galerie Harfa</div>
+          
         </div>
+       
       </div>
     </footer>
+    <script>
+      var video = document.querySelector('.video');
+      var btnVideo = document.getElementById('play');
+      var topInner = document.querySelector('.top__inner');
+      function togglePlayPause() {
+        if (video.paused) {
+          btnVideo.className = 'pause';
+          video.play();
+        } else {
+          btnVideo.className = 'play';
+          video.pause();
+        }
+      }
+      btnVideo.onclick = function () {
+        togglePlayPause();
+      };
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
     <script

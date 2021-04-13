@@ -39,10 +39,13 @@ jQuery(document).ready(function ($) {
   });
 });
 var elem = document.querySelector('.grid');
-var msnry = new Masonry(elem, {
-  // options
-  itemSelector: '.grid-item',
-  gutter: 15,
+imagesLoaded(elem, () => {
+  var msnry = new Masonry(elem, {
+    // options
+    itemSelector: '.grid-item',
+    gutter: 15,
+    columnWidth: '.grid-sizer',
+  });
 });
 
 // video terasy page

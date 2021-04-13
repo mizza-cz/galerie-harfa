@@ -49,8 +49,8 @@ p {
   margin: 0;
 }
 p {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 1.5rem;
+  line-height: 1.7;
   font-weight: 400;
   margin-bottom: 40px;
 }
@@ -69,7 +69,7 @@ body {
   }
   h1,
   h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
     margin-bottom: 55px;
     line-height: 60px;
@@ -84,13 +84,13 @@ body {
   z-index: 20;
 }
 .container {
-  padding: 0 15px;
+  padding: 0 5%;
   margin: 0 auto;
-  max-width: 1830px;
+  max-width: 1920px;
   width: 100%;
 }
 .container-small {
-  padding: 0 30px;
+  padding: 0 5%;
   margin: 0 auto;
   width: 100%;
   max-width: 1115px;
@@ -99,13 +99,13 @@ body {
 .sell--mini.sell {
   width: 80px;
   height: 80px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 23px;
   font-weight: 800;
   text-transform: uppercase;
   color: #404040;
   span {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 .sell--big.sell {
@@ -122,7 +122,7 @@ body {
   flex-direction: column;
   width: 100px;
   height: 100px;
-  font-size: 25px;
+  font-size: 1.56rem;
   line-height: 22px;
   left: 20px;
   top: 20px;
@@ -138,48 +138,41 @@ body {
   flex-wrap: wrap;
   color: $pink;
   &__descr {
-    font-size: 23.5px;
+    font-size: 1.47rem;
     line-height: 26px;
   }
   &__number {
-    font-size: 107.5px;
+    font-size: 6.7rem;
     span {
-      font-size: 25.2px;
+      font-size: 1.575rem;
     }
   }
 }
 
 .btn-link {
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #fefefe;
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   position: relative;
   opacity: 0.9;
   border-radius: 50%;
   display: flex;
-  // justify-content: center;
-  text-align: center;
-  display: block;
+  justify-content: center;
   margin: 0 auto;
-  padding-top: 27px;
+  align-items: center;
   transition: all 0.3s;
   &:hover {
     transform: scale(1.1);
   }
-  span {
-    display: block;
-    font-size: 30px;
-    line-height: 28px;
-  }
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 3px;
+    top: 6px;
+    left: 11px;
     width: 76px;
     height: 59px;
     background-image: url('../images/decorate/border-2.png');
@@ -224,7 +217,7 @@ body {
 }
 .decoration.decoration--bottom {
   bottom: 0;
-  top: auto;
+  top: initial;
   .bg--pink {
     border-bottom-left-radius: 10px;
     border-top-left-radius: 0;
@@ -239,14 +232,14 @@ body {
 }
 
 .text-b {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .more {
   transition: all 0.6s;
   opacity: 1;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: block;
   width: 130px;
   margin: 0 auto;
@@ -271,7 +264,7 @@ body {
 }
 .social__link {
   margin-left: 40px;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #575656;
   border-radius: 50%;
   width: 100px;
@@ -453,7 +446,7 @@ body {
 .btn-call {
   position: relative;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 1.4375rem;
   line-height: 30px;
   font-weight: 500;
   color: #ffffff;
@@ -476,7 +469,7 @@ body {
   }
   li,
   a {
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 32px;
     list-style: initial;
     a {
@@ -487,8 +480,4 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
-  .main {
-    margin-top: 60px;
-  }
-}
+
