@@ -130,6 +130,9 @@
   }
 }
 @media (max-width: 1455px) {
+  .main-page .services__row .btn {
+    max-width: 230px;
+  }
   .grid-sizer,
   .grid-item {
     width: 18.9%;
@@ -139,7 +142,7 @@
     width: 38.8%;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   .main-page .news .shops__inner {
     .shops__row {
       margin-bottom: 20px;
