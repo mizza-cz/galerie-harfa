@@ -198,6 +198,7 @@
 }
 
 // infromation
+
 .information {
   margin-bottom: 55px;
   &__inner {
@@ -232,11 +233,18 @@
     display: block;
   }
 }
+.information__checkbox {
+  font-size: 1.2rem;
+  line-height: 30px;
+  input {
+    margin-right: 5px;
+  }
+}
 .information__form {
   height: 60px;
   width: 443px;
   display: flex;
-  margin-left: 5px;
+  margin-bottom: 20px;
   button {
     background-color: $pink;
     color: #fff;
