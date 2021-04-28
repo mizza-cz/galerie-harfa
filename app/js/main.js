@@ -18,53 +18,46 @@ jQuery(document).ready(function ($) {
     $(this).parents('.best__item-content').removeClass('active'); //добавляем класс текущей (нажатой)
   });
   //youtube script
-var tag = document.createElement('script');
-tag.src = '//www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var tag = document.createElement('script');
+  tag.src = '//www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
+  var player;
 
-onYouTubeIframeAPIReady = function () {
-  player = new YT.Player('player', {
-    videoId: 'G__13eEzADk', // youtube video id
-    playerVars: {
-      autoplay: 0,
-      rel: 0,
-      showinfo: 0,
-    },
-    events: {
-      onStateChange: onPlayerStateChange,
-    },
+  onYouTubeIframeAPIReady = function () {
+    player = new YT.Player('player', {
+      videoId: 'G__13eEzADk', // youtube video id
+      playerVars: {
+        autoplay: 0,
+        rel: 0,
+        showinfo: 0,
+      },
+      events: {
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  };
+
+  var p = document.getElementById('player');
+  $(p).hide();
+
+  var t = document.getElementById('thumbnail');
+  t.src = 'images/content/bg-3.jpg';
+
+  onPlayerStateChange = function (event) {
+    if (event.data == YT.PlayerState.ENDED) {
+      $('.start-video').fadeIn('normal');
+    }
+  };
+
+  $(document).on('click', '.start-video', function () {
+    $(this).hide();
+    $('#player').show();
+    $('#thumbnail_container').hide();
+    player.playVideo();
   });
-};
 
-var p = document.getElementById('player');
-$(p).hide();
-
-var t = document.getElementById('thumbnail');
-t.src = 'images/content/bg-3.jpg';
-
-onPlayerStateChange = function (event) {
-  if (event.data == YT.PlayerState.ENDED) {
-    $('.start-video').fadeIn('normal');
-  }
-};
-
-$(document).on('click', '.start-video', function () {
-  $(this).hide();
-  $('#player').show();
-  $('#thumbnail_container').hide();
-  player.playVideo();
-});
-
-  //video terasy
-  // $('.btn__video').on('click', function () {
-  //   $(this).closest('top__inner').removeClass('top-play');
-  //   $(this).parent().addClass('top-play');
-  // });
-
-  //
   $('.grid').magnificPopup({
     delegate: 'a',
     type: 'image',
@@ -102,6 +95,12 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
+const footerBtn = document.querySelector('.btn-footer');
+const footerMenu = document.querySelector('.footer__wrap');
+footerBtn.addEventListener('click', () => {
+  footerMenu.classList.toggle('active');
+});
+
 // filter checkboxes
 document
   .querySelectorAll('.filter__form input[type=checkbox]')
@@ -113,4 +112,3 @@ const shopDetailBox = document.querySelector('.shop-detail__box');
 btnMore.addEventListener('click', () => {
   shopDetailBox.classList.toggle('vision');
 });
-

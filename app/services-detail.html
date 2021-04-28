@@ -288,7 +288,9 @@
             </div>
             <div class="information__item information__placing">
               <div class="information__title">Placing</div>
-              <div class="information__placing-floor">1. NP</div>
+              <ul class="information__menu">
+                <li class="information__list">1. NP</li>
+              </ul>
               <div class="information__placing-map">
                 <img src="images/content/floor.png" alt="" />
               </div>
@@ -370,57 +372,11 @@
           </div>
         </div>
       </div>
-
-      <section class="information sup-footer">
-        <div class="container">
-          <div class="information__inner">
-            <div class="decoration">
-              <span class="bg--pink"></span>
-              <span class="bg--orange"></span>
-              <span class="bg--green"></span>
-              <span class="bg--ocean"></span>
-              <span class="bg--yellow"></span>
-            </div>
-            <div class="information__item information__mail">
-              <div class="information__title">Moje Harfa</div>
-              <ul class="information__menu">
-                <li class="information__list">Výběr toho nejlepšího ve vašem emailu</li>
-              </ul>
-              <form class="information__form">
-                <input type="text" />
-                <button class="icon-send" type="submit"></button>
-              </form>
-            </div>
-            <div class="information__item">
-              <div class="information__title">Opening hours</div>
-              <ul class="information__menu">
-                <li class="information__list">Středa 7. 10. 2010</li>
-                <li class="information__list">Svátek má Justýna</li>
-                <li class="information__list">Otevřeno <span>10.00 – 22.00</span></li>
-              </ul>
-            </div>
-            <div class="information__item information__item--contact">
-              <div class="information__title">Contact</div>
-              <ul class="information__menu">
-                <li class="information__list">GALERIE HARFA</li>
-                <li class="information__list">Českomoravská 2420/15a</li>
-                <li class="information__list">190 00 Praha 9 – Libeň</li>
-                <li class="information__list">
-                  <a href="tel:420266055600">tel: +420 266 055 600</a>
-                </li>
-                <li class="information__list">
-                  <a href="mailto:info@galerieharfa.cz">e-mail: info@galerieharfa.cz</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer class="footer">
+    <section class="information sup-footer">
       <div class="container">
-        <div class="footer__inner">
+        <div class="information__inner">
           <div class="decoration">
             <span class="bg--pink"></span>
             <span class="bg--orange"></span>
@@ -428,85 +384,140 @@
             <span class="bg--ocean"></span>
             <span class="bg--yellow"></span>
           </div>
-          <div class="footer__row">
-            <div class="footer__col">
-              <h3 class="footer__title">Harfa for You</h3>
-              <ul class="footer__menu">
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Shopping</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Foodcourt</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Beauty</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Relax</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Kids</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Parking</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">O2</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__col">
-              <h3 class="footer__title">Pages</h3>
-              <ul class="footer__menu">
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Shops</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Best Deals</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Services</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">News</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Events</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__col">
-              <h3 class="footer__title">Harfa Gallery</h3>
-              <ul class="footer__menu">
-                <li class="footer__list">
-                  <a class="footer__link" href="#">About Us</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Career</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Cowork / Lease</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__col">
-              <h3 class="footer__title">Navigation</h3>
-              <ul class="footer__menu">
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Directions</a>
-                </li>
-                <li class="footer__list">
-                  <a class="footer__link" href="#">Map</a>
-                </li>
-              </ul>
-            </div>
+          <div class="information__item">
+            <div class="information__title">Moje Harfa</div>
+            <ul class="information__menu">
+              <li class="information__list">Výběr toho nejlepšího ve vašem emailu</li>
+            </ul>
+            <form class="form__box">
+              <div class="information__form">
+                <input placeholder="Zanechte nám svůj email" type="text" />
+                <button class="icon-send" type="submit"></button>
+              </div>
+              <label class="information__checkbox">
+                <input type="checkbox">
+                Souhlasím souhlasím s <a href="#">gdpr</a>
+              </label>
+              
+            </form>
+           
           </div>
-          <div class="footer__copy">© 2020 Galerie Harfa</div>
-          
+          <div class="information__item">
+            <div class="information__title">Opening hours</div>
+            <ul class="information__menu">
+              <li class="information__list">Středa 7. 10. 2010</li>
+              <li class="information__list">Svátek má Justýna</li>
+              <li class="information__list">Otevřeno <span>10.00 – 22.00</span></li>
+            </ul>
+          </div>
+          <div class="information__item">
+            <div class="information__title">Contact</div>
+            <ul class="information__menu">
+              <li class="information__list">GALERIE HARFA</li>
+              <li class="information__list">Českomoravská 2420/15a</li>
+              <li class="information__list">190 00 Praha 9 – Libeň</li>
+              <li class="information__list">
+                <a href="tel:420266055600">tel: +420 266 055 600</a>
+              </li>
+              <li class="information__list">
+                <a href="mailto:info@galerieharfa.cz">e-mail: info@galerieharfa.cz</a>
+              </li>
+            </ul>
+          </div>
         </div>
-       
       </div>
-    </footer>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="decoration">
+          <span class="bg--pink"></span>
+          <span class="bg--orange"></span>
+          <span class="bg--green"></span>
+          <span class="bg--ocean"></span>
+          <span class="bg--yellow"></span>
+        </div>
+        <div class="footer__row">
+          <div class="footer__col">
+            <h3 class="footer__title">Harfa for You</h3>
+            <ul class="footer__menu">
+              <li class="footer__list">
+                <a class="footer__link" href="#">Shopping</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Foodcourt</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Beauty</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Relax</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Kids</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Parking</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">O2</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Pages</h3>
+            <ul class="footer__menu">
+              <li class="footer__list">
+                <a class="footer__link" href="#">Shops</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Best Deals</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Services</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">News</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Events</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Harfa Gallery</h3>
+            <ul class="footer__menu">
+              <li class="footer__list">
+                <a class="footer__link" href="#">About Us</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Career</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Cowork / Lease</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3 class="footer__title">Navigation</h3>
+            <ul class="footer__menu">
+              <li class="footer__list">
+                <a class="footer__link" href="#">Directions</a>
+              </li>
+              <li class="footer__list">
+                <a class="footer__link" href="#">Map</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copy">© 2020 Galerie Harfa</div>
+        
+      </div>
+     
+    </div>
+  </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>

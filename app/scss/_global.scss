@@ -49,34 +49,50 @@ p {
   margin: 0;
 }
 p {
-  font-size: 1.5rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 115%;
   font-weight: 400;
   margin-bottom: 40px;
 }
 
 body {
   color: #575656;
+  font-size: 1rem;
+  line-height: 115%;
+  font-weight: 400;
   font-family: 'Allotrope', sans-serif;
 }
 .best__top {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 155px;
-  p {
-    margin-bottom: 92px;
-  }
-  h1,
-  h2 {
-    font-size: 3.75rem;
+  margin-top: 75px;
+  h1 {
+    font-size: 3.5rem;
     font-weight: 400;
     margin-bottom: 55px;
-    line-height: 60px;
+    line-height: 115%;
     span {
       font-weight: 800;
     }
   }
+  h2 {
+    font-size: 2.5rem;
+    line-height: 115%;
+    font-weight: 400;
+  }
+}
+h1 {
+  font-size: 3.5rem;
+  line-height: 115%;
+}
+h2 {
+  line-height: 115%;
+  font-size: 2.5rem;
+}
+h3 {
+  line-height: 115%;
+  font-size: 2rem;
 }
 .main {
   margin-top: 120px;
@@ -84,9 +100,9 @@ body {
   z-index: 20;
 }
 .container {
-  padding: 0 10%;
+  padding: 0;
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1550px;
   width: 100%;
 }
 .container-small {
@@ -100,7 +116,7 @@ body {
   width: 80px;
   height: 80px;
   font-size: 1.125rem;
-  line-height: 23px;
+  line-height: 115%;
   font-weight: 800;
   text-transform: uppercase;
   color: #404040;
@@ -114,16 +130,15 @@ body {
   left: 60px;
   top: 60px;
   .sell__number {
-    line-height: 32px;
-    margin-top: 31px;
+    margin-bottom: 10px;
+    padding-top: 20px;
   }
 }
 .sell {
   flex-direction: column;
   width: 100px;
   height: 100px;
-  font-size: 1.56rem;
-  line-height: 22px;
+  font-size: 1.4rem;
   left: 20px;
   top: 20px;
   position: absolute;
@@ -139,7 +154,7 @@ body {
   color: $pink;
   &__descr {
     font-size: 1.47rem;
-    line-height: 26px;
+    line-height: 115%;
   }
   &__number {
     font-size: 6.7rem;
@@ -150,8 +165,9 @@ body {
 }
 
 .btn-link {
+  margin: 0 auto;
   font-size: 1.75rem;
-  line-height: 1.2;
+  line-height: 115%;
   font-weight: 700;
   text-transform: uppercase;
   color: #fefefe;
@@ -178,6 +194,20 @@ body {
     background-image: url('../images/decorate/border-2.png');
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+.footer {
+  display: none;
+}
+.footer__wrap {
+  .btn-footer {
+    margin-bottom: 50px;
+  }
+}
+.footer__wrap.active {
+  .footer {
+    display: block;
   }
 }
 .bg--pink {
@@ -232,19 +262,22 @@ body {
 }
 
 .text-b {
-  font-size: 1.875rem;
+  font-size: 1.1rem;
+  line-height: 115%;
 }
 
-.more {
+.more,
+.btn-footer {
   transition: all 0.6s;
   opacity: 1;
   font-weight: 800;
   font-size: 1.25rem;
   display: block;
-  width: 130px;
+
   margin: 0 auto;
   text-align: center;
-  border-bottom: 1px solid #575656;
+  text-decoration: underline;
+  cursor: pointer;
 }
 #map {
   width: 100%;
@@ -264,11 +297,11 @@ body {
 }
 .social__link {
   margin-left: 40px;
-  font-size: 2.25rem;
+  font-size: 1.75rem;
   color: #575656;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
@@ -302,10 +335,11 @@ body {
   &::after {
     content: '';
     position: absolute;
-    left: -15px;
-    top: -13px;
-    width: 128px;
-    height: 128px;
+    left: -10px;
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
     background-image: url('../images/decorate/insta.png');
   }
   &::before {
@@ -326,8 +360,8 @@ body {
   &::after {
     content: '';
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     left: 0;
     right: 0;
     border-top: 3px solid #1d3354;
@@ -447,7 +481,7 @@ body {
   position: relative;
   text-transform: uppercase;
   font-size: 1.4375rem;
-  line-height: 30px;
+  line-height: 115%;
   font-weight: 500;
   color: #ffffff;
   z-index: 999;
@@ -470,7 +504,7 @@ body {
   li,
   a {
     font-size: 1.5rem;
-    line-height: 32px;
+    line-height: 115%;
     list-style: initial;
     a {
       &:hover {
