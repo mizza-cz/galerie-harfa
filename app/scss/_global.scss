@@ -166,13 +166,14 @@ h3 {
 
 .btn-link {
   margin: 0 auto;
-  font-size: 1.75rem;
+
   line-height: 115%;
   font-weight: 700;
   text-transform: uppercase;
   color: #fefefe;
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
+  font-size: 1rem;
   position: relative;
   opacity: 0.9;
   border-radius: 50%;
@@ -187,10 +188,10 @@ h3 {
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 76px;
-    height: 59px;
+    top: 2px;
+    left: 0px;
+    width: 60px;
+    height: 40px;
     background-image: url('../images/decorate/border-2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -270,7 +271,7 @@ h3 {
 .btn-footer {
   transition: all 0.6s;
   opacity: 1;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 1.25rem;
   display: block;
 

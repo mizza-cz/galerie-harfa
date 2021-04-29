@@ -113,7 +113,7 @@
   align-items: center;
 }
 .best__input::placeholder {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5rem;
   color: #707070;
 }
@@ -371,8 +371,9 @@
 .information__checkbox {
   font-size: 1rem;
   line-height: 115%;
+  font-weight: 300;
   a {
-    font-weight: 700;
+    font-weight: 300;
   }
   input {
     margin-right: 5px;
@@ -411,6 +412,7 @@
       color: #575656;
       font-family: 'Allotrope', sans-serif;
       font-size: 1rem;
+      font-weight: 300;
     }
     &:focus::placeholder {
       color: transparent;
