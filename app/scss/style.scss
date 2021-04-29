@@ -1812,18 +1812,16 @@ img.thumbnail {
 }
 /// career-page
 .career__list-title {
-  font-size: 2rem;
-  line-height: 32px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 .career__list {
   margin-bottom: 100px;
   margin-left: 30px;
   li {
     list-style: initial;
-    font-size: 1.5rem;
-    line-height: 32px;
+    font-size: 1em;
+    line-height: 115%;
   }
 }
 .career__title {
@@ -2286,5 +2284,11 @@ img.thumbnail {
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
+}
+
+.terasy__inner .shops__inner {
+  .shops__categories {
+    display: none;
+  }
 }
 @import 'media';
