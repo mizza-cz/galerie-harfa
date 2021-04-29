@@ -336,13 +336,17 @@
   .top__img {
     margin: 0;
   }
-  .best__item {
-    height: 370px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 760px;
+    height: 370px;
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+    .shops__content-title {
+      font-size: 1.75rem !important;
+    }
   }
+
   .container {
     padding: 0 5%;
   }
@@ -454,15 +458,14 @@
   }
   .shops__item,
   .shops__item-bg {
-    min-height: 480px;
+    min-height: 310px;
   }
-  .best__item {
-    height: 310px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 640px;
+    height: 310px;
   }
+
   #player {
     height: 560px;
   }
@@ -565,12 +568,10 @@
   .top__img img {
     min-height: 450px;
   }
-  .best__item {
-    height: 290px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 600px;
+    height: 290px;
   }
 
   .food__link {
@@ -645,13 +646,12 @@
   .grid-item--width2 {
     width: 48.5%;
   }
-  .best__item {
-    height: 265px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 550px;
+    height: 265px;
   }
+
   .best__hover .best__info-list {
     margin-bottom: 0;
     font-size: 0;
@@ -740,13 +740,12 @@
   .main-page .services__row--big {
     height: 820px;
   }
-  .best__item {
-    height: 250px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 520px;
+    height: 250px;
   }
+
   #player {
     height: 450px;
   }
@@ -867,12 +866,10 @@
   .main-page .services__row--big {
     height: 820px;
   }
-  .best__item {
-    height: 225px;
-  }
-  .best__item--,
+  .best__item,
+  .best__item--big,
   .main-page .news .best__item--big {
-    height: 470px;
+    height: 225px;
   }
 }
 @media (max-width: 780px) {
@@ -880,13 +877,12 @@
   .shops__item-bg {
     min-height: 340px;
   }
-  .best__item {
-    height: 340px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 700px;
+    height: 340px;
   }
+
   #player {
     height: 400px;
   }
@@ -1141,14 +1137,12 @@
 }
 
 @media (max-width: 755px) {
-  .best__item {
+  .best__item,
+  .best__item--big,
+  .main-page .news .best__item--big {
     height: 330px;
   }
 
-  .best__item--big,
-  .main-page .news .best__item--big {
-    height: 680px;
-  }
   .grid-sizer,
   .grid-item {
     width: 31.8%;
@@ -1163,13 +1157,12 @@
   .shops__item-bg {
     min-height: 300px;
   }
-  .best__item {
-    height: 300px;
-  }
+  .best__item,
   .best__item--big,
   .main-page .news .best__item--big {
-    height: 630px;
+    height: 300px;
   }
+
   .grid-sizer,
   .grid-item {
     width: 31.2%;
@@ -1229,10 +1222,7 @@
   .start-video {
     display: none;
   }
-  .best__item--big,
-  .main-page .news .best__item--big {
-    height: 594px;
-  }
+
   .main-page .shops__title {
     margin-bottom: 20px;
   }
