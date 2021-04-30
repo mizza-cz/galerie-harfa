@@ -1,4 +1,12 @@
 jQuery(document).ready(function ($) {
+  var $container = $('.grid');
+  // initialize
+  $container.masonry({
+    itemSelector: '.grid-item',
+    gutter: 15,
+    columnWidth: '.grid-sizer',
+  });
+
   $('.group__form-filter').on('click', function () {
     $(this).toggleClass('group__form-filter--closed');
     $(this).next().slideToggle();
@@ -78,15 +86,6 @@ jQuery(document).ready(function ($) {
     $(this).parent().addClass('active');
 
     return false;
-  });
-});
-var elem = document.querySelector('.grid');
-imagesLoaded(elem, () => {
-  var msnry = new Masonry(elem, {
-    // options
-    itemSelector: '.grid-item',
-    gutter: 15,
-    columnWidth: '.grid-sizer',
   });
 });
 
