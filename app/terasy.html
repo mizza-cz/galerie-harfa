@@ -163,7 +163,7 @@
               <div class="c-video">
                 <div id="player"></div>
                 <div id="thumbnail_container" class="thumbnail_container">
-                  <img class="thumbnail" id="thumbnail" />
+                  <img src="images/main-photo.jpg" class="thumbnail" id="thumbnail" />
                 </div>
                 <a
                   class="start-video"
@@ -187,7 +187,7 @@
       <section class="terasy">
         <div class="container">
           <div class="best__top">
-            <h1><b>Terasy</b></h1>
+            <h2>Terasy</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
@@ -384,7 +384,7 @@
               </div>
             </div>
           </div>
-          <div class="terasy__inner">
+          <!-- <div class="terasy__inner">
             <h2 class="terasy__subtitle">Vyražte na Terasy Harfa <span>#spolu</span></h2>
             <div class="shops__inner">
               <div class="shops__row terasy--1">
@@ -522,7 +522,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
 
@@ -583,27 +583,6 @@
         </div>
       </div>
 
-      <!-- <div id="map"></div>
-
-      <script type="text/javascript">
-        var map;
-
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            center: { lat: 50.10384273543545, lng: 14.49106584865871 },
-
-            zoom: 16,
-          });
-          var marker = new google.maps.Marker({
-            position: { lat: 50.10384273543545, lng: 14.49106584865871 },
-
-            map: map,
-
-            title: 'Galerie Harfa',
-            icon: 'images/decorate/marker.png',
-          });
-        }
-      </script> -->
 
       <div class="social">
         <div class="container">
@@ -765,32 +744,10 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      var video = document.querySelector('.video');
-      var btnVideo = document.getElementById('play');
-      var topInner = document.querySelector('.top__inner');
-      function togglePlayPause() {
-        if (video.paused) {
-          btnVideo.className = 'pause';
-          video.play();
-        } else {
-          btnVideo.className = 'play';
-          video.pause();
-        }
-      }
-      btnVideo.onclick = function () {
-        togglePlayPause();
-      };
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQECbsQhR5FvtJUoRstpiu7ZkEMnJh9jg&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
-  </body>
+  
 </html>

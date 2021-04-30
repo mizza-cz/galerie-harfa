@@ -14,6 +14,14 @@ jQuery(document).ready(function ($) {
     $(this).parents('.best__item-content').addClass('active'); //добавляем класс текущей (нажатой)
   });
 
+  $('.footer__wrap .btn-footer').click(function () {
+    $(this).parents('.footer__wrap').addClass('active'); //добавляем класс текущей (нажатой)
+  });
+
+  $('.more').click(function () {
+    $(this).parents('.shop-detail__box').addClass('vision'); //добавляем класс текущей (нажатой)
+  });
+
   $('.best__item-content .best__btn .shop-close').click(function () {
     $(this).parents('.best__item-content').removeClass('active'); //добавляем класс текущей (нажатой)
   });
@@ -42,8 +50,8 @@ jQuery(document).ready(function ($) {
   var p = document.getElementById('player');
   $(p).hide();
 
-  var t = document.getElementById('thumbnail');
-  t.src = 'images/content/bg-3.jpg';
+  // var t = document.getElementById('thumbnail');
+  // t.src = 'images/content/bg-3.jpg';
 
   onPlayerStateChange = function (event) {
     if (event.data == YT.PlayerState.ENDED) {
@@ -54,7 +62,7 @@ jQuery(document).ready(function ($) {
   $(document).on('click', '.start-video', function () {
     $(this).hide();
     $('#player').show();
-    $('#thumbnail_container').hide();
+    $('#thumbnail_container, .terasy-page .top-main__content').hide();
     player.playVideo();
   });
 
@@ -95,20 +103,7 @@ menuIcon.addEventListener('click', () => {
   navbar.classList.toggle('change');
 });
 
-const footerBtn = document.querySelector('.btn-footer');
-const footerMenu = document.querySelector('.footer__wrap');
-footerBtn.addEventListener('click', () => {
-  footerMenu.classList.toggle('active');
-});
-
 // filter checkboxes
 document
   .querySelectorAll('.filter__form input[type=checkbox]')
   .forEach((input) => input.addEventListener('change', () => input.form.submit()));
-
-/// text more
-const btnMore = document.querySelector('.more');
-const shopDetailBox = document.querySelector('.shop-detail__box');
-btnMore.addEventListener('click', () => {
-  shopDetailBox.classList.toggle('vision');
-});

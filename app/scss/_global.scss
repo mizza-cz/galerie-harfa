@@ -205,6 +205,9 @@ h3 {
   }
 }
 .footer__wrap.active {
+  .btn-footer {
+    display: none;
+  }
   .footer {
     display: block;
   }
