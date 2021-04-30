@@ -429,6 +429,13 @@
   }
 }
 @media (max-width: 1100px) {
+  .contact__inner {
+    justify-content: start;
+  }
+  .contact__item {
+    flex: 0 0 33.333%;
+    padding: 0 10px;
+  }
   .information__inner {
     flex-wrap: wrap;
     padding: 60px;
@@ -858,6 +865,9 @@
   }
 }
 @media (max-width: 780px) {
+  .contact__item {
+    flex: 0 50%;
+  }
   .shops__item,
   .shops__item-bg {
     min-height: 340px;
@@ -1973,6 +1983,10 @@
   }
 }
 @media (max-width: 410px) {
+  .contact__item {
+    flex: 100%;
+    padding: 0;
+  }
   .information__form {
     width: 100%;
   }
