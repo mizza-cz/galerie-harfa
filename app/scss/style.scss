@@ -2294,5 +2294,52 @@ img.thumbnail {
   }
 }
 
-
+/// contact
+.contact {
+  text-align: center;
+  margin: 110px 0;
+  h2 {
+    margin-bottom: 55px;
+    text-transform: uppercase;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__icon {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+.contact__item {
+  flex: 0 0 23.222%;
+  margin-bottom: 55px;
+  p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .icon-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('../images/decorate/dec-icon.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
 @import 'media';
