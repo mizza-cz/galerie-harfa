@@ -1273,11 +1273,7 @@
   .parking__inner .parking__text {
     margin-bottom: 20px;
   }
-  .parking__list-img {
-    height: 70px;
-    width: 95px;
-    margin-bottom: 0;
-  }
+
   .parking__list-img img {
     width: 100%;
     height: 100%;
@@ -1287,30 +1283,17 @@
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 39px;
+    flex-direction: column;
+    align-items: center;
     &-inner {
       flex-wrap: wrap;
-      max-width: 210px;
+      max-width: 100%;
       justify-content: center;
-    }
-  }
-  .parking__list {
-    font-size: 1.875rem;
-  }
-  .parking__list-bonus {
-    font-size: 3.75rem;
-    span {
-      font-size: 1.875rem;
+      flex-direction: column;
     }
   }
   .parking__categorie {
-    height: 190px;
-    max-width: 190px;
-    width: 100%;
     margin-left: 0;
-    padding: 35px 10px 39px 10px;
-  }
-  .parking__list-bottom {
-    display: none;
   }
   .parking__form {
     margin-bottom: 46px;
@@ -1973,9 +1956,6 @@
   .parking__categories {
     justify-content: space-around;
   }
-  .parking__categories-inner {
-    max-width: 190px;
-  }
 }
 @media (max-width: 414px) {
   .best__item--big .shops__content-title {
@@ -2021,7 +2001,7 @@
   }
 
   .parking__categories-inner {
-    max-width: 200px;
+    max-width: 100%;
   }
   .main.main-page {
     .top-main__content {

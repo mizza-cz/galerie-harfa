@@ -1921,6 +1921,7 @@ img.thumbnail {
   margin: 100px 0 72px -30px;
 
   &-item {
+    font-weight: 400;
     max-width: 580px;
     height: 580px;
     width: 100%;
@@ -1939,12 +1940,14 @@ img.thumbnail {
     .parking__price-descr {
       padding-top: 5px;
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 1.75rem;
+      line-height: 115%;
     }
   }
   &-descr {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     font-weight: 400;
+    line-height: 115%;
     max-width: 412px;
     margin: 0 auto;
     padding: 0 15px;
@@ -1956,12 +1959,13 @@ img.thumbnail {
   }
   &-title {
     margin-bottom: 23px;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 400;
-    line-height: 1;
+    line-height: 115%;
     span {
       font-weight: 800;
       font-size: 5rem;
+      line-height: 115%;
       display: block;
     }
   }
@@ -2000,7 +2004,7 @@ img.thumbnail {
     border-radius: 10px;
     img {
       height: 110px;
-      max-width: 230px;
+      max-width: 120px;
       width: 100%;
       object-fit: contain;
     }
@@ -2102,7 +2106,7 @@ img.thumbnail {
 }
 .parking__list {
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
   &-img {
     margin-bottom: 20px;
@@ -2115,6 +2119,7 @@ img.thumbnail {
   &-bottom {
     font-weight: 400;
     font-size: 2.5rem;
+    line-height: 115%;
     display: block;
     text-transform: uppercase;
   }
@@ -2122,11 +2127,11 @@ img.thumbnail {
 
 .parking__list-bonus {
   font-weight: 800;
-  font-size: 5rem;
+  font-size: 3.5rem;
+  line-height: 115%;
   margin-top: 10px;
   bottom: 65px;
   text-transform: uppercase;
-  line-height: 1;
   left: 0;
   right: 0;
   display: flex;
