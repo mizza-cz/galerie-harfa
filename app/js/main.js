@@ -1,11 +1,11 @@
 jQuery(document).ready(function ($) {
-  var $container = $('.grid');
-  // initialize
-  $container.masonry({
-    itemSelector: '.grid-item',
-    gutter: 15,
-    columnWidth: '.grid-sizer',
-  });
+  // var $container = $('.grid');
+  // // initialize
+  // $container.masonry({
+  //   itemSelector: '.grid-item',
+  //   gutter: 15,
+  //   columnWidth: '.grid-sizer',
+  // });
 
   $('.group__form-filter').on('click', function () {
     $(this).toggleClass('group__form-filter--closed');
