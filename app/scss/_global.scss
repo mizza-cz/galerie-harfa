@@ -205,9 +205,6 @@ h3 {
   }
 }
 .footer__wrap.active {
-  .btn-footer {
-    display: none;
-  }
   .footer {
     display: block;
   }
@@ -275,7 +272,6 @@ h3 {
   font-weight: 300;
   font-size: 1.25rem;
   display: block;
-
   margin: 0 auto;
   text-align: center;
   text-decoration: underline;

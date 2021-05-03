@@ -1925,20 +1925,20 @@ img.thumbnail {
   &-item {
     font-weight: 400;
     max-width: 580px;
-    height: 580px;
+    height: 400px;
     width: 100%;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     margin-left: 30px;
     position: relative;
     color: #fff;
-    padding-top: 106px;
+    padding-top: 90px;
   }
   &-info {
     font-size: 1.875rem;
     font-weight: 400;
     padding-top: 6px;
-    margin-bottom: 44px;
+    margin-bottom: 30px;
     .parking__price-descr {
       padding-top: 5px;
       text-transform: uppercase;
@@ -1966,7 +1966,7 @@ img.thumbnail {
     line-height: 115%;
     span {
       font-weight: 800;
-      font-size: 5rem;
+      font-size: 1.75rem;
       line-height: 115%;
       display: block;
     }

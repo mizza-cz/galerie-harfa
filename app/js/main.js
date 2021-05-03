@@ -12,26 +12,26 @@ jQuery(document).ready(function ($) {
     $(this).next().slideToggle();
   });
   $('.shops__item  .btn-arrow').click(function () {
-    $(this).parents('.shops__item').addClass('actives'); //добавляем класс текущей (нажатой)
+    $(this).parents('.shops__item').addClass('actives');
   });
 
   $('.shops__item  .shop-close').click(function () {
-    $(this).parents('.shops__item').removeClass('actives'); //добавляем класс текущей (нажатой)
+    $(this).parents('.shops__item').removeClass('actives');
   });
   $('.best__item-content .best__btn .btn-arrow').click(function () {
-    $(this).parents('.best__item-content').addClass('active'); //добавляем класс текущей (нажатой)
+    $(this).parents('.best__item-content').addClass('active');
   });
 
   $('.footer__wrap .btn-footer').click(function () {
-    $(this).parents('.footer__wrap').addClass('active'); //добавляем класс текущей (нажатой)
+    $(this).parents('.footer__wrap').addClass('active');
   });
 
   $('.more').click(function () {
-    $(this).parents('.shop-detail__box').addClass('vision'); //добавляем класс текущей (нажатой)
+    $(this).parents('.shop-detail__box').addClass('vision');
   });
 
   $('.best__item-content .best__btn .shop-close').click(function () {
-    $(this).parents('.best__item-content').removeClass('active'); //добавляем класс текущей (нажатой)
+    $(this).parents('.best__item-content').removeClass('active');
   });
   //youtube script
   var tag = document.createElement('script');
