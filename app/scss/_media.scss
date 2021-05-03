@@ -1033,6 +1033,14 @@
   .best__row:hover .best__hover {
     opacity: 0;
   }
+  .best__btn {
+    display: flex;
+  }
+  .best__row {
+    .best__btn {
+      display: none;
+    }
+  }
   .best__item-content:hover .best__hover {
     opacity: 0;
   }

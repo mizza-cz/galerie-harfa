@@ -179,6 +179,7 @@
 }
 
 .best__btn {
+  display: none;
   cursor: pointer;
   position: absolute;
   bottom: 0;
@@ -188,7 +189,6 @@
   height: 50px;
   justify-content: center;
   align-items: center;
-  display: flex;
   span {
     transition: all 0.5;
     display: none;
@@ -202,6 +202,9 @@
   }
 }
 .best__row {
+  .best__btn {
+    display: flex;
+  }
   &::before {
     content: '';
     height: 100%;
