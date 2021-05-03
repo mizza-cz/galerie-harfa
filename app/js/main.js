@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
   var player;
 
   onYouTubeIframeAPIReady = function () {
-    player = new YT.Player('player iframe', {
+    player = new YT.Player('player', {
       // videoId: 'G__13eEzADk', // youtube video id
       playerVars: {
         autoplay: 0,
