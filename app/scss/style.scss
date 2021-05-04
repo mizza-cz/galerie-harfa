@@ -47,6 +47,7 @@
     padding-top: 20px;
   }
   .best__top {
+    text-align: center;
     h1,
     h2 {
       font-weight: 600;
@@ -64,6 +65,8 @@
     margin: 0 auto;
     img {
       width: 100%;
+      max-width: 50%;
+      margin: 0 auto;
       object-fit: cover;
       height: 100%;
       border-radius: 10px;
