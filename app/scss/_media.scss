@@ -320,10 +320,10 @@
     padding: 0 5%;
   }
 
-  .top__img img {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+  // .top__img img {
+  //   border-bottom-left-radius: 0;
+  //   border-bottom-right-radius: 0;
+  // }
   .top__box-item.bg--pink {
     border-top-left-radius: 0;
   }
@@ -563,6 +563,16 @@
   }
 }
 @media (max-width: 1024px) {
+  .start-video {
+    width: 90px;
+    height: 90px;
+  }
+  .top__img img,
+  div.thumbnail_container,
+  #player {
+    min-height: auto;
+    height: 350px;
+  }
   .parking__price-item {
     max-width: 420px;
   }
@@ -737,13 +747,7 @@
   .terasy__inner .shops__content-title {
     font-size: 1.75rem;
   }
-  #player {
-    height: 420px;
-  }
-  .start-video {
-    width: 100px;
-    height: 100px;
-  }
+
   .shops__item,
   .shops__item-bg {
     min-height: 360px;
@@ -1078,6 +1082,12 @@
   }
 }
 @media (max-width: 768px) {
+  .top__img img,
+  div.thumbnail_container,
+  #player {
+    min-height: 230px;
+    height: 100%;
+  }
   .contact__inner {
     justify-content: start;
   }
