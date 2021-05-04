@@ -122,7 +122,8 @@
 }
 
 @media (max-width: 1440px) {
-  h2 {
+  h2,
+  .parking__subtitle {
     font-size: 2rem !important;
   }
   h3 {
@@ -404,13 +405,6 @@
   }
 }
 @media (max-width: 1100px) {
-  .contact__inner {
-    justify-content: start;
-  }
-  .contact__item {
-    flex: 0 0 33.333%;
-    padding: 0 10px;
-  }
   .information__inner {
     flex-wrap: wrap;
     padding: 60px;
@@ -569,6 +563,9 @@
   }
 }
 @media (max-width: 1024px) {
+  .parking__price-item {
+    max-width: 420px;
+  }
   .main-page .shops__title {
     margin-bottom: 16px;
   }
@@ -818,9 +815,6 @@
   }
 }
 @media (max-width: 780px) {
-  .contact__item {
-    flex: 0 50%;
-  }
   .shops__item,
   .shops__item-bg {
     min-height: 340px;
@@ -1084,6 +1078,13 @@
   }
 }
 @media (max-width: 768px) {
+  .contact__inner {
+    justify-content: start;
+  }
+  .contact__item {
+    flex: 0 50%;
+    padding: 0 10px;
+  }
   .main-page .events__item {
     padding-bottom: 125px;
     padding-top: 20px;
@@ -1280,14 +1281,7 @@
   .parking__price {
     margin: 72px 0 26px 0;
   }
-  .parking__subtitle.parking__subtitle--top {
-    line-height: 115%;
-    letter-spacing: 1.1px;
-    span {
-      display: block;
-      font-weight: 800;
-    }
-  }
+
   .parking-page.main-page {
     .text {
       font-size: 1.5rem;
@@ -1800,6 +1794,9 @@
 }
 
 @media (max-width: 480px) {
+  .contact__item {
+    flex: 100%;
+  }
   .main-page .services__row {
     height: 430px;
   }
