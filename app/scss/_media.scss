@@ -123,7 +123,8 @@
 
 @media (max-width: 1440px) {
   h2,
-  .parking__subtitle {
+  .parking__subtitle,
+  .best__top h1 {
     font-size: 2rem !important;
   }
   h3 {
@@ -320,9 +321,12 @@
     padding: 0 5%;
   }
 
-  .parking-page .top__img img {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+  .parking-page,
+  .shop-det {
+    .top__img img {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
   }
   .top__box-item.bg--pink {
     border-top-left-radius: 0;
@@ -566,8 +570,8 @@
   .top__img img,
   div.thumbnail_container,
   #player {
-    min-height: auto;
-    height: 350px;
+    min-height: 350px;
+    height: auto;
   }
   .parking__price-item {
     max-width: 420px;
@@ -1078,11 +1082,19 @@
   }
 }
 @media (max-width: 768px) {
+  .shop-detail__top {
+    margin-bottom: 0;
+  }
+  .main.shop-det .shop-detail .shop-detail__list {
+    margin: 10px 0 0 -5px;
+  }
+  .top__box {
+    width: 800px;
+  }
   .top__img img,
   div.thumbnail_container,
   #player {
     min-height: 230px;
-    height: 100%;
   }
   .contact__inner {
     justify-content: start;
