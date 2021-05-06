@@ -25,9 +25,8 @@ jQuery(document).ready(function ($) {
   $('.btn-footer').click(function () {
     $(this).parents('.footer__wrap').toggleClass('active');
   });
-
   $('.more').click(function () {
-    $(this).parents('.shop-detail__box').addClass('vision');
+    $(this).parents('.shop-detail__box').toggleClass('vision');
   });
 
   $('.best__item-content .best__btn .shop-close').click(function () {
