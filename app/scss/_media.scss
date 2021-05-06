@@ -1134,6 +1134,9 @@
   }
 }
 @media (max-width: 690px) {
+  .main-page.best-deal .best-deal__img img {
+    max-width: 100%;
+  }
   .main-page .services__row {
     margin-bottom: 15px;
     height: 600px;
@@ -1432,7 +1435,6 @@
       margin-top: 60px;
     }
     .top__inner {
-      padding-top: 45px;
       .best__top {
         margin-top: 0;
       }
@@ -1445,11 +1447,6 @@
       span {
         font-weight: 800;
         display: block;
-      }
-    }
-    .top {
-      .decoration {
-        display: flex;
       }
     }
   }
