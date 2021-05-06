@@ -322,7 +322,8 @@
   }
 
   .parking-page,
-  .shop-det {
+  .shop-det,
+  .services-detail {
     .top__img img {
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -989,6 +990,9 @@
     display: flex;
   }
   .best__row {
+    &::after {
+      display: none;
+    }
     .best__btn {
       display: none;
     }

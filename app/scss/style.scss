@@ -203,9 +203,23 @@
     transition: all 0.5s;
   }
 }
+
 .best__row {
-  .best__btn {
+  &::after {
+    content: '\ea3b';
+    position: absolute;
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 1.2rem;
+    transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     display: flex;
+    right: 0;
+    bottom: 0px;
+    z-index: 99;
   }
   &::before {
     content: '';
@@ -258,6 +272,7 @@
       font-size: 1rem;
       padding-top: 30px;
       transition: all 0.5s;
+      height: auto;
     }
     .best__hover {
       left: 35px;
@@ -753,13 +768,13 @@
   }
 }
 .shops__content-descr {
-  padding-bottom: 25px;
   font-size: 0;
+  height: 0;
   font-weight: 400;
   transition: all 0.5s;
 }
 .shops__categories-list {
-  margin: 0 5px 5px 5px;
+  margin: 20px 5px 5px 5px;
 }
 .shops__categories {
   display: flex;
