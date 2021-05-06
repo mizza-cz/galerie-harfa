@@ -269,6 +269,14 @@
   z-index: 22;
 
   &:hover {
+    .shops__categories {
+      opacity: 1;
+      width: auto;
+      height: auto;
+      transition: all 0.4s;
+      padding-top: 5px;
+      margin-bottom: -15px;
+    }
     .shops__content-descr {
       font-size: 1rem;
       padding-top: 30px;
@@ -775,28 +783,33 @@
   transition: all 0.5s;
 }
 .shops__categories-list {
-  margin: 20px 5px 5px 5px;
+  color: #fff;
+  display: block;
+  background-color: $pink;
+  border-radius: 11px;
+  padding: 4px 11px 3px 8px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  transition: all 0.4s;
+  margin: 5px;
+  &:hover {
+    background-color: #fff;
+    color: $pink;
+    border: 2px solid $pink;
+  }
 }
 .shops__categories {
+  transition: all 0.4s;
   display: flex;
   flex-wrap: wrap;
   margin-right: 30px;
   margin-left: -5px;
-  &-list a {
-    color: #fff;
-    display: block;
-    background-color: $pink;
-    border-radius: 11px;
-    padding: 4px 11px 3px 8px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    transition: all 0.4s;
-    &:hover {
-      background-color: #fff;
-      color: $pink;
-      border: 2px solid $pink;
-    }
+  padding-top: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  &-list {
   }
 }
 .shops__btn {
@@ -1790,12 +1803,7 @@ img.thumbnail {
     text-align: left;
   }
   .title {
-    text-align: center;
-    font-weight: 300;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 66px;
-    margin-bottom: 65px;
+    margin-bottom: 40px;
   }
 }
 .career {
@@ -1876,7 +1884,7 @@ img.thumbnail {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  .shops__categories-list a {
+  .shops__categories-list {
     font-weight: 700;
     color: #fff;
     background-color: $ocean;
@@ -2215,7 +2223,7 @@ img.thumbnail {
   }
 }
 .event-detail {
-  .shops__categories-list a {
+  .shops__categories-list {
     background-color: $orange;
     &:hover {
       border: 2px solid $orange;

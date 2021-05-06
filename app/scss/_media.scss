@@ -286,9 +286,6 @@
 }
 
 @media (max-width: 1280px) {
-  .shops__content-descr {
-    padding-bottom: 0;
-  }
   .shops__categories,
   .best__hover-descr {
     display: none !important;
@@ -905,11 +902,13 @@
       border: 2px solid $orange;
     }
   }
-
-  .shops__item:hover .shops__content-descr {
-    font-size: 0;
+  .best__item-content:hover .shops__content-descr {
     padding-top: 0;
   }
+  // .shops__item:hover .shops__content-descr {
+  //   font-size: 0;
+  //   padding-top: 0;
+  // }
 
   // .main-page .news .shops__item:hover .shops__categories-list a {
   //   border: 2px solid transparent;
@@ -1186,7 +1185,8 @@
     display: none;
   }
 
-  .main-page .shops__title {
+  .main-page .shops__title,
+  .main.services-detail .title {
     margin-bottom: 20px;
   }
   .best,
