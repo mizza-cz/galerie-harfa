@@ -1804,6 +1804,19 @@
 }
 
 @media (max-width: 480px) {
+  .top__img .mob-banner {
+    display: block;
+    img {
+      display: block;
+    }
+  }
+  .top__img {
+    img,
+    .c-video {
+      display: none;
+    }
+  }
+
   .contact__item {
     flex: 100%;
   }
