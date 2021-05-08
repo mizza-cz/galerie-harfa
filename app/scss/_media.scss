@@ -1804,17 +1804,21 @@
 }
 
 @media (max-width: 480px) {
-  .top__img .mob-banner {
-    display: block;
-    width: 100%;
-    img {
+  .top__img.top__img--hp{
+    .mob-banner {
       display: block;
+      width: 100%;
+      img {
+        display: block;
+      }
     }
-  }
-  .top__img {
-    .video-hp {
+    .video-hp,
+    img {
       display: none;
     }
+  } 
+  .top__img {
+    
   }
 
   .contact__item {
