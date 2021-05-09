@@ -564,7 +564,7 @@
   div.thumbnail_container,
   #player {
     min-height: 350px;
-    height: auto;
+    height: 100%;
   }
   .parking__price-item {
     max-width: 420px;
@@ -1086,7 +1086,7 @@
       width: 100%;
       img {
         display: block;
-        min-height: auto;
+        min-height: 100%;
       }
     }
     .c-video,
