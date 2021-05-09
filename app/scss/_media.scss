@@ -1080,6 +1080,20 @@
   }
 }
 @media (max-width: 768px) {
+  .top__img.top__img--hp {
+    .mob-banner {
+      display: block;
+      width: 100%;
+      img {
+        display: block;
+        min-height: auto;
+      }
+    }
+    .c-video,
+    img {
+      display: none;
+    }
+  }
   .shop-detail__top {
     margin-bottom: 0;
   }
@@ -1804,22 +1818,6 @@
 }
 
 @media (max-width: 480px) {
-  .top__img.top__img--hp {
-    .mob-banner {
-      display: block;
-      width: 100%;
-      img {
-        display: block;
-        min-height: auto;
-      }
-    }
-    .video-hp,
-    img {
-      display: none;
-    }
-  }
- 
-
   .contact__item {
     flex: 100%;
   }
