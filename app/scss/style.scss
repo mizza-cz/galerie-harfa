@@ -656,6 +656,24 @@
 //shop-detail section
 .shop-detail {
   margin-top: 110px;
+  h1,
+  h2,
+  h3 {
+    margin-bottom: 20px;
+  }
+  ol li,
+  ul,
+  li {
+    font-size: 1rem;
+    line-height: 115%;
+  }
+  ol li {
+    list-style: decimal;
+  }
+
+  ul li {
+    list-style: initial;
+  }
 }
 .shop-detail__top {
   display: flex;
