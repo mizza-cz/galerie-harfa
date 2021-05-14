@@ -779,6 +779,7 @@
   left: 35px;
   z-index: 999;
   padding-right: 35px;
+
   &-link {
     color: #fff;
   }
@@ -786,6 +787,8 @@
 .shops__content-title {
   margin-bottom: -20px;
   font-size: 1.75rem;
+  color: rgba(#fff, 0.8);
+  text-shadow: 1px 2px #0f0f0f;
   line-height: 115%;
 }
 .best__item--big {
@@ -827,8 +830,6 @@
   width: 0;
   height: 0;
   opacity: 0;
-  &-list {
-  }
 }
 .shops__btn {
   cursor: pointer;
