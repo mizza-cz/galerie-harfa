@@ -168,34 +168,27 @@
     height: 74%;
     overflow-y: auto;
 
-    @media only screen and (max-width: 1630px) {
-      height: 70%;
-
-      @media only screen and (max-width: 1320px) {
-        height: 65%;
-
-        @media only screen and (max-width: 1110px) {
-          height: 60%;
-        }
-      }
-    }
-
     p {
-      border-bottom: 0.7px solid #ffffffa1;
       padding-bottom: 9px;
-      padding-top: 5px;
+      padding-top: 7px;
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 12px;
       font-weight: 700;
-      line-height: 15px;
+      font-size: 20px;
+      border: none;
+      margin-top: 5px;
+      text-align: center;
 
-      &:first-of-type {
-        margin-top: 5px;
-      }
+      @media only screen and (max-width: 1920px) {
+        font-size: 15px;
 
-      &:last-of-type {
-        border: none;
+        @media only screen and (max-width: 1140px) {
+          font-size: 13px;
+
+          @media only screen and (max-width: 1150) {
+            font-size: 11px;
+          }
+        }
       }
     }
   }

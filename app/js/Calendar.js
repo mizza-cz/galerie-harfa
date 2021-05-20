@@ -277,3 +277,84 @@ class Calendar {
 
 }
 
+
+$(document).ready(function () {
+    var events = $("#calendar-esports .eventContent").get();
+    let first = [];
+    let element = new Array(events.length);
+    var xd = 0;
+
+
+    for (let i = 0; i < events.length; i++) {
+        if ($(events[i]).children().length > 1) {
+            var para = $(events[i]).children();
+
+            for (let j = 0; j < para.length; j++) {
+                $(para[j]).css("display", "none");
+            }
+
+            var arrowRight = '<i style="cursor: pointer;border: solid white;border-width: 0 3px 3px 0;display: inline-block;padding: 8px;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);" class="arrow right arrowRight"></i>';
+            var arrowLeft = '<i style="cursor: pointer;border: solid white;border-width: 0 3px 3px 0;display: inline-block;padding: 8px;transform: rotate(135deg);-webkit-transform: rotate(135deg);" class="arrow right arrowLeft"></i>';
+
+            $(events[i]).append("<div style='position:absolute; bottom:0; width:100%;'><span style='float:left;'>" + arrowLeft + "</span><span style='float:right;'>" + arrowRight + "</span></div>");
+
+
+            first[xd] = $(para).first();
+            first[xd].css("display", "block");
+
+        }
+    }
+
+    $(".arrowRight").click(function (e) {
+        var parentEventDiv = $(this).parent().parent().parent();
+        var children = parentEventDiv.children();
+        var activeEvent;
+
+        for (let index = 0; index < children.length; index++) {
+            if ($(children[index]).css('display') == 'block' && $(children[index]).prop("tagName") != 'DIV') {
+                activeEvent = $(children[index]);
+            }
+        }
+
+        var nextEvent = $(activeEvent).next();
+
+        if (nextEvent.length > 0 && $(nextEvent).prop("tagName") != 'DIV') {
+            $(activeEvent).css('display', "none");
+            $(nextEvent).css('display', "block");
+        } else {
+            $(activeEvent).css('display', "none");
+            $(children).first().css('display', 'block');
+        }
+    });
+
+    $(".arrowLeft").click(function (e) {
+        var parentEventDiv = $(this).parent().parent().parent();
+        var children = parentEventDiv.children();
+        var activeEvent;
+        var position;
+
+        for (let index = 0; index < children.length; index++) {
+            if ($(children[index]).css('display') == 'block' && $(children[index]).prop("tagName") != 'DIV') {
+                activeEvent = $(children[index]);
+                position = index;
+            }
+        }
+
+        var prevEvent = $(activeEvent).prev();
+
+        if (position == 0) {
+            prevEvent = $(children[children.length - 2]);
+        }
+
+        if (prevEvent.length > 0 && $(prevEvent).prop("tagName") != 'DIV') {
+            $(activeEvent).css('display', "none");
+            $(prevEvent).css('display', "block");
+        } else {
+            $(activeEvent).css('display', "none");
+            $(children).last().css('display', 'block');
+        }
+    });
+});
+
+
+
