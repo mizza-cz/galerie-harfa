@@ -31,6 +31,15 @@
 
 .menu__list {
   display: inline-block;
+  position: relative;
+}
+.day-price{
+  position: absolute;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 4px;
+  width: max-content;
+  bottom: -30px;
 }
 .menu__link {
   color: #404040;
@@ -218,6 +227,9 @@
     }
   }
 }
+.navbar__menu .day-price{
+  display: none;
+}
 
 @media (max-width: 1680px) {
   .navbar__col::before {
@@ -327,6 +339,15 @@
   }
 }
 @media (max-width: 600px) {
+  .navbar__menu .day-price{
+    display: block;
+  }
+  .day-price{
+    position: relative;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .header.sticky .navbar.change .burger-close {
     top: 0px;
     right: 0;

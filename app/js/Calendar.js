@@ -230,10 +230,14 @@ class Calendar {
                     AktualniDen = new Date(AktualniRok[1] + "-" + this.prevodNaSpravneCisloMesic(aktualniMesic + 1) + "-" + this.prevodNaSpravneCisloDen(den));
                     var data = this.checkEventDay(AktualniDen);
 
-                    if (den == today && plus == 0) { //zvyrazneni aktualniho dne
-                        calendar += `<div class="divTableCellCalendar today"><span>` + den + `</span></div>`
-                        den++;
-                    } else if (data[0]) {// zvyrazneni dne s akci, priprava obsahu do divu akce
+                    // if (den == today && plus == 0) { //zvyrazneni aktualniho dne
+                       
+                    //     calendar += `<div class="divTableCellCalendar event eventDayId today"><span>` + den + `</span><div class="eventContent"><p style="cursor: pointer;" onclick="window.location.href='` + data[4] + `'">` + data[3] + `</p></div></div>`
+                    //     den++;
+                        
+                    // } 
+                    //  else
+                     if (data[0]) {// zvyrazneni dne s akci, priprava obsahu do divu akce
                         calendar += `<div class="divTableCellCalendar event eventDayId` + data[1].toLocaleDateString("en-US").replace('/', '').replace('/', '') + `"><span>` + den + `</span>`;
                         calendar += `<div class="eventContent"><p style="cursor: pointer;" onclick="window.location.href='` + data[4] + `'">` + data[3] + `</p>`;
                         DivEventContent = "";
