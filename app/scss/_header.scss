@@ -175,6 +175,9 @@
   }
 }
 .header.sticky {
+  .day-price{
+   display: none;
+  }
   .header__inner {
     height: 70px;
   }
@@ -342,8 +345,13 @@
   .navbar__menu .day-price{
     display: block;
   }
+  .navbar.change .navbar__col::before, .navbar.change .navbar__col::after{
+    display: none;
+  }
   .day-price{
-    position: relative;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
