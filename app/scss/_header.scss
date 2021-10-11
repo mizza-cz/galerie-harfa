@@ -342,6 +342,15 @@
   }
 }
 @media (max-width: 600px) {
+  .navbar__col {
+    .menu,
+    .navbar__menu{
+      height: 35vh;
+    }
+  }
+  .header.sticky .day-price{
+    display: block;
+  }
   .navbar__menu .day-price{
     display: block;
   }
@@ -349,7 +358,7 @@
     display: none;
   }
   .day-price{
-    position: absolute;
+    position: static;
     text-align: center;
     bottom: 0;
     width: 100%;
