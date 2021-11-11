@@ -203,7 +203,9 @@ h3 {
     background-size: cover;
   }
 }
-
+.btn-footer2.btn-footer {
+  display: none;
+}
 .footer {
   display: none;
 }
@@ -213,6 +215,12 @@ h3 {
   }
 }
 .footer__wrap.active {
+  .btn-footer {
+    display: none;
+  }
+  .btn-footer2 {
+    display: block;
+  }
   .footer {
     display: block;
   }
