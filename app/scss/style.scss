@@ -46,6 +46,27 @@
 .main-page.best-deal {
   .top {
     padding-top: 20px;
+    ol,
+    ul {
+      max-width: 480px;
+      margin: 0 auto;
+      text-align: left;
+      margin-bottom: 16px;
+      padding: 16px;
+    }
+    ol li,
+    ul,
+    li {
+      font-size: 1rem;
+      line-height: 150%;
+    }
+    ol li {
+      list-style: decimal;
+    }
+
+    ul li {
+      list-style: initial;
+    }
   }
   .best__top {
     text-align: center;
@@ -90,9 +111,9 @@
     &__inner {
       text-align: center;
     }
-    .decoration {
-      display: none;
-    }
+    // .decoration {
+    //   display: none;
+    // }
   }
 }
 .best {
