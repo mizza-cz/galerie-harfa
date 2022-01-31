@@ -45,7 +45,7 @@
 }
 .main-page.best-deal {
   .top {
-    padding-top: 20px;
+    // padding-top: 20px;
     a {
       text-decoration: underline;
       &:hover {
@@ -1694,12 +1694,11 @@ img.thumbnail {
   }
 }
 
-.main.terasy-page {
-}
 .terasy-page {
   .top__img {
     width: 100%;
     height: 100%;
+    margin-bottom: 0;
   }
 
   .shops__categories-list {
@@ -1760,9 +1759,6 @@ img.thumbnail {
     height: 83px;
     left: 111px;
     top: -95px;
-  }
-  .decoration {
-    display: none;
   }
 }
 .terasy__inner {
