@@ -5,7 +5,121 @@
 @import 'event';
 @import 'calendar';
 
-// new styles
+.terasy-wrapper{
+  .shops__title{
+    text-align: center;
+  }
+}
+.terasy-categories{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  @media(max-width:600px){
+    flex-wrap: wrap;
+  }
+  &__title{
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+  }
+  li+li{
+    .terasy-categories__title::before{
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 1px;
+          display: block;
+          height: 100%;
+          background-color: #575656;
+          bottom: 0;
+          @media(max-width:600px){
+            display: none;
+          }
+    }
+  }
+  a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  li{
+    display: block;
+    max-width: 150px;
+    @media(max-width:600px){
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+    p{
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+    img{
+      width: 80px;
+      height: 80px;
+      padding: 20px;
+      display: block;
+    }
+  }
+}
+.terasy-links{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  &__item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    @media(max-width:1600px){
+      padding: 0 10px;
+      margin-bottom: 20px;
+    }
+    @media(max-width:780px){
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  &__link{
+    display: flex;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+    @media(max-width:1100px){
+      flex-wrap: wrap;
+    }
+  }
+  &__img{
+      flex: 0 0 50%;
+      max-width: 50%;
+      @media(max-width:1100px){
+        flex: 100%;
+        max-width: 100%;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+      }
+  }
+  &__info{
+    padding: 32px;
+    h3{
+      font-size: 1.75rem;
+      line-height: 115%;
+    }
+    p{
+      margin-bottom: 16px;
+    }
+    span{
+      text-decoration: underline;
+      font-weight: bold;
+      display: block;
+    }
+  }
+}
 
 // best ----------------------------------------------------
 .main-page .deal {
@@ -1314,149 +1428,6 @@
       line-height: 150%;
     }
   }
-  //   .services__row {
-  //     display: block;
-  //     grid-column-start: span 1;
-  //     grid-row-start: span 1;
-  //     position: relative;
-  //     border-radius: 7px;
-  //     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
-  //     height: 361px;
-  //     .btn-call {
-  //       height: 100px;
-  //       width: 100%;
-  //       display: flex;
-  //       align-items: center;
-  //       justify-content: center;
-  //       padding-top: 7px;
-  //       span {
-  //         margin: 0 5px;
-  //       }
-  //     }
-  //     .btn {
-  //       padding: 0;
-  //       max-width: 310px;
-  //       text-align: center;
-  //       width: 100%;
-  //       display: flex;
-  //       justify-content: center;
-  //       align-items: center;
-  //       height: 61px;
-  //       margin: 0 auto;
-  //     }
-  //   }
-  //   .services__item {
-  //     padding: 0 40px;
-  //     &-btn {
-  //       position: absolute;
-  //       bottom: 28px;
-  //       left: 0;
-  //       right: 0;
-  //       margin: 0 auto;
-  //       max-width: 100%;
-  //       width: 100%;
-  //     }
-  //   }
-  //   .services__row.services__row--width {
-  //     grid-column-start: span 2;
-  //   }
-  //   .services__row.services__row--height {
-  //     grid-row-start: span 2;
-  //     height: 760px;
-  //   }
-  //   .services__item-title {
-  //     position: absolute;
-  //     font-size: 1.75rem;
-  //     line-height: 115%;
-  //     font-weight: 800;
-  //     text-transform: uppercase;
-  //     color: #ffffff;
-  //     left: 25px;
-  //     top: 50px;
-  //     span {
-  //       font-size: 1.75rem;
-  //       line-height: 115%;
-  //       display: block;
-  //     }
-  //   }
-
-  //   .services__row--big {
-  //     background: linear-gradient(180deg, #eea941 0%, #157a6e 156%);
-  //     opacity: 0.94;
-  //     height: 760px;
-  //     grid-column-start: span 2;
-  //     grid-row-start: span 2;
-  //     &.services__row {
-  //       .services__item-title {
-  //         top: 33px;
-  //         left: 39px;
-  //       }
-  //     }
-  //   }
-
-  //   .services__item-time {
-  //     line-height: 30px;
-  //     color: #1d3354;
-  //     font-size: 1.625rem;
-  //     line-height: 30px;
-  //     font-weight: 800;
-  //     margin-top: 142px;
-  //     margin-bottom: 89px;
-  //   }
-  //   .services__link {
-  //     width: 100%;
-  //     height: 100%;
-  //     display: block;
-  //     background-size: cover;
-  //     background-repeat: no-repeat;
-  //     background-position: center;
-  //     border-radius: 7px;
-  //   }
-  //   .services__item-hours {
-  //     font-size: 3.56rem;
-  //     font-weight: 700;
-  //     color: #fff;
-  //     margin-top: 22px;
-  //     letter-spacing: -1px;
-  //     margin-bottom: 16px;
-  //   }
-  //   .services__item-price {
-  //     text-transform: uppercase;
-  //   }
-  //   .services__menu {
-  //     color: #fff;
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  //   .services__menu-title {
-  //     font-weight: 800;
-  //     font-size: 1.625rem;
-  //     line-height: 30px;
-  //     margin-bottom: 25px;
-  //     color: #fff;
-  //   }
-  //   .services__menu-link {
-  //     align-items: center;
-  //     justify-content: center;
-  //     display: flex;
-  //     text-transform: uppercase;
-  //     height: 60px;
-  //     font-size: 1.25rem;
-  //     color: #fff;
-  //     font-weight: 800;
-  //     line-height: 30px;
-  //     border: 2px solid #fff;
-  //     border-radius: 5px;
-  //     transition: all 0.4s;
-  //     &:hover {
-  //       border: 2px solid $orange;
-  //       color: $orange;
-  //       transform: scale(1.06);
-  //     }
-  //   }
-  //   .services__menu-link + .services__menu-link {
-  //     margin-top: 20px;
-  //   }
 }
 
 // services-page
