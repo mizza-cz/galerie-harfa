@@ -66,16 +66,8 @@
 
   .event {
     color: white;
-    // transition: all 0.3s;
-    //  cursor: pointer;
-
-    &:hover {
-      // color: black;
-      // background-color: red;
-    }
   }
   .event:before {
-    // background-color: #f7a941 !important;
     background-color: red;
   }
 
@@ -155,10 +147,6 @@
     position: relative;
     top: -20px;
     margin-top: -20px;
-  }
-
-  .today {
-    //background-color: grey;
   }
 
   .eventContent {

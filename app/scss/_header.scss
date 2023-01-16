@@ -6,7 +6,6 @@
   left: 0;
   z-index: 999;
   &__logo {
-    transition: all .6s;
     a {
       width: 119px;
       height: 55px;
@@ -59,7 +58,7 @@
   position: absolute;
   right: 20px;
   z-index: 9999;
-  transition: all 0.6s;
+  transition: all 0.2s;
 
   .navbar__link {
     font-size: 1.1rem;

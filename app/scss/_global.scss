@@ -203,9 +203,7 @@ h3 {
     background-size: cover;
   }
 }
-.btn-footer2.btn-footer {
-  display: none;
-}
+
 .footer {
   display: none;
 }
@@ -215,12 +213,6 @@ h3 {
   }
 }
 .footer__wrap.active {
-  .btn-footer {
-    display: none;
-  }
-  .btn-footer2 {
-    display: block;
-  }
   .footer {
     display: block;
   }
@@ -530,26 +522,4 @@ h3 {
 
 .mob-banner {
   display: none;
-}
-table {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  border-collapse: collapse;
-  width: 100%;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  tr:first-child {
-    td {
-      padding-top: 16px;
-    }
-  }
-  tr:last-child {
-    td {
-      padding-bottom: 16px;
-    }
-  }
-  td {
-    padding: 16px 8px 12px;
-    border-bottom: 1px solid rgba(#000, 0.1);
-  }
 }
