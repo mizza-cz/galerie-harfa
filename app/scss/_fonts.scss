@@ -27,54 +27,64 @@
 }
 
 .icon-trophy-solid:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon-running-solid:before {
-  content: "\e902";
+  content: '\e902';
 }
 .icon-hotel-solid:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon-hot-tub-solid:before {
-  content: "\e904";
+  content: '\e904';
 }
 .icon-dragon-solid:before {
-  content: "\e905";
+  content: '\e905';
 }
 .icon-dice-solid:before {
-  content: "\e906";
+  content: '\e906';
 }
 .icon-shopping-basket-solid:before {
-  content: "\e907";
+  content: '\e907';
 }
 .icon-googleplay:before {
-  content: "\e900";
+  content: '\e900';
   color: #607d8b;
 }
 .icon-facebook-square:before {
-  content: "\f082";
+  content: '\f082';
 }
 .icon-twitter:before {
-  content: "\f099";
+  content: '\f099';
 }
 .icon-youtube-play:before {
-  content: "\f16a";
+  content: '\f16a';
 }
 .icon-instagram:before {
-  content: "\f16d";
+  content: '\f16d';
 }
 .icon-apple:before {
-  content: "\f179";
+  content: '\f179';
 }
 .icon-paper-plane:before {
-  content: "\f1d8";
+  content: '\f1d8';
 }
 .icon-send:before {
-  content: "\f1d8";
+  content: '\f1d8';
 }
 .icon-spoon-knife:before {
-  content: "\e9a3";
+  content: '\e9a3';
 }
 .icon-arrow-up-right2:before {
-  content: "\ea3b";
+  content: '\ea3b';
+}
+.icon-person-skating:before {
+  content: '';
+  background-image: url('../images/svg/person-skating.svg');
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
